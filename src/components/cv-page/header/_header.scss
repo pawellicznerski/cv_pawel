@@ -1,0 +1,15 @@
+.header{
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  &__pic{
+    width: 50vw;
+    height: 50vw;
+    background-color: black
+  }
+  &__about-me{
+    width: 50vw;
+    height: 50vw;
+  }
+}
