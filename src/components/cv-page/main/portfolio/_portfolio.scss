@@ -1,0 +1,24 @@
+@import "./../../_cv-page__base/media-query-mixins.scss";
+
+.portfolio{
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  &__el{
+    width: 100vw;
+    height: 75vw;
+    @include mobile{
+      width: 50vw;
+      height: 50vw;
+    };
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content{
+
+  }
+}

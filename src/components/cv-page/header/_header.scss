@@ -21,41 +21,34 @@
     background-position: 150px 30px;
   }
   &__about-me{
+    background-color: rgba(245,245,245,1);
   }
-
-  &__contact-info__item{
-    // margin: 44px 0 0 0;
-    // width:25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    &__text{
-      text-align: center;
-      vertical-align: middle;
-      align-self: flex-end;
-      word-wrap: break-word;
-      width: 100%;
-      font-size: 12px;
-      padding: 4px;
-    }
-    &__icon{
-      margin:8px 0 0 10px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width:40px;
-      height:40px;
-      &_birth-date{
-
+  &__contact-info{
+    border: 1px solid black;
+    &__item{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid red;
+      &__text{
+        border: 1px solid green;
+        font-size: 12px;
+        padding: 4px;
+      }
+      &__icon{
+        border: 1px solid blue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:23px;
+        height:23px;
+        margin: 5px;
+      }
+      @each $icon in birth-date, phone, e-mail, address{
+        &__icon_#{$icon}{
+          background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_#{$icon}.svg");
+        }
       }
     }
-  }
-
-}
-
-@each $icon in birth-date, phone, e-mail, address{
-  .header__contact-info__item__icon_#{$icon}{
-    background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_#{$icon}.svg");
-  }
+  }//contact-info
 }

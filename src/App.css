@@ -16,38 +16,52 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 150px 30px; }
-  .header__contact-info__item {
+  .header__about-me {
+    background-color: whitesmoke; }
+  .header__contact-info {
+    border: 1px solid black; }
+    .header__contact-info__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid red; }
+      .header__contact-info__item__text {
+        border: 1px solid green;
+        font-size: 12px;
+        padding: 4px; }
+      .header__contact-info__item__icon {
+        border: 1px solid blue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 23px;
+        height: 23px;
+        margin: 5px; }
+      .header__contact-info__item__icon_birth-date {
+        background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
+      .header__contact-info__item__icon_phone {
+        background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_phone.svg"); }
+      .header__contact-info__item__icon_e-mail {
+        background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
+      .header__contact-info__item__icon_address {
+        background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
+
+.portfolio {
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .portfolio__el {
+    width: 100vw;
+    height: 75vw; }
+    @media (min-width: 600px) {
+      .portfolio__el {
+        width: 50vw;
+        height: 50vw; } }
+  .portfolio__text {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
-    .header__contact-info__item__text {
-      text-align: center;
-      vertical-align: middle;
-      align-self: flex-end;
-      word-wrap: break-word;
-      width: 100%;
-      font-size: 12px;
-      padding: 4px; }
-    .header__contact-info__item__icon {
-      margin: 8px 0 0 10px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 40px;
-      height: 40px; }
-
-.header__contact-info__item__icon_birth-date {
-  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
-
-.header__contact-info__item__icon_phone {
-  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_phone.svg"); }
-
-.header__contact-info__item__icon_e-mail {
-  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
-
-.header__contact-info__item__icon_address {
-  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
 
 * {
   padding: 0px;
