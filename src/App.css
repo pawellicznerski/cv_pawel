@@ -1,3 +1,54 @@
+.header {
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .header__el {
+    width: 100vw;
+    height: 75vw; }
+    @media (min-width: 600px) {
+      .header__el {
+        width: 50vw;
+        height: 50vw; } }
+  .header__pic {
+    background-color: black;
+    background-image: url("./components/cv-page/header/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 150px 30px; }
+  .header__contact-info__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .header__contact-info__item__text {
+      text-align: center;
+      vertical-align: middle;
+      align-self: flex-end;
+      word-wrap: break-word;
+      width: 100%;
+      font-size: 12px;
+      padding: 4px; }
+    .header__contact-info__item__icon {
+      margin: 8px 0 0 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px; }
+
+.header__contact-info__item__icon_birth-date {
+  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
+
+.header__contact-info__item__icon_phone {
+  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_phone.svg"); }
+
+.header__contact-info__item__icon_e-mail {
+  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
+
+.header__contact-info__item__icon_address {
+  background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
+
 * {
   padding: 0px;
   margin: 0px;
