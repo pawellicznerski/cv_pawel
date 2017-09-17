@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import EducationProgressBar from './__education__education-progress-bar/education__education-progress-bar.js';
 
 
-class Education extends Component {
+export class Education extends Component {
   render() {
     return (
       <div className="education">
-        <div className="main__section-name education__section-name">
-          <div className="main__section-name__icon education__section-name__icon_education"></div>
-          <p className="main__section-name__text education__section-name__text_education">formations</p>
+        <div className="education__el education__text">
+          <p className="education__el education__text_break">edukacja~</p>
         </div>
-        <EducationProgressBar></EducationProgressBar>
+        <div className="education__el education__content">
+          education__content
+        </div>
       </div>
     );
   }
 }
-
-export default Education;

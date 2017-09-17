@@ -2,14 +2,14 @@
 
 .portfolio{
   width: 100vw;
-  height: 50vw;
   display: flex;
   flex-wrap: wrap;
   &__el{
     width: 100vw;
-    height: 75vw;
+    height: 300px;
+    // border: 1px solid green;
     @include mobile{
-      width: 50vw;
+      width: 50%;
       height: 50vw;
     };
   }
@@ -17,8 +17,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    text-transform: uppercase;
+    &_break{
+      color: white;
+      font-family: 'Rokkitt', serif;
+      // font-family: 'Cinzel', serif;
+      // border: 1px solid red;
+      width: 190px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold;
+      @include mobile{
+        color: black;
+        width: 190px;
+        height: 180px;
+        font-size: 80px;
+        line-height: 60px;
+      };
+    }
+    @include mobile{
+      background-color: white;
+    };
   }
   &__content{
-
+    background-color: white;
+    @include mobile{
+      background-color: black;
+    };
   }
 }

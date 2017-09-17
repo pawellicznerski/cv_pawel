@@ -1,0 +1,30 @@
+&__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-transform: uppercase;
+  &_break{
+    color: white;
+    font-family: 'Rokkitt', serif;
+    // font-family: 'Cinzel', serif;
+    // border: 1px solid red;
+    width: 190px;
+    height: 180px;
+    font-size: 80px;
+    line-height: 60px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    @include mobile{
+      color: white;
+      width: 190px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+    };
+  }
+  @include mobile{
+    background-color: black;
+  };
+}

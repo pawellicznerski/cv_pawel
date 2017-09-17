@@ -1,67 +1,270 @@
 .header {
   width: 100vw;
-  height: 50vw;
   display: flex;
   flex-wrap: wrap; }
   .header__el {
-    width: 100vw;
-    height: 75vw; }
+    width: 100vw; }
     @media (min-width: 600px) {
       .header__el {
-        width: 50vw;
-        height: 50vw; } }
+        width: 50%; } }
   .header__pic {
     background-color: black;
     background-image: url("./components/cv-page/header/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 150px 30px; }
+    background-position: center;
+    height: 300px; }
+    @media (min-width: 600px) {
+      .header__pic {
+        height: 50vw; } }
   .header__about-me {
-    background-color: whitesmoke; }
-  .header__contact-info {
-    border: 1px solid black; }
-    .header__contact-info__item {
+    padding-left: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vw;
+    font-family: 'Cinzel', serif; }
+    @media (min-width: 600px) {
+      .header__about-me {
+        height: 50vw;
+        padding-left: 30px; } }
+    .header__about-me__me {
+      margin-top: 9vw; }
+      @media (min-width: 600px) {
+        .header__about-me__me {
+          margin-top: 11vw; } }
+    .header__about-me__contact-info__item {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
-      border: 1px solid red; }
-      .header__contact-info__item__text {
+      align-items: center; }
+      .header__about-me__contact-info__item__text {
         border: 1px solid green;
+        text-decoration: none;
+        color: black;
         font-size: 12px;
-        padding: 4px; }
-      .header__contact-info__item__icon {
-        border: 1px solid blue;
+        padding: 4px;
+        max-width: 70%; }
+      .header__about-me__contact-info__item__icon {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         width: 23px;
         height: 23px;
         margin: 5px; }
-      .header__contact-info__item__icon_birth-date {
+      .header__about-me__contact-info__item__icon_birth-date {
         background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
-      .header__contact-info__item__icon_phone {
+      .header__about-me__contact-info__item__icon_phone {
         background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_phone.svg"); }
-      .header__contact-info__item__icon_e-mail {
+      .header__about-me__contact-info__item__icon_e-mail {
         background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
-      .header__contact-info__item__icon_address {
+      .header__about-me__contact-info__item__icon_address {
         background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
+    .header__about-me__welcome-text {
+      margin-bottom: 15px; }
+      @media (min-width: 600px) {
+        .header__about-me__welcome-text {
+          margin-bottom: 7vw; } }
 
 .portfolio {
   width: 100vw;
-  height: 50vw;
   display: flex;
   flex-wrap: wrap; }
   .portfolio__el {
     width: 100vw;
-    height: 75vw; }
+    height: 300px; }
     @media (min-width: 600px) {
       .portfolio__el {
-        width: 50vw;
+        width: 50%;
         height: 50vw; } }
   .portfolio__text {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: black;
+    text-transform: uppercase; }
+    .portfolio__text_break {
+      color: white;
+      font-family: 'Rokkitt', serif;
+      width: 190px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold; }
+      @media (min-width: 600px) {
+        .portfolio__text_break {
+          color: black;
+          width: 190px;
+          height: 180px;
+          font-size: 80px;
+          line-height: 60px; } }
+    @media (min-width: 600px) {
+      .portfolio__text {
+        background-color: white; } }
+  .portfolio__content {
+    background-color: white; }
+    @media (min-width: 600px) {
+      .portfolio__content {
+        background-color: black; } }
+
+.competence {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .competence__el {
+    width: 100vw;
+    height: 300px; }
+    @media (min-width: 600px) {
+      .competence__el {
+        width: 50%;
+        height: 50vw; } }
+  .competence__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-transform: uppercase; }
+    .competence__text_break {
+      color: white;
+      font-family: 'Rokkitt', serif;
+      width: 190px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold; }
+      @media (min-width: 600px) {
+        .competence__text_break {
+          color: white;
+          width: 190px;
+          height: 180px;
+          font-size: 80px;
+          line-height: 60px; } }
+    @media (min-width: 600px) {
+      .competence__text {
+        background-color: black; } }
+  .competence__content {
+    background-color: white; }
+
+.education {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .education__el {
+    width: 100vw;
+    height: 300px; }
+    @media (min-width: 600px) {
+      .education__el {
+        width: 50%;
+        height: 50vw; } }
+  .education__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-transform: uppercase; }
+    .education__text_break {
+      color: white;
+      font-family: 'Rokkitt', serif;
+      width: 190px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold; }
+      @media (min-width: 600px) {
+        .education__text_break {
+          color: black;
+          width: 190px;
+          height: 180px;
+          font-size: 80px;
+          line-height: 60px; } }
+    @media (min-width: 600px) {
+      .education__text {
+        background-color: white; } }
+  .education__content {
+    background-color: white; }
+    @media (min-width: 600px) {
+      .education__content {
+        background-color: black; } }
+
+.experience {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .experience__el {
+    width: 100vw;
+    height: 300px; }
+    @media (min-width: 600px) {
+      .experience__el {
+        width: 50%;
+        height: 50vw; } }
+  .experience__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-transform: uppercase; }
+    .experience__text_break {
+      color: white;
+      font-family: 'Rokkitt', serif;
+      width: 270px;
+      height: 180px;
+      font-size: 80px;
+      line-height: 60px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold; }
+      @media (min-width: 600px) {
+        .experience__text_break {
+          color: white; } }
+    @media (min-width: 600px) {
+      .experience__text {
+        background-color: black; } }
+  .experience__content {
+    background-color: white; }
+
+.interests {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .interests__el {
+    width: 100vw;
+    height: 300px; }
+    @media (min-width: 600px) {
+      .interests__el {
+        width: 50%;
+        height: 50vw; } }
+  .interests__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-transform: uppercase; }
+    .interests__text_break {
+      color: white;
+      font-family: 'Rokkitt', serif;
+      border: 1px solid red;
+      width: 350px;
+      height: 210px;
+      font-size: 90px;
+      line-height: 70px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-weight: bold; }
+      @media (min-width: 600px) {
+        .interests__text_break {
+          color: black; } }
+    @media (min-width: 600px) {
+      .interests__text {
+        background-color: white; } }
+  @media (min-width: 600px) {
+    .interests__content {
+      background-color: black; } }
 
 * {
   padding: 0px;

@@ -5,9 +5,10 @@ export class Portfolio extends Component {
     return (
       <div className="portfolio">
         <div className="portfolio__el portfolio__text">
-        portfolio-
+          <p className="portfolio__el portfolio__text_break">portfolio~</p>
         </div>
         <div className="portfolio__el portfolio__content">
+          portfolio__content
         </div>
       </div>
     );

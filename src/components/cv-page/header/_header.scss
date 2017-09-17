@@ -2,15 +2,12 @@
 
 .header{
   width: 100vw;
-  height: 50vw;
   display: flex;
   flex-wrap: wrap;
   &__el{
     width: 100vw;
-    height: 75vw;
     @include mobile{
-      width: 50vw;
-      height: 50vw;
+      width: 50%;
     };
   }
   &__pic{
@@ -18,37 +15,68 @@
     background-image: url("./components/cv-page/header/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 150px 30px;
+    background-position: center;
+    height: 300px;
+    @include mobile{
+      height: 50vw;
+    };
   }
   &__about-me{
+    padding-left: 20px;
     background-color: rgba(245,245,245,1);
-  }
-  &__contact-info{
-    border: 1px solid black;
-    &__item{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      border: 1px solid red;
-      &__text{
-        border: 1px solid green;
-        font-size: 12px;
-        padding: 4px;
-      }
-      &__icon{
-        border: 1px solid blue;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width:23px;
-        height:23px;
-        margin: 5px;
-      }
-      @each $icon in birth-date, phone, e-mail, address{
-        &__icon_#{$icon}{
-          background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_#{$icon}.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 80vw;
+    font-family: 'Cinzel', serif;
+    @include mobile{
+      height: 50vw;
+      padding-left: 30px;
+    };
+    &__me{
+      margin-top: 9vw;
+      @include mobile{
+        margin-top: 11vw;
+      };
+    }
+    &__contact-info{
+      // border: 1px solid black;
+      &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // border: 1px solid red;
+        &__text{
+          border: 1px solid green;
+          text-decoration: none;
+          color: black;
+          font-size: 12px;
+          padding: 4px;
+          max-width: 70%;
+          @include mobile{
+          };
+        }
+        &__icon{
+          // border: 1px solid blue;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width:23px;
+          height:23px;
+          margin: 5px;
+        }
+        @each $icon in birth-date, phone, e-mail, address{
+          &__icon_#{$icon}{
+            background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_#{$icon}.svg");
+          }
         }
       }
+    }//contact-info
+    &__welcome-text{
+      margin-bottom: 15px;
+      @include mobile{
+        margin-bottom: 7vw;
+      };
     }
-  }//contact-info
-}
+  }//about-me
+}//header
