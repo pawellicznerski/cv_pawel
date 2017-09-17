@@ -9,7 +9,7 @@ export class Header extends Component {
         <div  className="header__el header__about-me">
           <div className="header__about-me__me">
             <h2 className="header__about-me__me_name">Paweł Licznerski</h2>
-            <h5 className="header__about-me__me_profession">Front-End Developer</h5>
+            <span className="header__about-me__me_profession">Front-End Developer</span>
           </div>
 
           <div className="header__about-me__contact-info">
@@ -31,7 +31,7 @@ export class Header extends Component {
             </div>
           </div>
 
-          <h5 className="header__about-me__welcome-text">Zapraszam do obejżenia mojego CV i portfolio</h5>
+          <span className="header__about-me__welcome-text">Zapraszam do obejżenia mojego CV i portfolio</span>
         </div>
       </div>
     );

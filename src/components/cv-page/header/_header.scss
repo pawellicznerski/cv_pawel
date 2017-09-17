@@ -6,8 +6,11 @@
   flex-wrap: wrap;
   &__el{
     width: 100vw;
+    height: 300px;
+    // border: 1px solid green;
     @include mobile{
       width: 50%;
+      height: 50vw;
     };
   }
   &__pic{
@@ -16,9 +19,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    // height: 300px;
     @include mobile{
-      height: 50vw;
+      // height: 50vw;
     };
   }
   &__about-me{
@@ -28,25 +31,47 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    height: 80vw;
-    font-family: 'Cinzel', serif;
+    // height: 80vw;
+    font-family: 'Rokkitt', serif;
     @include mobile{
-      height: 50vw;
+      // height: 50vw;
     };
     &__me{
       width: 80%;
       text-align: center;
+      font-size: 23px;
+      margin-top: 10px;
       @include mobile{
         width: 90%;
+        margin-top: 20px;
       };
+      &_name{
+        @include mobile{
+          font-size: 29px;
+          line-height: 27px;
+        };
+      }
+      &_profession{
+        font-size: 15px;
+        text-transform: uppercase;
+        @include mobile{
+          font-size: 12px;
+        };
+      }
     }
     &__contact-info{
       display: flex;
       flex-direction: column;
       width: 80%;
-      // align-items: center;
+      margin-bottom: 5px;
+      font-size: 18px;
       @include mobile{
         width: 90%;
+        font-size: 14px;
+      };
+      @include tablet{
+        width: 90%;
+        font-size: 19px;
       };
       &__item{
         display: flex;
@@ -57,9 +82,9 @@
           // border: 1px solid green;
           text-decoration: none;
           color: black;
-          font-size: 12px;
-          padding: 4px;
+          padding: 4px 4px 4px 40px;
           @include mobile{
+            padding: 4px 4px 4px 10px;
           };
         }
         &__icon{
@@ -67,8 +92,8 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          min-width:33px;
-          min-height:33px;
+          min-width:25px;
+          min-height:25px;
           margin: 3px;
         }
         @each $icon in birth-date, phone, e-mail, address{
@@ -79,6 +104,7 @@
       }
     }//contact-info
     &__welcome-text{
+      margin-bottom: 18px;
       text-align: center;
       width: 80%;
       @include mobile{

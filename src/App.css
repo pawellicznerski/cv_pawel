@@ -3,44 +3,58 @@
   display: flex;
   flex-wrap: wrap; }
   .header__el {
-    width: 100vw; }
+    width: 100vw;
+    height: 300px; }
     @media (min-width: 600px) {
       .header__el {
-        width: 50%; } }
+        width: 50%;
+        height: 50vw; } }
   .header__pic {
     background-color: black;
     background-image: url("./components/cv-page/header/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 300px; }
-    @media (min-width: 600px) {
-      .header__pic {
-        height: 50vw; } }
+    background-position: center; }
   .header__about-me {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 80vw;
-    font-family: 'Cinzel', serif; }
-    @media (min-width: 600px) {
-      .header__about-me {
-        height: 50vw; } }
+    font-family: 'Rokkitt', serif; }
     .header__about-me__me {
       width: 80%;
-      text-align: center; }
+      text-align: center;
+      font-size: 23px;
+      margin-top: 10px; }
       @media (min-width: 600px) {
         .header__about-me__me {
-          width: 90%; } }
+          width: 90%;
+          margin-top: 20px; } }
+      @media (min-width: 600px) {
+        .header__about-me__me_name {
+          font-size: 29px;
+          line-height: 27px; } }
+      .header__about-me__me_profession {
+        font-size: 15px;
+        text-transform: uppercase; }
+        @media (min-width: 600px) {
+          .header__about-me__me_profession {
+            font-size: 12px; } }
     .header__about-me__contact-info {
       display: flex;
       flex-direction: column;
-      width: 80%; }
+      width: 80%;
+      margin-bottom: 5px;
+      font-size: 18px; }
       @media (min-width: 600px) {
         .header__about-me__contact-info {
-          width: 90%; } }
+          width: 90%;
+          font-size: 14px; } }
+      @media (min-width: 750px) {
+        .header__about-me__contact-info {
+          width: 90%;
+          font-size: 19px; } }
       .header__about-me__contact-info__item {
         display: flex;
         justify-content: flex-start;
@@ -48,14 +62,16 @@
         .header__about-me__contact-info__item__text {
           text-decoration: none;
           color: black;
-          font-size: 12px;
-          padding: 4px; }
+          padding: 4px 4px 4px 40px; }
+          @media (min-width: 600px) {
+            .header__about-me__contact-info__item__text {
+              padding: 4px 4px 4px 10px; } }
         .header__about-me__contact-info__item__icon {
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          min-width: 33px;
-          min-height: 33px;
+          min-width: 25px;
+          min-height: 25px;
           margin: 3px; }
         .header__about-me__contact-info__item__icon_birth-date {
           background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
@@ -66,6 +82,7 @@
         .header__about-me__contact-info__item__icon_address {
           background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
     .header__about-me__welcome-text {
+      margin-bottom: 18px;
       text-align: center;
       width: 80%; }
       @media (min-width: 600px) {
