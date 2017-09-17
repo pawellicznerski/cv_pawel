@@ -38,9 +38,9 @@
      inkscape:window-height="705"
      id="namedview15"
      showgrid="false"
-     inkscape:zoom="3.9333333"
-     inkscape:cx="-18.940678"
-     inkscape:cy="50.338983"
+     inkscape:zoom="0.69532167"
+     inkscape:cx="-338.9522"
+     inkscape:cy="-28.020397"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -53,21 +53,21 @@
      id="defs6" />
   <g
      id="black"
-     style="fill:#a2a2a2;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1"
      transform="matrix(1.5370763,0,0,1.5370763,-16.112288,-16.42214)">
     <g
        id="slice"
        transform="translate(-700,-500)"
-       style="fill:#a2a2a2;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1" />
     <g
        id="mail"
        transform="translate(11,18)"
-       style="fill:#a2a2a2;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1">
       <path
          d="M 19,15.461539 36.307692,0.46153846 H 1.6923077 Z M 14.325177,13.801054 19,17.63824 23.601581,13.801054 36.307692,24.692308 H 1.6923077 Z M 0.53846154,23.538461 V 1.6153846 L 13.230769,12.576923 Z m 36.92307746,0 V 1.6153846 L 24.769231,12.576923 Z"
          id="path9"
          inkscape:connector-curvature="0"
-         style="fill:#a2a2a2;fill-opacity:1" />
+         style="fill:#000000;fill-opacity:1" />
     </g>
   </g>
 </svg>

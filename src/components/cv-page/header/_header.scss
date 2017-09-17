@@ -22,37 +22,43 @@
     };
   }
   &__about-me{
-    padding-left: 20px;
-    background-color: rgba(245,245,245,1);
+    // padding-left: 20px;
+    background-color: rgba(255,255,255,1);
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: center;
     height: 80vw;
     font-family: 'Cinzel', serif;
     @include mobile{
       height: 50vw;
-      padding-left: 30px;
     };
     &__me{
-      margin-top: 9vw;
+      width: 80%;
+      text-align: center;
       @include mobile{
-        margin-top: 11vw;
+        width: 90%;
       };
     }
     &__contact-info{
-      // border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      // align-items: center;
+      @include mobile{
+        width: 90%;
+      };
       &__item{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         // border: 1px solid red;
         &__text{
-          border: 1px solid green;
+          // border: 1px solid green;
           text-decoration: none;
           color: black;
           font-size: 12px;
           padding: 4px;
-          max-width: 70%;
           @include mobile{
           };
         }
@@ -61,9 +67,9 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          width:23px;
-          height:23px;
-          margin: 5px;
+          min-width:33px;
+          min-height:33px;
+          margin: 3px;
         }
         @each $icon in birth-date, phone, e-mail, address{
           &__icon_#{$icon}{
@@ -73,9 +79,10 @@
       }
     }//contact-info
     &__welcome-text{
-      margin-bottom: 15px;
+      text-align: center;
+      width: 80%;
       @include mobile{
-        margin-bottom: 7vw;
+        width: 90%;
       };
     }
   }//about-me

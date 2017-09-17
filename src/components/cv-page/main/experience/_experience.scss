@@ -1,4 +1,5 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
+@import "./../__section-text-mixin/section-text-mixin.scss";
 
 .experience{
   width: 100vw;
@@ -13,32 +14,10 @@
       height: 50vw;
     };
   }
-  &__text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    text-transform: uppercase;
-    &_break{
-      color: white;
-      font-family: 'Rokkitt', serif;
-      // font-family: 'Cinzel', serif;
-      // border: 1px solid red;
-      width: 270px;
-      height: 180px;
-      font-size: 80px;
-      line-height: 60px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      font-weight: bold;
-      @include mobile{
-        color: white;
-      };
-    }
-    @include mobile{
-      background-color: black;
-    };
-  }
+  @include section-text-mixin( black,white,259px );
+  @include mobile{
+    @include section-text-mixin( black,white,259px );
+  };
   &__content{
     background-color: white;
   }
