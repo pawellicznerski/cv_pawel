@@ -32,13 +32,9 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    // height: 80vw;
-    font-family: 'Lora', serif;
     @include mobile{
-      // height: 50vw;
     };
     &__me{
-      font-family: 'Lora', cursive;
       width: 80%;
       text-align: center;
       font-size: 23px;

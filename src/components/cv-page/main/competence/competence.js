@@ -32,9 +32,9 @@ export class Competence extends Component {
               <Bar name="HTML/CSS" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_second"}></Bar>
               <Bar name="Javascript" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_third"}></Bar>
               <Bar name="React.js" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fourth"}></Bar>
-              <Bar name="Sass/BEM" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fifth"}></Bar>
-              <Bar name="Angielski" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_sixth"}></Bar>
-              <Bar name="Angielski" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_seventh"}></Bar>
+              <Bar name="Sass/RWD/BEM" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fifth"}></Bar>
+              <Bar name="jQuery" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_sixth"}></Bar>
+              <Bar name="Webpack/GIT" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_last"}></Bar>
             </div>
         </div>
 

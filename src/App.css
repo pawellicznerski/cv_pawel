@@ -20,10 +20,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    font-family: 'Lora', serif; }
+    align-items: center; }
     .header__about-me__me {
-      font-family: 'Lora', cursive;
       width: 80%;
       text-align: center;
       font-size: 23px;
@@ -205,90 +203,113 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     .competence-bars {
       margin-bottom: 50px; } }
   .competence-bars__section-name {
-    margin: 0 0 30px 10px;
+    margin: 0 0 0px 10px;
     background-color: rgba(10, 10, 10, 0);
     display: flex; }
-    @media (min-width: 760px) {
-      .competence-bars__section-name {
-        margin: 50px 0 20px 7px; } }
     .competence-bars__section-name__icon_competence {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 8px 0 0 0;
-      height: 22px;
-      width: 22px;
+      margin-top: 9px;
+      height: 39px;
+      width: 39px;
       background-image: url("./components/cv-page/main/competence/competence__section-name__icon_competence.svg"); }
-      @media (min-width: 760px) {
+      @media (min-width: 600px) {
         .competence-bars__section-name__icon_competence {
-          margin: 4px 0 0 6px;
-          height: 33px;
-          width: 33px; } }
+          margin: 3.5vw 0 4vw 0; } }
+      @media (min-width: 1000px) {
+        .competence-bars__section-name__icon_competence {
+          margin: 5.5vw 0 6vw 4px; } }
     .competence-bars__section-name__text_competence {
-      margin: 0 0 0 8px;
+      margin-left: 4px;
       text-transform: capitalize;
-      font-size: 26px; }
+      font-family: 'Rokkitt',serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 13px; }
+      @media (min-width: 600px) {
+        .competence-bars__section-name__text_competence {
+          font-size: 28px;
+          margin: 4vw 0 4vw 4px; } }
       @media (min-width: 760px) {
         .competence-bars__section-name__text_competence {
-          font-size: 29px;
-          font-weight: bold; } }
+          font-size: 35px; } }
+      @media (min-width: 1000px) {
+        .competence-bars__section-name__text_competence {
+          font-size: 50px;
+          margin: 6vw 0 5vw 9px; } }
   .competence-bars__el {
-    margin: 10px 0;
+    margin: 7px 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; }
-    @media (min-width: 900px) {
+    @media (min-width: 600px) {
       .competence-bars__el {
-        margin: 2px 0; } }
+        margin: 5px 0; } }
+    @media (min-width: 760px) {
+      .competence-bars__el {
+        margin: 8px 0; } }
     .competence-bars__el__text {
-      margin-left: 8px;
+      margin: 0 5px 0 18px;
       font-size: 15px;
       text-transform: capitalize; }
-      @media (min-width: 900px) {
+      @media (min-width: 760px) {
         .competence-bars__el__text {
-          margin-left: 10px;
           font-size: 18px; } }
+      @media (min-width: 1000px) {
+        .competence-bars__el__text {
+          margin-left: 2vw;
+          font-size: 27px; } }
     .competence-bars__el__bar {
-      margin-right: 8px;
-      width: 70%;
+      margin: 0 18px;
+      width: 50%;
       height: 14px;
       border: 3px solid black;
       border-radius: 9px;
       display: flex;
       justify-content: flex-start; }
-      @media (min-width: 900px) {
+      @media (min-width: 600px) {
         .competence-bars__el__bar {
-          margin-right: 28px;
-          width: 60%;
-          height: 11px;
-          border-radius: 8px; } }
+          width: 40%; } }
+      @media (min-width: 760px) {
+        .competence-bars__el__bar {
+          margin: 0 22px; } }
+      @media (min-width: 1000px) {
+        .competence-bars__el__bar {
+          margin: 0 3vw 0 5px;
+          width: 45%;
+          height: 25px;
+          border-radius: 10px; } }
       .competence-bars__el__bar_filling {
         height: 8px;
         border-radius: 8px;
         background-color: black;
         border: 3px solid black; }
-        @media (min-width: 900px) {
+        @media (min-width: 1000px) {
           .competence-bars__el__bar_filling {
-            height: 5px;
-            border-radius: 5px; } }
+            height: 19px;
+            border-radius: 7px; } }
       .competence-bars__el__bar_filling_first {
-        width: 85%; }
+        width: 90%; }
       .competence-bars__el__bar_filling_second {
-        width: 80%; }
+        width: 40%; }
       .competence-bars__el__bar_filling_third {
-        width: 95%; }
+        width: 30%; }
       .competence-bars__el__bar_filling_fourth {
-        width: 50%; }
+        width: 40%; }
       .competence-bars__el__bar_filling_fifth {
         width: 40%; }
+      .competence-bars__el__bar_filling_sixth {
+        width: 30%; }
       .competence-bars__el__bar_filling_last {
-        width: 60%; }
+        width: 40%; }
 
 .education {
   width: 100vw;
@@ -434,6 +455,9 @@
   @media (min-width: 600px) {
     .interests__content {
       background-color: black; } }
+
+.page {
+  font-family: 'Lora', serif; }
 
 * {
   padding: 0px;

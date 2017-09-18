@@ -32,100 +32,128 @@
   };
 
   &__section-name{
-    margin: 0 0 30px 10px;
+    margin: 0 0 0px 10px;
     background-color: rgba(10,10,10,0);
     display: flex;
     @include tablet{
-      margin: 50px 0 20px 7px;
+      // margin: 50px 0 20px 7px;
     };
     &__icon_competence{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 8px 0 0 0;
-      height: 22px;
-      width: 22px;
-      @include tablet{
-        margin: 4px 0 0 6px;
-        height: 33px;
-        width: 33px;
+      margin-top:9px;
+      height: 39px;
+      width: 39px;
+      @include mobile{
+        margin: 3.5vw 0 4vw 0;
+      };
+      @include laptop{
+        margin: 5.5vw 0 6vw 4px;
       };
       background-image: url("./components/cv-page/main/competence/competence__section-name__icon_competence.svg");
     }
     &__text_competence{
-      margin: 0 0 0 8px;
+      margin-left: 4px;
       text-transform: capitalize;
-      font-size: 26px;
+      font-family: 'Rokkitt',serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 13px;
+     @include mobile{
+       font-size: 28px;
+       margin: 4vw 0 4vw 4px;
+     };
      @include tablet{
-       font-size: 29px;
-       font-weight: bold;
+       font-size: 35px;
+      //  margin: 3vw 0 3vw 4px;
+     };
+     @include laptop{
+       font-size: 50px;
+       margin: 6vw 0 5vw 9px;
      };
    }//__text_competence
   }//__section-name
 
   &__el{
-    margin: 10px 0;
+    // border: 1px solid red;
+    margin: 7px 0;
     width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     // border: 1px solid blue;
-    @include laptop{
-      margin: 2px 0;
+    @include mobile{
+      margin: 5px 0;
+    };
+    @include tablet{
+      margin: 8px 0;
     };
     &__text{
-      margin-left: 8px;
+      margin: 0 5px 0 18px;
       font-size: 15px;
       text-transform: capitalize;
-      @include laptop{
-        margin-left: 10px;
+      @include tablet{
         font-size: 18px;
+      }
+      @include laptop{
+        margin-left: 2vw;
+        font-size: 27px;
       };
     }
     &__bar{
-      margin-right: 8px;
-      width: 70%;
+      margin: 0 18px;
+      width: 50%;
       height: 14px;
       border: 3px solid black;
       border-radius: 9px;
       display: flex;
       justify-content: flex-start;
+      @include mobile{
+        width: 40%;
+      };
+      @include tablet{
+        margin: 0 22px;
+      }
       @include laptop{
-        margin-right: 28px;
-        width: 60%;
-        height: 11px;
-        border-radius: 8px;
+        margin: 0 3vw 0 5px;
+        width: 45%;
+        height: 25px;
+        border-radius: 10px;
       };
       &_filling{
         height: 8px;
         border-radius: 8px;
         background-color:black;
         border: 3px solid black;
-
         @include laptop{
-          height: 5px;
-          border-radius: 5px;
+          height: 19px;
+          border-radius: 7px;
         };
 
       }
       &_filling_first{
-        width: 85%;
+        width: 90%;
       }
       &_filling_second{
-        width: 80%;
+        width: 40%;
       }
       &_filling_third{
-        width: 95%;
+        width: 30%;
       }
       &_filling_fourth{
-        width: 50%;
+        width: 40%;
       }
       &_filling_fifth{
         width: 40%;
       }
+      &_filling_sixth{
+        width: 30%;
+      }
       &_filling_last{
-        width: 60%;
+        width: 40%;
       }
     }
 
