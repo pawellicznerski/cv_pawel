@@ -34,6 +34,20 @@
     align-items: center;
     @include mobile{
     };
+    &__cv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'rokkitt',serif;
+      color:  $color__primary_white;
+      height: 39px;
+      width: 39px;
+      background-color: $color__primary_olive;
+      border-radius: 20px;
+      font-size: 25px;
+      margin-right: 10px;
+      padding-top: 3px;
+    }
     &__me{
       width: 80%;
       text-align: center;
@@ -47,9 +61,19 @@
         margin-top: 3vw;
       };
       &_name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'rokkitt',serif;
         @include mobile{
           font-size: 29px;
           line-height: 27px;
+        };
+        @include tablet{
+          font-size: 35px;
+        };
+        @include tablet{
+          font-size: 50px;
         };
       }
       &_profession{

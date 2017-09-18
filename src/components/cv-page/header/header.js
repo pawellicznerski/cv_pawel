@@ -9,9 +9,9 @@ export class Header extends Component {
         <div  className="header__el header__pic"></div>
 
         <div  className="header__el header__about-me">
-          
+
           <div className="header__about-me__me">
-            <h2 className="header__about-me__me_name">Paweł Licznerski</h2>
+            <h2 className="header__about-me__me_name"><div className="header__about-me__cv">CV</div>Paweł Licznerski</h2>
             <span className="header__about-me__me_profession">Front-End Developer</span>
           </div>
 

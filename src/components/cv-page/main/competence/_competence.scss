@@ -1,5 +1,6 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 @import "./../__section-text-mixin/section-text-mixin.scss";
+@import "./../../_cv-page__base/cv-page__base__variables.scss";
 
 .competence{
   width: 100vw;
@@ -45,6 +46,8 @@
       margin-top:9px;
       height: 39px;
       width: 39px;
+      background-color: $color__primary_olive;
+      border-radius: 20px;
       @include mobile{
         margin: 3.5vw 0 4vw 0;
       };

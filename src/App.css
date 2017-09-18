@@ -20,6 +20,19 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
+    .header__about-me__cv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'rokkitt',serif;
+      color: #fdfdfd;
+      height: 39px;
+      width: 39px;
+      background-color: #bfc215;
+      border-radius: 20px;
+      font-size: 25px;
+      margin-right: 10px;
+      padding-top: 3px; }
     .header__about-me__me {
       width: 80%;
       text-align: center;
@@ -32,10 +45,21 @@
       @media (min-width: 760px) {
         .header__about-me__me {
           margin-top: 3vw; } }
-      @media (min-width: 600px) {
-        .header__about-me__me_name {
-          font-size: 29px;
-          line-height: 27px; } }
+      .header__about-me__me_name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'rokkitt',serif; }
+        @media (min-width: 600px) {
+          .header__about-me__me_name {
+            font-size: 29px;
+            line-height: 27px; } }
+        @media (min-width: 760px) {
+          .header__about-me__me_name {
+            font-size: 35px; } }
+        @media (min-width: 760px) {
+          .header__about-me__me_name {
+            font-size: 50px; } }
       .header__about-me__me_profession {
         font-size: 15px;
         text-transform: uppercase; }
@@ -216,6 +240,8 @@
       margin-top: 9px;
       height: 39px;
       width: 39px;
+      background-color: #bfc215;
+      border-radius: 20px;
       background-image: url("./components/cv-page/main/competence/competence__section-name__icon_competence.svg"); }
       @media (min-width: 600px) {
         .competence-bars__section-name__icon_competence {
@@ -489,15 +515,15 @@
     .education__section-name__icon_education {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 25px 25px;
       margin: 9px 15px 4vw 0;
       height: 39px;
       width: 39px;
+      background-color: #bfc215;
+      border-radius: 20px;
       background-image: url("./components/cv-page/main/education/education__section-name__icon_education.svg"); }
       @media (min-width: 600px) {
         .education__section-name__icon_education {
-          height: 29px;
-          width: 29px;
           margin: 2vw 9px 1.5vw 0; } }
       @media (min-width: 1000px) {
         .education__section-name__icon_education {
