@@ -14,10 +14,7 @@
       height: 50vw;
     };
   }
-  @include section-text-mixin( black,white,259px );
-  @include mobile{
-    @include section-text-mixin( black,white,259px );
-  };
+  @include section-text-mixin( black,white,259px,black,white,259px,black,white,340px,310px);
   &__content{
     background-color: white;
   }

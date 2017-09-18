@@ -1,12 +1,22 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 
-@mixin section-text-mixin($text-background-color,$text-color,$text-width) {
+@mixin section-text-mixin(
+  $text-background-color,$text-color,$text-width,
+  $text-background-color-2,$text-color-2,$text-width-2,
+  $text-background-color-3,$text-color-3,$text-width-3,$text-height-3
+  ) {
   &__text{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $text-background-color;//------------
     text-transform: uppercase;
+    @include mobile{
+      background-color: $text-background-color-2;//------------
+    };
+    @include tablet{
+      background-color: $text-background-color-3;//------------
+    };
     &_break{
       color: $text-color;//--------------
       font-family: 'Rokkitt', serif;
@@ -14,11 +24,23 @@
       // border: 1px solid red;
       width: $text-width;//------------------
       height: 180px;
-      font-size: 80px;
-      line-height: 60px;
+      font-size: 74px;
+      line-height: 58px;
       word-wrap: break-word;
       overflow-wrap: break-word;
       font-weight: bold;
+      @include mobile{
+        color: $text-color-2;//--------------
+        width: $text-width-2;//------------------
+      };
+      @include tablet{
+        color: $text-color-3;//--------------
+        width: $text-width-3;//------------------
+        font-size: 120px;
+        line-height: 80px;
+        // border: 1px solid red;
+        height: $text-height-3;
+      };
     }
   }
 }

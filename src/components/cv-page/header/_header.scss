@@ -32,11 +32,12 @@
     justify-content:space-around;
     align-items: center;
     // height: 80vw;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Lora', serif;
     @include mobile{
       // height: 50vw;
     };
     &__me{
+      font-family: 'Lora', cursive;
       width: 80%;
       text-align: center;
       font-size: 23px;
@@ -64,14 +65,13 @@
       flex-direction: column;
       width: 80%;
       margin-bottom: 5px;
-      font-size: 18px;
+      font-size: 14px;
       @include mobile{
         width: 90%;
         font-size: 14px;
       };
       @include tablet{
-        width: 90%;
-        font-size: 19px;
+        width: 40vw;
       };
       &__item{
         display: flex;
@@ -85,6 +85,9 @@
           padding: 4px 4px 4px 40px;
           @include mobile{
             padding: 4px 4px 4px 10px;
+          };
+          @include tablet{
+            padding: 4px 4px 4px 3vw;
           };
         }
         &__icon{
@@ -104,11 +107,15 @@
       }
     }//contact-info
     &__welcome-text{
-      margin-bottom: 18px;
+      margin-bottom: 14px;
       text-align: center;
       width: 80%;
       @include mobile{
         width: 90%;
+      };
+      @include mobile{
+        width: 70%;
+        font-size: 14px;
       };
     }
   }//about-me
