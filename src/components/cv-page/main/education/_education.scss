@@ -1,5 +1,9 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 @import "./../__section-text-mixin/section-text-mixin.scss";
+@import "./../../_cv-page__base/cv-page__base__variables.scss";
+
+//includes styles for every inner block in education
+@import "./__education__education-progress-bar/education__education-progress-bar.scss" ;
 
 .education{
   width: 100vw;
@@ -7,16 +11,67 @@
   flex-wrap: wrap;
   &__el{
     width: 100vw;
-    height: 300px;
-    // border: 1px solid green;
+    min-height: 300px;
     @include mobile{
       width: 50%;
       height: 50vw;
     };
   }
+  &__section-name{
+    margin: 0 0 0px 10px;
+    background-color: rgba(10,10,10,0);
+    display: flex;
+    @include tablet{
+      // margin: 50px 0 20px 7px;
+    };
+    &__icon_education{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 9px 15px 4vw 0;
+      height: 39px;
+      width: 39px;
+      @include mobile{
+        height: 29px;
+        width: 29px;
+        margin: 2vw 9px 1.5vw 0;
+      };
+      @include laptop{
+        margin: 5.5vw 0 6vw 4px;
+      };
+      background-image: url("./components/cv-page/main/education/education__section-name__icon_education.svg");
+    }
+    &__text_education{
+      margin-left: 4px;
+      text-transform: capitalize;
+      font-family: 'Rokkitt',serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 13px;
+     @include mobile{
+       color: white;
+       font-size: 28px;
+       margin: 2vw 0 1.5vw 0;
+     };
+     @include tablet{
+       font-size: 35px;
+      //  margin: 3vw 0 3vw 4px;
+     };
+     @include laptop{
+       font-size: 50px;
+       margin: 6vw 0 5vw 9px;
+     };
+   }//__text_education
+  }//__section-name
+
   @include section-text-mixin( black,white,190px,white,black,190px,white,black,290px,240px);
   &__content{
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     @include mobile{
       background-color: black;
     };

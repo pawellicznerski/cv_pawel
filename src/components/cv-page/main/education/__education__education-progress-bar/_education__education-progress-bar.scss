@@ -1,0 +1,136 @@
+// dates texts colors
+@import "./../_education__base/education__base__variables.scss";
+// addition background color for text in the progress bar
+@import "./../../../_cv-page__base/cv-page__base__variables.scss";
+//media query
+@import "./../../../_cv-page__base/media-query-mixins.scss";
+
+
+.education__education-progress-bar{
+  width:290px;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  @include mobile{
+    min-height: 50vw;
+  };
+  @include laptop{
+    width:500px;
+    margin: 0;
+  };
+  &__el{
+    // border: 1px solid red;
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    width: 33.33%;
+    margin-bottom: 30px;
+    @include mobile{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: -20px 0 0 0;
+      font-size: 12px;
+    };
+    &_last{
+      @include mobile{
+        margin-top: -85px;
+      };
+    }
+    &__item{
+      margin: 0 9px;
+      height: 100px;
+      min-width: 18px;
+      // border: 1px solid blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      @include mobile{
+        width: 23%;
+        margin: 1px;
+      };
+    }
+  }
+}
+
+.education__education-progress-bar__el__item_line{
+  &::before{
+    content:"";
+    position: absolute;
+    left:0;
+    width: 4px;
+    height: 100px;
+    background-color: $color__primary_black;
+    @include mobile{
+      width: 25%;
+      height: 4px;
+      background-color: $color__primary_white;
+    };
+  }
+  @for $i from 0 through 2{
+    &_#{$i}{
+      &::before{
+        top:50px+($i*100px);
+        @include mobile{
+          left:12.5%+($i*25%);
+          top: 0px;
+        };
+      }
+    }
+  }
+  &_last{
+    &::before{
+      content:none;
+    }
+  }
+}
+
+.education__education-progress-bar__el__item__text{
+  color:  $color__primary_black;
+  @include mobile{
+    color: $color__primary_white;
+  };
+  &_color-background{
+    color: $color__primary_white;
+    background-color: $color__primary_black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    @include mobile{
+      background-color: $color__primary_white;
+      color: $color__primary_black;
+    };
+    &_strong{
+      color: $color__primary_white;
+      font-weight: bold;
+      background-color: $color__primary_black;
+      @include mobile{
+        color: $color__primary_black;
+        background-color:$color__primary_white;
+      };
+
+    }
+  }
+
+  @for $i from 0 through 3 {
+    &__circle-#{$i}{
+      &::after{
+        content:"";
+        position: absolute;
+        top: 50px-9px+($i *100px);
+        left:-7px;
+        width: 10px;
+        height: 10px;
+        border: 4px solid $color__primary_black;
+        border-radius: 50%;
+        background-color: white;
+        @include mobile{
+          left:12.5%+($i*25%);
+          top: -7px;
+          border: 4px solid $color__primary_white;
+          background-color: $color__primary_black;
+        };
+      }
+    }
+  }
+}
