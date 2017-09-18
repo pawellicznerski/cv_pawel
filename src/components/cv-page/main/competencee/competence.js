@@ -7,11 +7,6 @@ class Competence extends Component {
     return (
       <div className="competence">
         <div className="competence__content">
-          <div className="main__section-name competence__section-name">
-            <div className="main__section-name__icon competence__section-name__icon_competence"></div>
-            <p className="main__section-name__text competence__section-name__text_competence">competence</p>
-          </div>
-
           <div className="competence__competence-bars">
 
             <div className="competence__competence-bars__el">

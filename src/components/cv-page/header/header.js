@@ -31,7 +31,7 @@ export class Header extends Component {
             </div>
           </div>
 
-          <span className="header__about-me__welcome-text">Zapraszam do obejżenia mojego CV i portfolio</span>
+          <span className="header__about-me__welcome-text">Zapraszam do obejrzenia mojego CV i portfolio</span>
         </div>
       </div>
     );

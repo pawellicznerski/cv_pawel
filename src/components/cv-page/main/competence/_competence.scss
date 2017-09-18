@@ -19,3 +19,115 @@
     background-color: white;
   }
 }
+
+.competence-bars{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  // border: 1px solid red;
+  @include laptop{
+    margin-bottom: 50px;
+  };
+
+  &__section-name{
+    margin: 0 0 30px 10px;
+    background-color: rgba(10,10,10,0);
+    display: flex;
+    @include tablet{
+      margin: 50px 0 20px 7px;
+    };
+    &__icon_competence{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 8px 0 0 0;
+      height: 22px;
+      width: 22px;
+      @include tablet{
+        margin: 4px 0 0 6px;
+        height: 33px;
+        width: 33px;
+      };
+      background-image: url("./components/cv-page/main/competence/competence__section-name__icon_competence.svg");
+    }
+    &__text_competence{
+      margin: 0 0 0 8px;
+      text-transform: capitalize;
+      font-size: 26px;
+     @include tablet{
+       font-size: 29px;
+       font-weight: bold;
+     };
+   }//__text_competence
+  }//__section-name
+
+  &__el{
+    margin: 10px 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // border: 1px solid blue;
+    @include laptop{
+      margin: 2px 0;
+    };
+    &__text{
+      margin-left: 8px;
+      font-size: 15px;
+      text-transform: capitalize;
+      @include laptop{
+        margin-left: 10px;
+        font-size: 18px;
+      };
+    }
+    &__bar{
+      margin-right: 8px;
+      width: 70%;
+      height: 14px;
+      border: 3px solid black;
+      border-radius: 9px;
+      display: flex;
+      justify-content: flex-start;
+      @include laptop{
+        margin-right: 28px;
+        width: 60%;
+        height: 11px;
+        border-radius: 8px;
+      };
+      &_filling{
+        height: 8px;
+        border-radius: 8px;
+        background-color:black;
+        border: 3px solid black;
+
+        @include laptop{
+          height: 5px;
+          border-radius: 5px;
+        };
+
+      }
+      &_filling_first{
+        width: 85%;
+      }
+      &_filling_second{
+        width: 80%;
+      }
+      &_filling_third{
+        width: 95%;
+      }
+      &_filling_fourth{
+        width: 50%;
+      }
+      &_filling_fifth{
+        width: 40%;
+      }
+      &_filling_last{
+        width: 60%;
+      }
+    }
+
+  }
+}
