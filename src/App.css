@@ -11,7 +11,6 @@
         height: 50vw; } }
   .header__pic {
     background-color: #000005;
-    background-image: url("./components/cv-page/header/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -319,10 +318,6 @@
   @media (min-width: 600px) {
     .education__education-progress-bar {
       min-height: 50vw; } }
-  @media (min-width: 1000px) {
-    .education__education-progress-bar {
-      width: 500px;
-      margin: 0; } }
   .education__education-progress-bar__el {
     list-style-type: none;
     position: relative;

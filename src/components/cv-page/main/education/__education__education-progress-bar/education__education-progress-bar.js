@@ -48,7 +48,7 @@ class EducationProgressBar extends Component {
           <p className="education__education-progress-bar__el__item__text_color-background"><span className="education__education-progress-bar__el__item__text_color-background_strong">Magister</span> jęz. angielski</p>
         </li>
         <li className="education__education-progress-bar__el__item">
-          <p className="education__education-progress-bar__el__item__text">Dyplom Front end with react</p>
+          <p className="education__education-progress-bar__el__item__text">Dyplom Front-end with React</p>
         </li>
       </ul>
 

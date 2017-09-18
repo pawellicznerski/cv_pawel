@@ -5,8 +5,11 @@ export class Header extends Component {
   render() {
     return (
       <div className="header">
+
         <div  className="header__el header__pic"></div>
+
         <div  className="header__el header__about-me">
+          
           <div className="header__about-me__me">
             <h2 className="header__about-me__me_name">Paweł Licznerski</h2>
             <span className="header__about-me__me_profession">Front-End Developer</span>
@@ -33,6 +36,7 @@ export class Header extends Component {
 
           <span className="header__about-me__welcome-text">Zapraszam do obejrzenia mojego CV i portfolio</span>
         </div>
+
       </div>
     );
   }

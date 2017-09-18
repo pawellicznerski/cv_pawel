@@ -7,7 +7,7 @@ export class Education extends Component {
     return (
       <div className="education">
         <div className="education__el education__text">
-          <p className="education__el education__text_break">edukacja~</p>
+          <p className="education__text_break">edukacja~</p>
         </div>
         <div className="education__el ">
           <div className="education__content">

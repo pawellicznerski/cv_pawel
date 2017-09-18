@@ -14,10 +14,10 @@
   @include mobile{
     min-height: 50vw;
   };
-  @include laptop{
-    width:500px;
-    margin: 0;
-  };
+  // @include laptop{
+  //   width:500px;
+  //   margin: 0;
+  // };
   &__el{
     // border: 1px solid red;
     list-style-type: none;

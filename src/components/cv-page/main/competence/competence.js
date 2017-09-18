@@ -19,7 +19,7 @@ export class Competence extends Component {
       <div className="competence">
 
         <div className="competence__el competence__text">
-          <p className="competence__el competence__text_break">potrafię~</p>
+          <p className="competence__text_break">potrafię~</p>
         </div>
 
         <div className="competence__el competence__content">
