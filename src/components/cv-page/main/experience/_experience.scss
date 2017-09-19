@@ -1,5 +1,7 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 @import "./../__section-text-mixin/section-text-mixin.scss";
+@import "./../../_cv-page__base/cv-page__base__variables.scss";
+
 
 .experience{
   width: 100vw;
@@ -11,11 +13,275 @@
     // border: 1px solid green;
     @include mobile{
       width: 50%;
-      height: 50vw;
+      height: 56vw;
     };
+    // @include tablet{
+    //   height: 58vw;
+    // };
   }
-  @include section-text-mixin( black,white,259px,black,white,259px,black,white,340px,310px);
-  &__content{
-    background-color: white;
-  }
+
+  //mixin where was pass correspondingly: color,background-color,width,height.
+  @include section-text-mixin( black,white,259px/*mobile*/,black,white,259px/*tablet*/,black,white,340px,310px/*laptop*/);
 }
+  .experience2{
+    background-color: $color__primary_white;
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+
+    // flex-wrap: wrap;
+    @include mobile{
+      width:50vw;
+      height: 56vw;
+    };
+    // @include tablet{
+    //   height: 58vw;
+    // };
+    &__chart{
+      display: flex;
+    }
+    &__section-name{
+      // border: 1px solid brown;
+      background-color: $color__primary_white;
+      color: $color__primary_black;
+      display: flex;
+      justify-content: center;
+      @include tablet{
+        // margin: 50px 0 20px 7px;
+      };
+      &__icon_experience2{
+        background-image: url("./components/cv-page/main/experience/experience__section-name__icon_experience.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        margin: 19px 0 20px 0;
+        height: 39px;
+        width: 39px;
+        background-color: $color__primary_olive;
+        border-radius: 20px;
+        @include mobile{
+          margin: 2.5vw 9px 2.5vw 0;
+        };
+        @include laptop{
+          margin: 3.5vw 0 2vw 4px;
+        };
+      }
+      &__text_experience2{
+        padding-left: 14px;
+        text-transform: capitalize;
+        font-family: 'Rokkitt',serif;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 23px 0 20px 0;
+       @include mobile{
+         font-size: 28px;
+         margin: 2vw 0 1.5vw 0;
+       };
+       @include tablet{
+         font-size: 35px;
+         margin: 3vw 0 3vw 4px;
+       };
+       @include laptop{
+         font-size: 50px;
+         margin: 4vw 0 2vw 9px;
+       };
+     }//__text_education
+    }//__section-name
+    &__section{
+    // background-color: rgba(140,140,140,1);
+    width:49vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-wrap: wrap;
+    @include mobile{
+      width:25vw;
+    };
+    // @include laptop{
+    //   width:900px;
+      // border: 1px solid blue;
+    // };
+    &_left{
+      padding-right: 9px;
+    }
+    &_right{
+      border-left: 3px solid black;
+      // @include tablet{
+      //   width:300px;
+      //   margin: 0;
+      // };
+    }
+    }
+
+    &__section__el{
+      &_left{
+        // @include tablet{
+        //   width:300px;
+        //   margin: 0;
+        // };
+      }
+      &_right{
+        // border-left: 3px solid black;
+        margin-top: 10px;
+        @include tablet{
+          margin-top: 0;
+        };
+      }
+      background-color: $color__primary_black;
+      width: 42vw;
+      min-height: 200px;
+      max-height: 250px;
+      margin: 0 0 10px 10px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      // background-color: $color__primary_black;
+      border: 1px solid $color__primary_olive;
+      border-radius: 14px;
+      @include mobile{
+        width: 21vw;
+        min-height: 0;
+        // max-height: 230px;
+      };
+      @include tablet{
+        min-height: 170px;
+        // max-height: 230px;
+      };
+      @include laptop{
+        min-height: 220px;
+        // max-height: 230px;
+      };
+      // @include laptop{
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   margin: 40px 0 40px 17px;
+      // };
+      &__text_title{
+        margin: 3px;
+        background-color: inherit;
+        order: 1;
+        width: 50%;
+        word-wrap: break-word;
+        color: $color__primary_white;
+        // border: 1px solid green;
+        @include mobile{
+          font-size: 11px;
+        };
+        @include tablet{
+          font-size: 16px;
+        };
+        @include laptop{
+          font-size: 20px;
+        };
+        // @include laptop{
+        //   font-size: 20px;
+        //   width: 70%;
+        // };
+      }
+      &__text_main{
+        margin: 3px;
+        background-color: inherit;
+        order: 3;
+        word-wrap: break-word;
+        color: $color__primary_white;
+        text-align: justify;
+        // border: 1px solid blue;
+        @include mobile{
+          font-size: 11px;
+        };
+        @include tablet{
+          font-size: 14px;
+        };
+        @include laptop{
+          font-size: 18px;
+        };
+        // @include laptop{
+        //   width: 70%;
+        //   margin-top: -54px;
+        // };
+      }
+      &__text_date{
+        margin: 3px;
+        background-color: inherit;
+        order: 2;
+        width: 35%;
+        word-wrap: break-word;
+        border-left: 2px solid $color__primary_white;
+        // border: 1px solid red;
+        @include mobile{
+          // align-self: flex-end;
+          // width: 25%;
+          // height: 90%;
+          // margin-top: -18px;
+          // vertical-align: middle;
+          // text-align: center;
+        };
+        // @include laptop{
+        //   align-self: flex-end;
+        //   width: 25%;
+        //   height: 90%;
+        //   margin-top: -18px;
+        //   vertical-align: middle;
+        //   text-align: center;
+        // };
+        &_year{
+          background-color: inherit;
+          margin-left: 6px;
+          font-weight: bold;
+          font-size: 20px;
+          color: $color__primary_olive;
+          @include mobile{
+            font-size: 13px;
+          };
+          @include tablet{
+            font-size: 17px;
+          };
+          @include laptop{
+            font-size: 22px;
+          };
+        }
+      }
+    }
+  }//experience2
+
+  .experience2__section__el__text_arrow{
+    &::before{
+      width: 14px;
+      height: 28px;
+      position: absolute;
+      content: "";
+      // background-color: red;
+      background-image: url("./components/cv-page/main/experience/experience_images_arrow.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      // @include laptop{
+      //   width: 22px;
+      //   height: 44px;
+      // };
+    }
+  }
+  .experience2__section__el__text_arrow_left{
+    &::before{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    right:-10px;
+    top:20px;
+    // @include laptop{
+    //   right:-23px;
+    //   top:20px;
+    //   };
+    }
+  }
+  .experience2__section__el__text_arrow_right{
+    &::before{
+    left:-12px;
+    top:20px;
+    // @include laptop{
+    //   left:-17px;
+    //   top:20px;
+    // };
+    }
+  }

@@ -179,7 +179,8 @@
   flex-wrap: wrap; }
   .competence__el {
     width: 100vw;
-    height: 300px; }
+    height: 300px;
+    border: 1px solid green; }
     @media (min-width: 600px) {
       .competence__el {
         width: 50%;
@@ -230,7 +231,7 @@
     .competence-bars {
       margin-bottom: 50px; } }
   .competence-bars__section-name {
-    margin: 0 0 0px 10px;
+    padding-left: 10px;
     background-color: rgba(10, 10, 10, 0);
     display: flex; }
     .competence-bars__section-name__icon_competence {
@@ -250,7 +251,7 @@
         .competence-bars__section-name__icon_competence {
           margin: 5.5vw 0 6vw 4px; } }
     .competence-bars__section-name__text_competence {
-      margin-left: 4px;
+      padding-left: 4px;
       text-transform: capitalize;
       font-family: 'Rokkitt',serif;
       font-weight: bold;
@@ -269,7 +270,7 @@
           font-size: 50px;
           margin: 6vw 0 5vw 9px; } }
   .competence-bars__el {
-    margin: 7px 0;
+    padding: 7px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -277,12 +278,12 @@
     flex-wrap: wrap; }
     @media (min-width: 600px) {
       .competence-bars__el {
-        margin: 5px 0; } }
+        padding: 5px 0; } }
     @media (min-width: 760px) {
       .competence-bars__el {
-        margin: 8px 0; } }
+        padding: 8px 0; } }
     .competence-bars__el__text {
-      margin: 0 5px 0 18px;
+      padding: 0 5px 0 18px;
       font-size: 15px;
       text-transform: capitalize; }
       @media (min-width: 760px) {
@@ -290,10 +291,9 @@
           font-size: 18px; } }
       @media (min-width: 1000px) {
         .competence-bars__el__text {
-          margin-left: 2vw;
+          padding-left: 2vw;
           font-size: 27px; } }
     .competence-bars__el__bar {
-      margin: 0 18px;
       width: 50%;
       height: 14px;
       border: 3px solid black;
@@ -515,10 +515,11 @@
         width: 50vw;
         height: 50vw; } }
   .education__section-name {
-    margin: 0 0 0px 10px;
+    margin: 0 0 0 10px;
     background-color: rgba(10, 10, 10, 0);
     display: flex; }
     .education__section-name__icon_education {
+      background-image: url("./components/cv-page/main/education/education__section-name__icon_education.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 25px 25px;
@@ -526,16 +527,15 @@
       height: 39px;
       width: 39px;
       background-color: #bfc215;
-      border-radius: 20px;
-      background-image: url("./components/cv-page/main/education/education__section-name__icon_education.svg"); }
+      border-radius: 20px; }
       @media (min-width: 600px) {
         .education__section-name__icon_education {
-          margin: 2vw 9px 1.5vw 0; } }
+          margin: 1.5vw 9px 1.5vw 0; } }
       @media (min-width: 1000px) {
         .education__section-name__icon_education {
           margin: 3.5vw 0 2vw 4px; } }
     .education__section-name__text_education {
-      margin-left: 4px;
+      padding-left: 14px;
       text-transform: capitalize;
       font-family: 'Rokkitt',serif;
       font-weight: bold;
@@ -609,7 +609,7 @@
     @media (min-width: 600px) {
       .experience__el {
         width: 50%;
-        height: 50vw; } }
+        height: 56vw; } }
   .experience__text {
     display: flex;
     justify-content: center;
@@ -643,8 +643,174 @@
           font-size: 120px;
           line-height: 80px;
           height: 310px; } }
-  .experience__content {
-    background-color: white; }
+
+.experience2 {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  height: 570px; }
+  @media (min-width: 600px) {
+    .experience2 {
+      width: 50vw;
+      height: 56vw; } }
+  .experience2__chart {
+    display: flex; }
+  .experience2__section-name {
+    background-color: #fdfdfd;
+    color: #000005;
+    display: flex;
+    justify-content: center; }
+    .experience2__section-name__icon_experience2 {
+      background-image: url("./components/cv-page/main/experience/experience__section-name__icon_experience.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      margin: 19px 0 20px 0;
+      height: 39px;
+      width: 39px;
+      background-color: #bfc215;
+      border-radius: 20px; }
+      @media (min-width: 600px) {
+        .experience2__section-name__icon_experience2 {
+          margin: 2.5vw 9px 2.5vw 0; } }
+      @media (min-width: 1000px) {
+        .experience2__section-name__icon_experience2 {
+          margin: 3.5vw 0 2vw 4px; } }
+    .experience2__section-name__text_experience2 {
+      padding-left: 14px;
+      text-transform: capitalize;
+      font-family: 'Rokkitt',serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin: 23px 0 20px 0; }
+      @media (min-width: 600px) {
+        .experience2__section-name__text_experience2 {
+          font-size: 28px;
+          margin: 2vw 0 1.5vw 0; } }
+      @media (min-width: 760px) {
+        .experience2__section-name__text_experience2 {
+          font-size: 35px;
+          margin: 3vw 0 3vw 4px; } }
+      @media (min-width: 1000px) {
+        .experience2__section-name__text_experience2 {
+          font-size: 50px;
+          margin: 4vw 0 2vw 9px; } }
+  .experience2__section {
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 600px) {
+      .experience2__section {
+        width: 25vw; } }
+    .experience2__section_left {
+      padding-right: 9px; }
+    .experience2__section_right {
+      border-left: 3px solid black; }
+  .experience2__section__el {
+    background-color: #000005;
+    width: 42vw;
+    min-height: 200px;
+    max-height: 250px;
+    margin: 0 0 10px 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #bfc215;
+    border-radius: 14px; }
+    .experience2__section__el_right {
+      margin-top: 10px; }
+      @media (min-width: 760px) {
+        .experience2__section__el_right {
+          margin-top: 0; } }
+    @media (min-width: 600px) {
+      .experience2__section__el {
+        width: 21vw;
+        min-height: 0; } }
+    @media (min-width: 760px) {
+      .experience2__section__el {
+        min-height: 170px; } }
+    @media (min-width: 1000px) {
+      .experience2__section__el {
+        min-height: 220px; } }
+    .experience2__section__el__text_title {
+      margin: 3px;
+      background-color: inherit;
+      order: 1;
+      width: 50%;
+      word-wrap: break-word;
+      color: #fdfdfd; }
+      @media (min-width: 600px) {
+        .experience2__section__el__text_title {
+          font-size: 11px; } }
+      @media (min-width: 760px) {
+        .experience2__section__el__text_title {
+          font-size: 16px; } }
+      @media (min-width: 1000px) {
+        .experience2__section__el__text_title {
+          font-size: 20px; } }
+    .experience2__section__el__text_main {
+      margin: 3px;
+      background-color: inherit;
+      order: 3;
+      word-wrap: break-word;
+      color: #fdfdfd;
+      text-align: justify; }
+      @media (min-width: 600px) {
+        .experience2__section__el__text_main {
+          font-size: 11px; } }
+      @media (min-width: 760px) {
+        .experience2__section__el__text_main {
+          font-size: 14px; } }
+      @media (min-width: 1000px) {
+        .experience2__section__el__text_main {
+          font-size: 18px; } }
+    .experience2__section__el__text_date {
+      margin: 3px;
+      background-color: inherit;
+      order: 2;
+      width: 35%;
+      word-wrap: break-word;
+      border-left: 2px solid #fdfdfd; }
+      .experience2__section__el__text_date_year {
+        background-color: inherit;
+        margin-left: 6px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #bfc215; }
+        @media (min-width: 600px) {
+          .experience2__section__el__text_date_year {
+            font-size: 13px; } }
+        @media (min-width: 760px) {
+          .experience2__section__el__text_date_year {
+            font-size: 17px; } }
+        @media (min-width: 1000px) {
+          .experience2__section__el__text_date_year {
+            font-size: 22px; } }
+
+.experience2__section__el__text_arrow::before {
+  width: 14px;
+  height: 28px;
+  position: absolute;
+  content: "";
+  background-image: url("./components/cv-page/main/experience/experience_images_arrow.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.experience2__section__el__text_arrow_left::before {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  right: -10px;
+  top: 20px; }
+
+.experience2__section__el__text_arrow_right::before {
+  left: -12px;
+  top: 20px; }
 
 .interests {
   width: 100vw;

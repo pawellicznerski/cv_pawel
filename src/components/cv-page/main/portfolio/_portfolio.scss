@@ -14,6 +14,7 @@
       height: 50vw;
     };
   }
+  //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
   @include section-text-mixin( black,white,175px,white,black,180px,white,black,290px,240px);
   &__content{
     background-color: white;

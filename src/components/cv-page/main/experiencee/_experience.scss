@@ -11,8 +11,8 @@
   width:100vw;
   display: flex;
   flex-wrap: wrap;
-  @include laptop{
-    width:900px;
+  @include mobile{
+    width:50vw;
     // border: 1px solid blue;
   };
   &__section{
