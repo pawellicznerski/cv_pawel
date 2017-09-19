@@ -340,11 +340,14 @@
   width: 290px;
   min-height: 300px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid yellow; }
   @media (min-width: 600px) {
     .education__education-progress-bar {
-      min-height: 50vw; } }
+      flex-direction: column;
+      min-height: 60%; } }
   .education__education-progress-bar__el {
+    border: 1px solid red;
     list-style-type: none;
     position: relative;
     padding: 0;
@@ -355,11 +358,9 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        margin: -20px 0 0 0;
+        margin: 0;
+        height: 30%;
         font-size: 12px; } }
-    @media (min-width: 600px) {
-      .education__education-progress-bar__el_last {
-        margin-top: -85px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -371,7 +372,8 @@
       @media (min-width: 600px) {
         .education__education-progress-bar__el__item {
           width: 23%;
-          margin: 1px; } }
+          margin: 1px;
+          height: 50px; } }
 
 .education__education-progress-bar__el__item_line::before {
   content: "";
@@ -407,15 +409,21 @@
       left: 62.5%;
       top: 0px; } }
 
-.education__education-progress-bar__el__item_line_last::before {
+.education__education-progress-bar__el__item_line_3::before {
   content: none; }
 
 .education__education-progress-bar__el__item__text {
-  color: #000005; }
+  color: #000005;
+  font-size: 15px; }
   @media (min-width: 600px) {
     .education__education-progress-bar__el__item__text {
-      color: #fdfdfd; } }
+      color: #fdfdfd;
+      font-size: 12.5px; } }
+  @media (min-width: 760px) {
+    .education__education-progress-bar__el__item__text {
+      font-size: 14px; } }
   .education__education-progress-bar__el__item__text_color-background {
+    font-weight: normal;
     color: #fdfdfd;
     background-color: #000005;
     border-radius: 8px;
@@ -586,10 +594,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    min-height: 300px; }
     @media (min-width: 600px) {
       .education__content {
-        background-color: black; } }
+        background-color: black;
+        height: 50vw; } }
 
 .experience {
   width: 100vw;

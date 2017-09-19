@@ -11,15 +11,17 @@
   min-height: 300px;
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid yellow;
   @include mobile{
-    min-height: 50vw;
+    flex-direction: column;
+    min-height: 60%;
   };
   // @include laptop{
   //   width:500px;
   //   margin: 0;
   // };
   &__el{
-    // border: 1px solid red;
+    border: 1px solid red;
     list-style-type: none;
     position: relative;
     padding: 0;
@@ -29,12 +31,14 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      margin: -20px 0 0 0;
+      margin: 0;
+      height: 30%;
+      // margin: -20px 0 0 0;
       font-size: 12px;
     };
     &_last{
       @include mobile{
-        margin-top: -85px;
+        // margin-top: -85px;
       };
     }
     &__item{
@@ -49,6 +53,7 @@
       @include mobile{
         width: 23%;
         margin: 1px;
+        height: 50px
       };
     }
   }
@@ -79,7 +84,7 @@
       }
     }
   }
-  &_last{
+  &_3{
     &::before{
       content:none;
     }
@@ -88,10 +93,16 @@
 
 .education__education-progress-bar__el__item__text{
   color:  $color__primary_black;
+  font-size: 15px;
   @include mobile{
     color: $color__primary_white;
+    font-size: 12.5px;
+  };
+  @include tablet{
+    font-size: 14px;
   };
   &_color-background{
+    font-weight: normal;
     color: $color__primary_white;
     background-color: $color__primary_black;
     border-radius: 8px;
