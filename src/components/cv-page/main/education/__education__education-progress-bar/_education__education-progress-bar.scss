@@ -4,24 +4,30 @@
 @import "./../../../_cv-page__base/cv-page__base__variables.scss";
 //media query
 @import "./../../../_cv-page__base/media-query-mixins.scss";
+//in few situations replacing repeating
+@mixin bgrAndFontColor($font-color,$bgr-color) {
+  color:$font-color;
+  background-color: $bgr-color;
+}
 
-
+//main container of the bars--------------------------------
 .education__education-progress-bar{
   width:290px;
   min-height: 300px;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   @include mobile{
     flex-direction: column;
-    min-height: 60%;
+    min-height: 244px;
   };
-  // @include laptop{
-  //   width:500px;
-  //   margin: 0;
-  // };
+  @include tablet{
+    width: 100%;
+    min-height: 300px;
+  };
+// the bars section is devided into three elements. Each has class el---------
   &__el{
-    border: 1px solid red;
+    // border: 1px solid red;
     list-style-type: none;
     position: relative;
     padding: 0;
@@ -32,15 +38,12 @@
       display: flex;
       flex-wrap: wrap;
       margin: 0;
-      height: 30%;
-      // margin: -20px 0 0 0;
-      font-size: 12px;
+      height: 80px;
     };
-    &_last{
-      @include mobile{
-        // margin-top: -85px;
-      };
-    }
+    @include tablet{
+      height: 13vw;
+    };
+// each element has four items each of them has class __item-----------
     &__item{
       margin: 0 9px;
       height: 100px;
@@ -51,14 +54,18 @@
       justify-content: center;
       text-align: center;
       @include mobile{
-        width: 23%;
+        width: 24%;
         margin: 1px;
-        height: 50px
+        height: 60px
+      };
+      @include tablet{
+        width: 20%;
+        margin: 1px 1vw;
+        height: 10vw;
       };
     }
   }
-}
-
+// the middle element (there are three of them) has the bar made of pseudo elemt
 .education__education-progress-bar__el__item_line{
   &::before{
     content:"";
@@ -90,7 +97,7 @@
     }
   }
 }
-
+//all four items in three elements has the class below styling colors and fonts
 .education__education-progress-bar__el__item__text{
   color:  $color__primary_black;
   font-size: 15px;
@@ -101,47 +108,40 @@
   @include tablet{
     font-size: 14px;
   };
+  @include laptop{
+    font-size: 18px;
+  };
   &_color-background{
     font-weight: normal;
-    color: $color__primary_white;
-    background-color: $color__primary_black;
+    @include bgrAndFontColor($color__primary_white,$color__primary_black);//first- font-color, second: bgr-color
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 5px 7px;
     @include mobile{
-      background-color: $color__primary_white;
-      color: $color__primary_black;
+      @include bgrAndFontColor($color__primary_black,$color__primary_white);//first- font-color, second: bgr-color
     };
-    &_strong{
-      color: $color__primary_white;
-      font-weight: bold;
-      background-color: $color__primary_black;
-      @include mobile{
-        color: $color__primary_black;
-        background-color:$color__primary_white;
-      };
-
-    }
   }
-
-  @for $i from 0 through 3 {
-    &__circle-#{$i}{
-      &::after{
-        content:"";
-        position: absolute;
-        top: 50px-9px+($i *100px);
-        left:-7px;
-        width: 10px;
-        height: 10px;
-        border: 4px solid $color__primary_black;
-        border-radius: 50%;
-        background-color: white;
-        @include mobile{
-          left:12.5%+($i*25%);
-          top: -7px;
-          border: 4px solid $color__primary_white;
-          background-color: $color__primary_black;
-        };
+//the circles in the middle element-------------------
+    @for $i from 0 through 3 {
+      &__circle-#{$i}{
+        &::after{
+          content:"";
+          position: absolute;
+          top: 50px-9px+($i *100px);
+          left:-7px;
+          width: 10px;
+          height: 10px;
+          border: 4px solid $color__primary_black;
+          border-radius: 50%;
+          background-color: white;
+          @include mobile{
+            left:12.5%+($i*25%);
+            top: -7px;
+            border: 4px solid $color__primary_white;
+            background-color: $color__primary_black;
+          };
+        }
       }
-    }
-  }
-}
+    }//end of circle
+  }//end of __text
+
+}// end of the bar

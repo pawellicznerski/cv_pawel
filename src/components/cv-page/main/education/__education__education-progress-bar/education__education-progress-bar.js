@@ -46,7 +46,7 @@ export default class EducationProgressBar extends Component {
         <ProgressBarLineAndDate linePosition="3" text="Marzec 2017"/>
       </ul>
 
-      <ul className="education__education-progress-bar__el education__education-progress-bar__el_last">
+      <ul className="education__education-progress-bar__el">
         <ProgressBarText text="Technik Spec. handel" background="true"/>
         <ProgressBarText text="Nauczyciel jęz. ang." background="false"/>
         <ProgressBarText text="Magister jęz. angielski" background="true"/>
