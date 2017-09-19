@@ -14,8 +14,8 @@ export class Interests extends Component {
           <div className="interests__content">
 
             <div className=" interests__section-name">
-              <div className=" interests__section-name__icon_interests"></div>
-              <p className=" interests__section-name__text_interests">Zainteresowania</p>
+              <div className=" interests__section-name__icon"></div>
+              <p className=" interests__section-name__text">Zainteresowania</p>
             </div>
 
             <div className="interests__cirles">

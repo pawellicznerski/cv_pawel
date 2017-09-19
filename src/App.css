@@ -850,15 +850,20 @@
           height: 320px; } }
   @media (min-width: 600px) {
     .interests__content {
-      background-color: black; } }
+      background-color: black;
+      height: 50vw; } }
   .interests__section-name {
     padding-left: 10px;
-    background-color: rgba(10, 10, 10, 0);
-    display: flex; }
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 600px) {
+      .interests__section-name {
+        background-color: #000005; } }
     .interests__section-name__icon {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 28px 28px;
       margin-top: 9px;
       height: 39px;
       width: 39px;
@@ -882,7 +887,8 @@
       @media (min-width: 600px) {
         .interests__section-name__text {
           font-size: 28px;
-          margin: 4vw 0 4vw 4px; } }
+          margin: 4vw 0 4vw 4px;
+          color: #fdfdfd; } }
       @media (min-width: 760px) {
         .interests__section-name__text {
           font-size: 35px; } }
@@ -892,16 +898,21 @@
           margin: 6vw 0 5vw 9px; } }
 
 .interests__content {
-  width: 100%;
-  margin-bottom: 10px; }
+  width: 100%; }
   .interests__content .interests__cirles {
     width: 100%;
-    height: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 6vw; }
+    @media (min-width: 600px) {
+      .interests__content .interests__cirles {
+        margin: 4vw 0 0 2vw; } }
+    @media (min-width: 760px) {
+      .interests__content .interests__cirles {
+        margin-bottom: 6vw; } }
     .interests__content .interests__cirles_item {
       text-transform: capitalize;
       color: #000005;
@@ -937,6 +948,87 @@
         width: 96px;
         height: 96px;
         position: absolute; }
+    @media (min-width: 600px) {
+      .interests__content .interests__cirles_item_dark-main {
+        font-size: 15.4px;
+        width: 140px;
+        height: 140px;
+        position: relative; }
+        .interests__content .interests__cirles_item_dark-main_lightest {
+          font-size: 12.6px;
+          left: -82.6px;
+          top: 49px;
+          width: 98px;
+          height: 98px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 15.4px;
+          left: -51.8px;
+          top: -14px;
+          width: 84px;
+          height: 84px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_darkest {
+          font-size: 15.4px;
+          right: -51.8px;
+          top: 77px;
+          width: 84px;
+          height: 84px;
+          position: absolute; } }
+    @media (min-width: 760px) {
+      .interests__content .interests__cirles_item_dark-main {
+        font-size: 19.8px;
+        width: 180px;
+        height: 180px;
+        position: relative; }
+        .interests__content .interests__cirles_item_dark-main_lightest {
+          font-size: 16.2px;
+          left: -106.2px;
+          top: 63px;
+          width: 126px;
+          height: 126px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 19.8px;
+          left: -66.6px;
+          top: -18px;
+          width: 108px;
+          height: 108px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_darkest {
+          font-size: 19.8px;
+          right: -66.6px;
+          top: 99px;
+          width: 108px;
+          height: 108px;
+          position: absolute; } }
+    @media (min-width: 1000px) {
+      .interests__content .interests__cirles_item_dark-main {
+        font-size: 24.2px;
+        width: 220px;
+        height: 220px;
+        position: relative; }
+        .interests__content .interests__cirles_item_dark-main_lightest {
+          font-size: 19.8px;
+          left: -129.8px;
+          top: 77px;
+          width: 154px;
+          height: 154px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 24.2px;
+          left: -81.4px;
+          top: -22px;
+          width: 132px;
+          height: 132px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_darkest {
+          font-size: 24.2px;
+          right: -81.4px;
+          top: 121px;
+          width: 132px;
+          height: 132px;
+          position: absolute; } }
 
 .page {
   font-family: 'Lora', serif; }
