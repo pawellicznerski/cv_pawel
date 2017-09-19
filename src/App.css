@@ -644,23 +644,23 @@
           line-height: 80px;
           height: 310px; } }
 
-.experience2 {
+.experience__content {
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   height: 570px; }
   @media (min-width: 600px) {
-    .experience2 {
+    .experience__content {
       width: 50vw;
       height: 56vw; } }
-  .experience2__chart {
+  .experience__content__chart {
     display: flex; }
-  .experience2__section-name {
+  .experience__content__section-name {
     background-color: #fdfdfd;
     color: #000005;
     display: flex;
     justify-content: center; }
-    .experience2__section-name__icon_experience2 {
+    .experience__content__section-name__icon {
       background-image: url("./components/cv-page/main/experience/experience__section-name__icon_experience.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -671,12 +671,12 @@
       background-color: #bfc215;
       border-radius: 20px; }
       @media (min-width: 600px) {
-        .experience2__section-name__icon_experience2 {
+        .experience__content__section-name__icon {
           margin: 2.5vw 9px 2.5vw 0; } }
       @media (min-width: 1000px) {
-        .experience2__section-name__icon_experience2 {
+        .experience__content__section-name__icon {
           margin: 3.5vw 0 2vw 4px; } }
-    .experience2__section-name__text_experience2 {
+    .experience__content__section-name__text {
       padding-left: 14px;
       text-transform: capitalize;
       font-family: 'Rokkitt',serif;
@@ -685,33 +685,33 @@
       line-height: 32px;
       margin: 23px 0 20px 0; }
       @media (min-width: 600px) {
-        .experience2__section-name__text_experience2 {
+        .experience__content__section-name__text {
           font-size: 28px;
           margin: 2vw 0 1.5vw 0; } }
       @media (min-width: 760px) {
-        .experience2__section-name__text_experience2 {
+        .experience__content__section-name__text {
           font-size: 35px;
           margin: 3vw 0 3vw 4px; } }
       @media (min-width: 1000px) {
-        .experience2__section-name__text_experience2 {
+        .experience__content__section-name__text {
           font-size: 50px;
           margin: 4vw 0 2vw 9px; } }
-  .experience2__section {
+  .experience__content__section {
     width: 49vw;
     display: flex;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 600px) {
-      .experience2__section {
+      .experience__content__section {
         width: 25vw; } }
-    .experience2__section_left {
+    .experience__content__section_left {
       padding-right: 9px; }
-    .experience2__section_right {
+    .experience__content__section_right {
       border-left: 3px solid black; }
-  .experience2__section__el {
+  .experience__content__section__el {
     background-color: #000005;
     width: 42vw;
-    min-height: 200px;
+    min-height: 220px;
     max-height: 250px;
     margin: 0 0 10px 10px;
     position: relative;
@@ -719,22 +719,17 @@
     flex-wrap: wrap;
     border: 1px solid #bfc215;
     border-radius: 14px; }
-    .experience2__section__el_right {
-      margin-top: 10px; }
-      @media (min-width: 760px) {
-        .experience2__section__el_right {
-          margin-top: 0; } }
     @media (min-width: 600px) {
-      .experience2__section__el {
+      .experience__content__section__el {
         width: 21vw;
-        min-height: 0; } }
+        min-height: 130px; } }
     @media (min-width: 760px) {
-      .experience2__section__el {
+      .experience__content__section__el {
         min-height: 170px; } }
     @media (min-width: 1000px) {
-      .experience2__section__el {
+      .experience__content__section__el {
         min-height: 220px; } }
-    .experience2__section__el__text_title {
+    .experience__content__section__el__text_title {
       margin: 3px;
       background-color: inherit;
       order: 1;
@@ -742,15 +737,15 @@
       word-wrap: break-word;
       color: #fdfdfd; }
       @media (min-width: 600px) {
-        .experience2__section__el__text_title {
+        .experience__content__section__el__text_title {
           font-size: 11px; } }
       @media (min-width: 760px) {
-        .experience2__section__el__text_title {
+        .experience__content__section__el__text_title {
           font-size: 16px; } }
       @media (min-width: 1000px) {
-        .experience2__section__el__text_title {
+        .experience__content__section__el__text_title {
           font-size: 20px; } }
-    .experience2__section__el__text_main {
+    .experience__content__section__el__text_main {
       margin: 3px;
       background-color: inherit;
       order: 3;
@@ -758,38 +753,35 @@
       color: #fdfdfd;
       text-align: justify; }
       @media (min-width: 600px) {
-        .experience2__section__el__text_main {
+        .experience__content__section__el__text_main {
           font-size: 11px; } }
       @media (min-width: 760px) {
-        .experience2__section__el__text_main {
+        .experience__content__section__el__text_main {
           font-size: 14px; } }
       @media (min-width: 1000px) {
-        .experience2__section__el__text_main {
+        .experience__content__section__el__text_main {
           font-size: 18px; } }
-    .experience2__section__el__text_date {
-      margin: 3px;
-      background-color: inherit;
+    .experience__content__section__el__text_date {
+      padding: 3px 3px 3px 6px;
       order: 2;
       width: 35%;
       word-wrap: break-word;
-      border-left: 2px solid #fdfdfd; }
-      .experience2__section__el__text_date_year {
-        background-color: inherit;
-        margin-left: 6px;
-        font-weight: bold;
-        font-size: 20px;
-        color: #bfc215; }
-        @media (min-width: 600px) {
-          .experience2__section__el__text_date_year {
-            font-size: 13px; } }
-        @media (min-width: 760px) {
-          .experience2__section__el__text_date_year {
-            font-size: 17px; } }
-        @media (min-width: 1000px) {
-          .experience2__section__el__text_date_year {
-            font-size: 22px; } }
+      border-left: 2px solid #fdfdfd;
+      background-color: inherit;
+      font-weight: bold;
+      font-size: 20px;
+      color: #bfc215; }
+      @media (min-width: 600px) {
+        .experience__content__section__el__text_date {
+          font-size: 13px; } }
+      @media (min-width: 760px) {
+        .experience__content__section__el__text_date {
+          font-size: 17px; } }
+      @media (min-width: 1000px) {
+        .experience__content__section__el__text_date {
+          font-size: 22px; } }
 
-.experience2__section__el__text_arrow::before {
+.experience__content__section__el__text_arrow::before {
   width: 14px;
   height: 28px;
   position: absolute;
@@ -799,7 +791,7 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
-.experience2__section__el__text_arrow_left::before {
+.experience__content__section__el__text_arrow_left::before {
   -ms-transform: rotate(180deg);
   /* IE 9 */
   -webkit-transform: rotate(180deg);
@@ -808,7 +800,7 @@
   right: -10px;
   top: 20px; }
 
-.experience2__section__el__text_arrow_right::before {
+.experience__content__section__el__text_arrow_right::before {
   left: -12px;
   top: 20px; }
 
