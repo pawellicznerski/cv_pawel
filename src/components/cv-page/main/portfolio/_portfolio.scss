@@ -11,27 +11,10 @@
 }
 @mixin pseudoEl($color){
   &::before{
-    content: '';
-    position: absolute;
-    width: 13px;
-    height: 50%;
-    top:35px;
-    left:-7px;
     background-color: changeColor($color);
-    transform: skewX(13deg);
-    @include mobile{
-      top:50%;
-    };
   }
   &::after{
-    content: '';
-    position: absolute;
-    width: 13px;
-    height: 51%;
-    top:0px;
-    left:-7px;
     background-color: changeColor($color);
-    transform: skewX(-13deg);
   }
 }
 
@@ -110,6 +93,27 @@
       align-items: center;
       background-color: $color__primary_black;
       color: $color__primary_white;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top:35px;
+        left:-7px;
+        transform: skewX(13deg);
+        @include mobile{
+          top:50%;
+        };
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top:0px;
+        left:-7px;
+        transform: skewX(-13deg);
+      }
       @each $i in green,orange,olive,yellow,grey {
         &_#{$i}{
           @include pseudoEl(olive);

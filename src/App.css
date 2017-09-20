@@ -226,226 +226,75 @@
       align-items: center;
       background-color: #000005;
       color: #fdfdfd; }
-      .portfolio__projects__project__main_green::before {
+      .portfolio__projects__project__main::before {
         content: '';
         position: absolute;
         width: 13px;
         height: 50%;
         top: 35px;
         left: -7px;
-        background-color: #bfc215;
         transform: skewX(13deg); }
         @media (min-width: 600px) {
-          .portfolio__projects__project__main_green::before {
+          .portfolio__projects__project__main::before {
             top: 50%; } }
-      .portfolio__projects__project__main_green::after {
+      .portfolio__projects__project__main::after {
         content: '';
         position: absolute;
         width: 13px;
         height: 51%;
         top: 0px;
         left: -7px;
-        background-color: #bfc215;
         transform: skewX(-13deg); }
+      .portfolio__projects__project__main_green::before {
+        background-color: #bfc215; }
+      .portfolio__projects__project__main_green::after {
+        background-color: #bfc215; }
       .portfolio__projects__project__main_green:hover {
         background-color: #00ed00; }
         .portfolio__projects__project__main_green:hover::before {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 50%;
-          top: 35px;
-          left: -7px;
-          background-color: #00ed00;
-          transform: skewX(13deg); }
-          @media (min-width: 600px) {
-            .portfolio__projects__project__main_green:hover::before {
-              top: 50%; } }
+          background-color: #00ed00; }
         .portfolio__projects__project__main_green:hover::after {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 51%;
-          top: 0px;
-          left: -7px;
-          background-color: #00ed00;
-          transform: skewX(-13deg); }
+          background-color: #00ed00; }
       .portfolio__projects__project__main_orange::before {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 50%;
-        top: 35px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(13deg); }
-        @media (min-width: 600px) {
-          .portfolio__projects__project__main_orange::before {
-            top: 50%; } }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_orange::after {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 51%;
-        top: 0px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(-13deg); }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_orange:hover {
         background-color: #f74e17; }
         .portfolio__projects__project__main_orange:hover::before {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 50%;
-          top: 35px;
-          left: -7px;
-          background-color: #f74e17;
-          transform: skewX(13deg); }
-          @media (min-width: 600px) {
-            .portfolio__projects__project__main_orange:hover::before {
-              top: 50%; } }
+          background-color: #f74e17; }
         .portfolio__projects__project__main_orange:hover::after {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 51%;
-          top: 0px;
-          left: -7px;
-          background-color: #f74e17;
-          transform: skewX(-13deg); }
+          background-color: #f74e17; }
       .portfolio__projects__project__main_olive::before {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 50%;
-        top: 35px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(13deg); }
-        @media (min-width: 600px) {
-          .portfolio__projects__project__main_olive::before {
-            top: 50%; } }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_olive::after {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 51%;
-        top: 0px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(-13deg); }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_olive:hover {
         background-color: #bfc215; }
         .portfolio__projects__project__main_olive:hover::before {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 50%;
-          top: 35px;
-          left: -7px;
-          background-color: #bfc215;
-          transform: skewX(13deg); }
-          @media (min-width: 600px) {
-            .portfolio__projects__project__main_olive:hover::before {
-              top: 50%; } }
+          background-color: #bfc215; }
         .portfolio__projects__project__main_olive:hover::after {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 51%;
-          top: 0px;
-          left: -7px;
-          background-color: #bfc215;
-          transform: skewX(-13deg); }
+          background-color: #bfc215; }
       .portfolio__projects__project__main_yellow::before {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 50%;
-        top: 35px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(13deg); }
-        @media (min-width: 600px) {
-          .portfolio__projects__project__main_yellow::before {
-            top: 50%; } }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_yellow::after {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 51%;
-        top: 0px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(-13deg); }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_yellow:hover {
         background-color: #c19f13; }
         .portfolio__projects__project__main_yellow:hover::before {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 50%;
-          top: 35px;
-          left: -7px;
-          background-color: #c19f13;
-          transform: skewX(13deg); }
-          @media (min-width: 600px) {
-            .portfolio__projects__project__main_yellow:hover::before {
-              top: 50%; } }
+          background-color: #c19f13; }
         .portfolio__projects__project__main_yellow:hover::after {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 51%;
-          top: 0px;
-          left: -7px;
-          background-color: #c19f13;
-          transform: skewX(-13deg); }
+          background-color: #c19f13; }
       .portfolio__projects__project__main_grey::before {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 50%;
-        top: 35px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(13deg); }
-        @media (min-width: 600px) {
-          .portfolio__projects__project__main_grey::before {
-            top: 50%; } }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_grey::after {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 51%;
-        top: 0px;
-        left: -7px;
-        background-color: #bfc215;
-        transform: skewX(-13deg); }
+        background-color: #bfc215; }
       .portfolio__projects__project__main_grey:hover {
         background-color: #bebebe; }
         .portfolio__projects__project__main_grey:hover::before {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 50%;
-          top: 35px;
-          left: -7px;
-          background-color: #bebebe;
-          transform: skewX(13deg); }
-          @media (min-width: 600px) {
-            .portfolio__projects__project__main_grey:hover::before {
-              top: 50%; } }
+          background-color: #bebebe; }
         .portfolio__projects__project__main_grey:hover::after {
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 51%;
-          top: 0px;
-          left: -7px;
-          background-color: #bebebe;
-          transform: skewX(-13deg); }
+          background-color: #bebebe; }
       .portfolio__projects__project__main__icon {
         padding-top: 5px;
         font: normal 18px 'Pacifico',cursive;
