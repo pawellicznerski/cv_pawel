@@ -33,6 +33,13 @@
       font-size: 25px;
       margin-right: 10px;
       padding-top: 3px; }
+      @media (min-width: 1000px) {
+        .header__about-me__cv {
+          margin: 1.5vw 14px 2vw 0;
+          background-size: 32px 32px;
+          height: 58px;
+          width: 58px;
+          border-radius: 29px; } }
     .header__about-me__me {
       width: 80%;
       text-align: center;
@@ -57,7 +64,7 @@
         @media (min-width: 760px) {
           .header__about-me__me_name {
             font-size: 35px; } }
-        @media (min-width: 760px) {
+        @media (min-width: 1000px) {
           .header__about-me__me_name {
             font-size: 50px; } }
       .header__about-me__me_profession {
@@ -727,8 +734,7 @@
       height: 50vw; } }
 
 .interests__content {
-  width: 100%;
-  border: 1px solid red; }
+  width: 100%; }
   .interests__content .interests__cirles {
     width: 80%;
     padding-left: 24vw;
@@ -759,6 +765,7 @@
       font-size: 17.6px;
       width: 160px;
       height: 160px;
+      border: 8px solid #bfc215;
       position: relative; }
       .interests__content .interests__cirles_item_dark-main_lightest {
         font-size: 14.4px;
@@ -786,6 +793,7 @@
         font-size: 15.4px;
         width: 140px;
         height: 140px;
+        border: 8px solid #bfc215;
         position: relative; }
         .interests__content .interests__cirles_item_dark-main_lightest {
           font-size: 12.6px;
@@ -813,6 +821,7 @@
         font-size: 19.8px;
         width: 180px;
         height: 180px;
+        border: 8px solid #bfc215;
         position: relative; }
         .interests__content .interests__cirles_item_dark-main_lightest {
           font-size: 16.2px;
@@ -840,6 +849,7 @@
         font-size: 24.2px;
         width: 220px;
         height: 220px;
+        border: 8px solid #bfc215;
         position: relative; }
         .interests__content .interests__cirles_item_dark-main_lightest {
           font-size: 19.8px;
@@ -867,8 +877,7 @@
   padding-bottom: 10px;
   background-color: rgba(10, 10, 10, 0);
   display: flex;
-  justify-content: center;
-  border: 1px solid blue; }
+  justify-content: center; }
   @media (min-width: 600px) {
     .section-el-header {
       padding-bottom: 0; } }
@@ -894,7 +903,11 @@
         margin: 1.5vw 0 2vw 0; } }
     @media (min-width: 1000px) {
       .section-el-header__icon {
-        margin: 2.5vw 0 3vw 0; } }
+        margin: 1.5vw 0 3vw 0;
+        background-size: 32px 32px;
+        height: 58px;
+        width: 58px;
+        border-radius: 29px; } }
   .section-el-header__text {
     padding-left: 4px;
     text-transform: capitalize;

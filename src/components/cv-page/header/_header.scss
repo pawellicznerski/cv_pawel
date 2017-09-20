@@ -47,6 +47,13 @@
       font-size: 25px;
       margin-right: 10px;
       padding-top: 3px;
+      @include laptop{
+        margin: 1.5vw 14px 2vw 0;
+        background-size: 32px 32px;
+        height: 58px;
+        width: 58px;
+        border-radius: 29px;
+      };
     }
     &__me{
       width: 80%;
@@ -72,7 +79,8 @@
         @include tablet{
           font-size: 35px;
         };
-        @include tablet{
+        @include laptop{
+          // margin: 0vw 0 3vw 0;
           font-size: 50px;
         };
       }

@@ -5,7 +5,7 @@
     background-color: rgba(10,10,10,0);
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     @include mobile{
       padding-bottom: 0;
     };
@@ -27,7 +27,11 @@
         margin: 1.5vw 0 2vw 0;
       };
       @include laptop{
-        margin: 2.5vw 0 3vw 0;
+        margin: 1.5vw 0 3vw 0;
+        background-size: 32px 32px;
+        height: 58px;
+        width: 58px;
+        border-radius: 29px;
       };
     }
 

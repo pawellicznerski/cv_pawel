@@ -8,7 +8,7 @@
     font-size: $biggestCircleSize*0.11;
     width: $biggestCircleSize;
     height: $biggestCircleSize;
-    // background-color: $color__primary_olive;
+    border: 8px solid $color__primary_olive;
     position: relative;
     &_lightest{
       font-size: $biggestCircleSize*0.09;
@@ -65,7 +65,7 @@
 }
   .interests__content{
     width: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
     .interests__cirles{
       width: 80%;
       padding-left: 24vw;
