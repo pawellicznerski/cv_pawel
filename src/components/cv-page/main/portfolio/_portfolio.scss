@@ -1,7 +1,7 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 @import "./../__section-text-mixin/section-text-mixin.scss";
 @import "./../../_cv-page__base/_cv-page__base__variables.scss";
-
+//function and mixing used in creatin
 @function changeColor($i){
   @if $i == green {@return rgba(0,237,0,255);}
   @if $i == orange {@return rgba(247,78,23,1);}
@@ -113,6 +113,10 @@
       @each $i in green,orange,olive,yellow,grey {
         &_#{$i}{
           @include pseudoEl(olive);
+          &:hover{
+            @include pseudoEl($i);
+            background-color: changeColor($i);
+          }
         }
       }
       &__icon{
