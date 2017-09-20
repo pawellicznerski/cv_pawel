@@ -38,8 +38,8 @@ export class Portfolio extends Component {
 
           <div className="portfolio__projects">
             <Project no="5" name="pawellicznerski" text='CV Paweł Licznerski' demo="Ultramarathon_Training_App/" code="Ultramarathon_Training_App" color="olive"/>
-            <Project no="4" name="findyourfilm" text='' demo="Ultramarathon_Training_App/" code="Ultramarathon_Training_App" color="yellow"/>
-            <Project no="3" name="" text='Your todo list...' demo="Ultramarathon_Training_App/" code="Ultramarathon_Training_App" color="orange"/>
+            <Project no="4" name="findyourfilm" text='' demo="film-finder/" code="film-finder" color="yellow"/>
+            <Project no="3" name="" text='Your todo list...' demo="Todo_List_Project4/" code="Todo_List_Project4" color="orange"/>
             <Project no="2" name="cvproject" text='' demo="CV_project/" code="CV_project" color="grey"/>
             <Project no="1" name="ultramarathon" text='' demo="Ultramarathon_Training_App/" code="Ultramarathon_Training_App" color="green"/>
           </div>

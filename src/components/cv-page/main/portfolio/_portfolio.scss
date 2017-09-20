@@ -19,6 +19,9 @@
     left:-7px;
     background-color: changeColor($color);
     transform: skewX(13deg);
+    @include mobile{
+      top:50%;
+    };
   }
   &::after{
     content: '';
@@ -60,17 +63,31 @@
 .portfolio__projects{
   width: 100%;
   height: 500px;
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mobile{
+    width: 100%;
+    height: 77%;
+  };
   &__project{
-    // border: 1px solid $color__primary_white;
+    // border: 1px solid yellow;
     margin-top: 15px;
     width: 90%;
     height: 70px;
     display: flex;
+    padding-left: 1.5vw;
+    @include mobile{
+      width: 95%;
+      height: 55px;
+      margin-top: 5px;
+    };
+    @include tablet{
+      margin-top: 1vw;
+    };
+
     &__no{
       width: 12%;
       background-color: $color__primary_white;
@@ -80,7 +97,11 @@
       align-items: center;
       font-size: 40px;
       line-height: 40px;
-      // border: 1px solid $color__primary_white;
+      @include mobile{
+        background-color: $color__primary_black;
+        color: $color__primary_white;
+        width: 11.5%;
+      };
     }
     &__main{
       width: 85%;
@@ -91,20 +112,29 @@
       color: $color__primary_white;
       @each $i in green,orange,olive,yellow,grey {
         &_#{$i}{
-          @include pseudoEl($i);
+          @include pseudoEl(olive);
         }
       }
       &__icon{
         padding-top: 5px;
-        border: 1px solid red;
+        // border: 1px solid red;
         font: normal 18px 'Pacifico',cursive;
         margin-left: 2vw;
         height: 40px;
-        width: 54%;
+        width: 58%;
         background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
-        // border-radius: 15px;
+        @include mobile{
+          height: 30px;
+          padding-top: 0;
+        };
+        @include tablet{
+          height: 50px;
+          width: 63%;
+          padding-top: 5px;
+          font-size: 23px;
+        };
         @each $i in ultramarathon, cvproject, findyourfilm {
           &_#{$i}{
             background-image: url('./components/cv-page/main/portfolio/images/#{$i}.png');
@@ -113,6 +143,15 @@
         &_pawellicznerski{
           font: normal 15px 'Rokkitt',cursive;
           padding-top: 10px;
+          @include mobile{
+            font-size: 13px;
+            padding-top: 6px;
+          };
+          @include tablet{
+            font-size: 20.5px;
+            line-height: 20px;
+            padding: 15px 0 0 0;
+          };
         }
       }
       &__link{
@@ -120,8 +159,6 @@
         width: 50px;
         height: 50px;
         border-radius: 29px;
-        // color: rgba(0,237,0,255);
-        // background-color: $color__primary_white;
         color: $color__primary_black;
         background-color:$color__primary_white;
         margin: 0 5px;
@@ -130,14 +167,34 @@
         align-items: center;
         text-transform: uppercase;
         text-decoration: none;
+        @include mobile{
+          width: 38px;
+          height: 38px;
+          font-size: 11.5px;
+          color: $color__primary_white;
+          background-color:$color__primary_black;
+          border:2px dotted $color__primary_white;
+        };
+        @include tablet{
+          margin: 0 1vw;
+          width: 44px;
+          height: 44px;
+          font-size: 13.5px;
+        };
         @each $i in ultramarathon {
           &_#{$i}{
             background-image: url('./components/cv-page/main/portfolio/images/#{$i}.svg');
           }
         }
         &:hover{
+          animation: buttonBgr 0.4s ease-in forwards;
         }
       }
     }
   }
+}
+
+@keyframes buttonBgr {
+    0%   {color: $color__primary_white; background-color:$color__primary_black;}
+    100% {color: $color__primary_black; background-color:$color__primary_white;}
 }

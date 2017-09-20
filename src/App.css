@@ -183,16 +183,28 @@
 .portfolio__projects {
   width: 100%;
   height: 500px;
-  border: 1px solid red;
   display: flex;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 600px) {
+    .portfolio__projects {
+      width: 100%;
+      height: 77%; } }
   .portfolio__projects__project {
     margin-top: 15px;
     width: 90%;
     height: 70px;
-    display: flex; }
+    display: flex;
+    padding-left: 1.5vw; }
+    @media (min-width: 600px) {
+      .portfolio__projects__project {
+        width: 95%;
+        height: 55px;
+        margin-top: 5px; } }
+    @media (min-width: 760px) {
+      .portfolio__projects__project {
+        margin-top: 1vw; } }
     .portfolio__projects__project__no {
       width: 12%;
       background-color: #fdfdfd;
@@ -202,6 +214,11 @@
       align-items: center;
       font-size: 40px;
       line-height: 40px; }
+      @media (min-width: 600px) {
+        .portfolio__projects__project__no {
+          background-color: #000005;
+          color: #fdfdfd;
+          width: 11.5%; } }
     .portfolio__projects__project__main {
       width: 85%;
       position: relative;
@@ -216,8 +233,11 @@
         height: 50%;
         top: 35px;
         left: -7px;
-        background-color: #00ed00;
+        background-color: #bfc215;
         transform: skewX(13deg); }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main_green::before {
+            top: 50%; } }
       .portfolio__projects__project__main_green::after {
         content: '';
         position: absolute;
@@ -225,7 +245,7 @@
         height: 51%;
         top: 0px;
         left: -7px;
-        background-color: #00ed00;
+        background-color: #bfc215;
         transform: skewX(-13deg); }
       .portfolio__projects__project__main_orange::before {
         content: '';
@@ -234,8 +254,11 @@
         height: 50%;
         top: 35px;
         left: -7px;
-        background-color: #f74e17;
+        background-color: #bfc215;
         transform: skewX(13deg); }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main_orange::before {
+            top: 50%; } }
       .portfolio__projects__project__main_orange::after {
         content: '';
         position: absolute;
@@ -243,7 +266,7 @@
         height: 51%;
         top: 0px;
         left: -7px;
-        background-color: #f74e17;
+        background-color: #bfc215;
         transform: skewX(-13deg); }
       .portfolio__projects__project__main_olive::before {
         content: '';
@@ -254,6 +277,9 @@
         left: -7px;
         background-color: #bfc215;
         transform: skewX(13deg); }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main_olive::before {
+            top: 50%; } }
       .portfolio__projects__project__main_olive::after {
         content: '';
         position: absolute;
@@ -270,8 +296,11 @@
         height: 50%;
         top: 35px;
         left: -7px;
-        background-color: #c19f13;
+        background-color: #bfc215;
         transform: skewX(13deg); }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main_yellow::before {
+            top: 50%; } }
       .portfolio__projects__project__main_yellow::after {
         content: '';
         position: absolute;
@@ -279,7 +308,7 @@
         height: 51%;
         top: 0px;
         left: -7px;
-        background-color: #c19f13;
+        background-color: #bfc215;
         transform: skewX(-13deg); }
       .portfolio__projects__project__main_grey::before {
         content: '';
@@ -288,8 +317,11 @@
         height: 50%;
         top: 35px;
         left: -7px;
-        background-color: #bebebe;
+        background-color: #bfc215;
         transform: skewX(13deg); }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main_grey::before {
+            top: 50%; } }
       .portfolio__projects__project__main_grey::after {
         content: '';
         position: absolute;
@@ -297,18 +329,27 @@
         height: 51%;
         top: 0px;
         left: -7px;
-        background-color: #bebebe;
+        background-color: #bfc215;
         transform: skewX(-13deg); }
       .portfolio__projects__project__main__icon {
         padding-top: 5px;
-        border: 1px solid red;
         font: normal 18px 'Pacifico',cursive;
         margin-left: 2vw;
         height: 40px;
-        width: 54%;
+        width: 58%;
         background-position: left;
         background-repeat: no-repeat;
         background-size: contain; }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main__icon {
+            height: 30px;
+            padding-top: 0; } }
+        @media (min-width: 760px) {
+          .portfolio__projects__project__main__icon {
+            height: 50px;
+            width: 63%;
+            padding-top: 5px;
+            font-size: 23px; } }
         .portfolio__projects__project__main__icon_ultramarathon {
           background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.png"); }
         .portfolio__projects__project__main__icon_cvproject {
@@ -318,6 +359,15 @@
         .portfolio__projects__project__main__icon_pawellicznerski {
           font: normal 15px 'Rokkitt',cursive;
           padding-top: 10px; }
+          @media (min-width: 600px) {
+            .portfolio__projects__project__main__icon_pawellicznerski {
+              font-size: 13px;
+              padding-top: 6px; } }
+          @media (min-width: 760px) {
+            .portfolio__projects__project__main__icon_pawellicznerski {
+              font-size: 20.5px;
+              line-height: 20px;
+              padding: 15px 0 0 0; } }
       .portfolio__projects__project__main__link {
         font: bold 15px 'rokkitt',serif;
         width: 50px;
@@ -331,8 +381,32 @@
         align-items: center;
         text-transform: uppercase;
         text-decoration: none; }
+        @media (min-width: 600px) {
+          .portfolio__projects__project__main__link {
+            width: 38px;
+            height: 38px;
+            font-size: 11.5px;
+            color: #fdfdfd;
+            background-color: #000005;
+            border: 2px dotted #fdfdfd; } }
+        @media (min-width: 760px) {
+          .portfolio__projects__project__main__link {
+            margin: 0 1vw;
+            width: 44px;
+            height: 44px;
+            font-size: 13.5px; } }
         .portfolio__projects__project__main__link_ultramarathon {
           background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.svg"); }
+        .portfolio__projects__project__main__link:hover {
+          animation: buttonBgr 0.4s ease-in forwards; }
+
+@keyframes buttonBgr {
+  0% {
+    color: #fdfdfd;
+    background-color: #000005; }
+  100% {
+    color: #000005;
+    background-color: #fdfdfd; } }
 
 .competence {
   width: 100vw;
