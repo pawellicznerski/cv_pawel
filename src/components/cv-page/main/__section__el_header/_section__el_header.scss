@@ -1,0 +1,65 @@
+@import "./../../_cv-page__base/_cv-page__base__variables.scss";
+
+  .section-el-header{
+    padding-bottom: 10px;
+    background-color: rgba(10,10,10,0);
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+    @include mobile{
+      padding-bottom: 0;
+    };
+    &__icon{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 26px 26px;
+      margin-top:9px;
+      height: 39px;
+      width: 39px;
+      background-color: $color__primary_olive;
+      border-radius: 20px;
+      @each $i in competence, education, experience, interests {
+        &_#{$i}{
+          background-image: url("./components/cv-page/main/__section__el_header/section__el_header_#{$i}.svg");
+        }
+      }
+      @include mobile{
+        margin: 1.5vw 0 2vw 0;
+      };
+      @include laptop{
+        margin: 2.5vw 0 3vw 0;
+      };
+    }
+
+    &__text{
+      padding-left: 4px;
+      text-transform: capitalize;
+      font-family: 'Rokkitt',serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 13px;
+
+     @include mobile{
+       font-size: 28px;
+       margin: 2vw 0 2vw 0;
+       padding-left: 18px;
+     };
+     @include tablet{
+       font-size: 35px;
+      //  margin: 3vw 0 3vw 4px;
+     };
+     @include laptop{
+       font-size: 50px;
+       margin: 3vw 0 2vw 0;
+     };
+     //switch background and font color in case of different window size
+     @include mobile{
+       &_color-change{
+         color: $color__primary_white;
+         background-color: $color__primary_black;
+       }
+     };
+   }//__text_competence
+
+  }//__section-name

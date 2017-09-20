@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import EducationProgressBar from './__education__education-progress-bar/education__education-progress-bar';
-
+import { SectionElHeader } from './../__section__el_header/section__el_header';
 
 export class Education extends Component {
   render() {
@@ -11,10 +11,7 @@ export class Education extends Component {
         </div>
         <div className="education__el ">
           <div className="education__content">
-            <div className="education__section-name">
-              <div className="education__section-name__icon_education"></div>
-              <p className="education__section-name__text_education">Moje szkoły</p>
-            </div>
+            <SectionElHeader text="Moje szkoły" icon="education" colorChange="true"/>
             <EducationProgressBar></EducationProgressBar>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { SectionElHeader } from './../__section__el_header/section__el_header';
 
 export class Interests extends Component {
   render() {
@@ -13,10 +13,7 @@ export class Interests extends Component {
         <div className="interests__el">
           <div className="interests__content">
 
-            <div className=" interests__section-name">
-              <div className=" interests__section-name__icon"></div>
-              <p className=" interests__section-name__text">Zainteresowania</p>
-            </div>
+            <SectionElHeader text="Moje hobby" icon="interests" colorChange="true"/>
 
             <div className="interests__cirles">
               <div className="interests__cirles_item interests__cirles_item_dark-main">Front-end

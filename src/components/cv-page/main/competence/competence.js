@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SectionElHeader } from './../__section__el_header/section__el_header';
 
 class Bar extends Component {
   render() {
@@ -23,19 +24,16 @@ export class Competence extends Component {
         </div>
 
         <div className="competence__el competence__content">
-            <div className="competence-bars">
-              <div className=" competence-bars__section-name">
-                <div className="competence-bars__section-name__icon_competence"></div>
-                <p className="competence-bars__section-name__text_competence">Moje umiejętności:</p>
-              </div>
-              <Bar name="Angielski" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_first"}></Bar>
-              <Bar name="HTML/CSS" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_second"}></Bar>
-              <Bar name="Javascript" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_third"}></Bar>
-              <Bar name="React.js" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fourth"}></Bar>
-              <Bar name="Sass/RWD/BEM" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fifth"}></Bar>
-              <Bar name="jQuery" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_sixth"}></Bar>
-              <Bar name="Webpack/GIT" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_last"}></Bar>
-            </div>
+          <SectionElHeader text="Moje umiejętności" icon="competence" colorChange="false"/>
+          <div className="competence-bars">
+            <Bar name="Angielski" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_first"}></Bar>
+            <Bar name="HTML/CSS" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_second"}></Bar>
+            <Bar name="Javascript" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_third"}></Bar>
+            <Bar name="React.js" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fourth"}></Bar>
+            <Bar name="Sass/RWD/BEM" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_fifth"}></Bar>
+            <Bar name="jQuery" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_sixth"}></Bar>
+            <Bar name="Webpack/GIT" classes={"competence-bars__el__bar_filling competence-bars__el__bar_filling_last"}></Bar>
+          </div>
         </div>
 
       </div>

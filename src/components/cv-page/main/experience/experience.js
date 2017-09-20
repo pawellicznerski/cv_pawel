@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SectionElHeader } from './../__section__el_header/section__el_header';
 
 class Job extends Component {
   addClasses(basicClass){
@@ -26,10 +27,8 @@ export class Experience extends Component {
         </div>
 
         <div className="experience__el  experience__content">
-          <div className="experience__content__section-name">
-            <div className="experience__content__section-name__icon"></div>
-            <p className="experience__content__section-name__text">Moja praca</p>
-          </div>
+
+          <SectionElHeader text="Moja praca" icon="experience" colorChange="false"/>
 
           <div className="experience__content__chart">
             <div className="experience__content__section experience__content__section_left">

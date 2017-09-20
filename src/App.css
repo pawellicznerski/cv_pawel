@@ -179,11 +179,10 @@
   flex-wrap: wrap; }
   .competence__el {
     width: 100vw;
-    height: 300px;
-    border: 1px solid green; }
+    height: 300px; }
     @media (min-width: 600px) {
       .competence__el {
-        width: 50%;
+        width: 50vw;
         height: 50vw; } }
   .competence__text {
     display: flex;
@@ -224,61 +223,19 @@
 .competence-bars {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap; }
-  @media (min-width: 1000px) {
+  flex-direction: column; }
+  @media (min-width: 600px) {
     .competence-bars {
-      margin-bottom: 50px; } }
-  .competence-bars__section-name {
-    padding-left: 10px;
-    background-color: rgba(10, 10, 10, 0);
-    display: flex; }
-    .competence-bars__section-name__icon_competence {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-top: 9px;
-      height: 39px;
-      width: 39px;
-      background-color: #bfc215;
-      border-radius: 20px;
-      background-image: url("./components/cv-page/main/competence/competence__section-name__icon_competence.svg"); }
-      @media (min-width: 600px) {
-        .competence-bars__section-name__icon_competence {
-          margin: 3.5vw 0 4vw 0; } }
-      @media (min-width: 1000px) {
-        .competence-bars__section-name__icon_competence {
-          margin: 5.5vw 0 6vw 4px; } }
-    .competence-bars__section-name__text_competence {
-      padding-left: 4px;
-      text-transform: capitalize;
-      font-family: 'Rokkitt',serif;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 32px;
-      margin-top: 13px; }
-      @media (min-width: 600px) {
-        .competence-bars__section-name__text_competence {
-          font-size: 28px;
-          margin: 4vw 0 4vw 4px; } }
-      @media (min-width: 760px) {
-        .competence-bars__section-name__text_competence {
-          font-size: 35px; } }
-      @media (min-width: 1000px) {
-        .competence-bars__section-name__text_competence {
-          font-size: 50px;
-          margin: 6vw 0 5vw 9px; } }
+      margin-top: 1vw; } }
   .competence-bars__el {
-    padding: 7px;
+    padding: 4px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    justify-content: space-between; }
     @media (min-width: 600px) {
       .competence-bars__el {
-        padding: 5px 0; } }
+        padding: 6px 0; } }
     @media (min-width: 760px) {
       .competence-bars__el {
         padding: 8px 0; } }
@@ -300,9 +257,6 @@
       border-radius: 9px;
       display: flex;
       justify-content: flex-start; }
-      @media (min-width: 600px) {
-        .competence-bars__el__bar {
-          width: 40%; } }
       @media (min-width: 760px) {
         .competence-bars__el__bar {
           margin: 0 22px; } }
@@ -319,7 +273,7 @@
         border: 3px solid black; }
         @media (min-width: 1000px) {
           .competence-bars__el__bar_filling {
-            height: 19px;
+            height: 20px;
             border-radius: 7px; } }
       .competence-bars__el__bar_filling_first {
         width: 90%; }
@@ -514,46 +468,6 @@
       .education__el {
         width: 50vw;
         height: 50vw; } }
-  .education__section-name {
-    margin: 0 0 0 10px;
-    background-color: rgba(10, 10, 10, 0);
-    display: flex; }
-    .education__section-name__icon_education {
-      background-image: url("./components/cv-page/main/education/education__section-name__icon_education.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 25px 25px;
-      margin: 9px 15px 4vw 0;
-      height: 39px;
-      width: 39px;
-      background-color: #bfc215;
-      border-radius: 20px; }
-      @media (min-width: 600px) {
-        .education__section-name__icon_education {
-          margin: 1.5vw 9px 1.5vw 0; } }
-      @media (min-width: 1000px) {
-        .education__section-name__icon_education {
-          margin: 3.5vw 0 2vw 4px; } }
-    .education__section-name__text_education {
-      padding-left: 14px;
-      text-transform: capitalize;
-      font-family: 'Rokkitt',serif;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 32px;
-      margin-top: 13px; }
-      @media (min-width: 600px) {
-        .education__section-name__text_education {
-          color: white;
-          font-size: 28px;
-          margin: 2vw 0 1.5vw 0; } }
-      @media (min-width: 760px) {
-        .education__section-name__text_education {
-          font-size: 35px; } }
-      @media (min-width: 1000px) {
-        .education__section-name__text_education {
-          font-size: 50px;
-          margin: 4vw 0 2vw 9px; } }
   .education__text {
     display: flex;
     justify-content: center;
@@ -655,47 +569,6 @@
       height: 56vw; } }
   .experience__content__chart {
     display: flex; }
-  .experience__content__section-name {
-    background-color: #fdfdfd;
-    color: #000005;
-    display: flex;
-    justify-content: center; }
-    .experience__content__section-name__icon {
-      background-image: url("./components/cv-page/main/experience/experience__section-name__icon_experience.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 25px 25px;
-      margin: 19px 0 20px 0;
-      height: 39px;
-      width: 39px;
-      background-color: #bfc215;
-      border-radius: 20px; }
-      @media (min-width: 600px) {
-        .experience__content__section-name__icon {
-          margin: 2.5vw 9px 2.5vw 0; } }
-      @media (min-width: 1000px) {
-        .experience__content__section-name__icon {
-          margin: 3.5vw 0 2vw 4px; } }
-    .experience__content__section-name__text {
-      padding-left: 14px;
-      text-transform: capitalize;
-      font-family: 'Rokkitt',serif;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 32px;
-      margin: 23px 0 20px 0; }
-      @media (min-width: 600px) {
-        .experience__content__section-name__text {
-          font-size: 28px;
-          margin: 2vw 0 1.5vw 0; } }
-      @media (min-width: 760px) {
-        .experience__content__section-name__text {
-          font-size: 35px;
-          margin: 3vw 0 3vw 4px; } }
-      @media (min-width: 1000px) {
-        .experience__content__section-name__text {
-          font-size: 50px;
-          margin: 4vw 0 2vw 9px; } }
   .experience__content__section {
     width: 49vw;
     display: flex;
@@ -852,55 +725,13 @@
     .interests__content {
       background-color: black;
       height: 50vw; } }
-  .interests__section-name {
-    padding-left: 10px;
-    background-color: #fdfdfd;
-    display: flex;
-    justify-content: center; }
-    @media (min-width: 600px) {
-      .interests__section-name {
-        background-color: #000005; } }
-    .interests__section-name__icon {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 28px 28px;
-      margin-top: 9px;
-      height: 39px;
-      width: 39px;
-      background-color: #bfc215;
-      border-radius: 20px;
-      background-image: url("./components/cv-page/main/interests/interests__section-name__icon_interests.svg"); }
-      @media (min-width: 600px) {
-        .interests__section-name__icon {
-          margin: 3.5vw 0 4vw 0; } }
-      @media (min-width: 1000px) {
-        .interests__section-name__icon {
-          margin: 5.5vw 0 6vw 4px; } }
-    .interests__section-name__text {
-      padding-left: 4px;
-      text-transform: capitalize;
-      font-family: 'Rokkitt',serif;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 32px;
-      margin-top: 13px; }
-      @media (min-width: 600px) {
-        .interests__section-name__text {
-          font-size: 28px;
-          margin: 4vw 0 4vw 4px;
-          color: #fdfdfd; } }
-      @media (min-width: 760px) {
-        .interests__section-name__text {
-          font-size: 35px; } }
-      @media (min-width: 1000px) {
-        .interests__section-name__text {
-          font-size: 50px;
-          margin: 6vw 0 5vw 9px; } }
 
 .interests__content {
-  width: 100%; }
+  width: 100%;
+  border: 1px solid red; }
   .interests__content .interests__cirles {
-    width: 100%;
+    width: 80%;
+    padding-left: 24vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -909,10 +740,12 @@
     margin-top: 6vw; }
     @media (min-width: 600px) {
       .interests__content .interests__cirles {
-        margin: 4vw 0 0 2vw; } }
+        margin-top: 4vw;
+        padding-left: 14vw; } }
     @media (min-width: 760px) {
       .interests__content .interests__cirles {
-        margin-bottom: 6vw; } }
+        margin: 8vw 0 6vw 0;
+        padding-left: 16vw; } }
     .interests__content .interests__cirles_item {
       text-transform: capitalize;
       color: #000005;
@@ -1029,6 +862,63 @@
           width: 132px;
           height: 132px;
           position: absolute; } }
+
+.section-el-header {
+  padding-bottom: 10px;
+  background-color: rgba(10, 10, 10, 0);
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue; }
+  @media (min-width: 600px) {
+    .section-el-header {
+      padding-bottom: 0; } }
+  .section-el-header__icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    margin-top: 9px;
+    height: 39px;
+    width: 39px;
+    background-color: #bfc215;
+    border-radius: 20px; }
+    .section-el-header__icon_competence {
+      background-image: url("./components/cv-page/main/__section__el_header/section__el_header_competence.svg"); }
+    .section-el-header__icon_education {
+      background-image: url("./components/cv-page/main/__section__el_header/section__el_header_education.svg"); }
+    .section-el-header__icon_experience {
+      background-image: url("./components/cv-page/main/__section__el_header/section__el_header_experience.svg"); }
+    .section-el-header__icon_interests {
+      background-image: url("./components/cv-page/main/__section__el_header/section__el_header_interests.svg"); }
+    @media (min-width: 600px) {
+      .section-el-header__icon {
+        margin: 1.5vw 0 2vw 0; } }
+    @media (min-width: 1000px) {
+      .section-el-header__icon {
+        margin: 2.5vw 0 3vw 0; } }
+  .section-el-header__text {
+    padding-left: 4px;
+    text-transform: capitalize;
+    font-family: 'Rokkitt',serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 13px; }
+    @media (min-width: 600px) {
+      .section-el-header__text {
+        font-size: 28px;
+        margin: 2vw 0 2vw 0;
+        padding-left: 18px; } }
+    @media (min-width: 760px) {
+      .section-el-header__text {
+        font-size: 35px; } }
+    @media (min-width: 1000px) {
+      .section-el-header__text {
+        font-size: 50px;
+        margin: 3vw 0 2vw 0; } }
+    @media (min-width: 600px) {
+      .section-el-header__text_color-change {
+        color: #fdfdfd;
+        background-color: #000005; } }
 
 .page {
   font-family: 'Lora', serif; }
