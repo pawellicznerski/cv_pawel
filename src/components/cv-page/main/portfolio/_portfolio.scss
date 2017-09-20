@@ -83,7 +83,7 @@
       // border: 1px solid $color__primary_white;
     }
     &__main{
-      width: 88%;
+      width: 85%;
       position: relative;
       display: flex;
       align-items: center;
@@ -95,17 +95,24 @@
         }
       }
       &__icon{
-        // background-color: $color__primary_white;
+        padding-top: 5px;
+        border: 1px solid red;
+        font: normal 18px 'Pacifico',cursive;
+        margin-left: 2vw;
         height: 40px;
-        width: 58%;
-        background-position: center;
+        width: 54%;
+        background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
         // border-radius: 15px;
-        @each $i in ultramarathon,cvproject {
+        @each $i in ultramarathon, cvproject, findyourfilm {
           &_#{$i}{
-            background-image: url('./components/cv-page/main/portfolio/images/#{$i}.svg');
+            background-image: url('./components/cv-page/main/portfolio/images/#{$i}.png');
           }
+        }
+        &_pawellicznerski{
+          font: normal 15px 'Rokkitt',cursive;
+          padding-top: 10px;
         }
       }
       &__link{

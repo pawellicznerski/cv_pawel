@@ -203,7 +203,7 @@
       font-size: 40px;
       line-height: 40px; }
     .portfolio__projects__project__main {
-      width: 88%;
+      width: 85%;
       position: relative;
       display: flex;
       align-items: center;
@@ -300,15 +300,24 @@
         background-color: #bebebe;
         transform: skewX(-13deg); }
       .portfolio__projects__project__main__icon {
+        padding-top: 5px;
+        border: 1px solid red;
+        font: normal 18px 'Pacifico',cursive;
+        margin-left: 2vw;
         height: 40px;
-        width: 58%;
-        background-position: center;
+        width: 54%;
+        background-position: left;
         background-repeat: no-repeat;
         background-size: contain; }
         .portfolio__projects__project__main__icon_ultramarathon {
-          background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.svg"); }
+          background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.png"); }
         .portfolio__projects__project__main__icon_cvproject {
-          background-image: url("./components/cv-page/main/portfolio/images/cvproject.svg"); }
+          background-image: url("./components/cv-page/main/portfolio/images/cvproject.png"); }
+        .portfolio__projects__project__main__icon_findyourfilm {
+          background-image: url("./components/cv-page/main/portfolio/images/findyourfilm.png"); }
+        .portfolio__projects__project__main__icon_pawellicznerski {
+          font: normal 15px 'Rokkitt',cursive;
+          padding-top: 10px; }
       .portfolio__projects__project__main__link {
         font: bold 15px 'rokkitt',serif;
         width: 50px;
