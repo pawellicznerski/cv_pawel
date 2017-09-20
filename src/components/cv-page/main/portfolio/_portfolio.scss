@@ -1,5 +1,36 @@
 @import "./../../_cv-page__base/media-query-mixins.scss";
 @import "./../__section-text-mixin/section-text-mixin.scss";
+@import "./../../_cv-page__base/_cv-page__base__variables.scss";
+
+@function changeColor($i){
+  @if $i == green {@return rgba(0,237,0,255);}
+  @if $i == orange {@return rgba(247,78,23,1);}
+  @if $i == grey {@return rgba(190,190,190,255);}
+  @if $i == olive {@return rgba(191, 194, 21, 1);}
+  @if $i == yellow {@return rgba(193,159,19,1);}
+}
+@mixin pseudoEl($color){
+  &::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    top:35px;
+    left:-7px;
+    background-color: changeColor($color);
+    transform: skewX(13deg);
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 51%;
+    top:0px;
+    left:-7px;
+    background-color: changeColor($color);
+    transform: skewX(-13deg);
+  }
+}
 
 .portfolio{
   width: 100vw;
@@ -7,7 +38,7 @@
   flex-wrap: wrap;
   &__el{
     width: 100vw;
-    height: 300px;
+    height: 500px;
     // border: 1px solid green;
     @include mobile{
       width: 50%;
@@ -17,9 +48,89 @@
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
   @include section-text-mixin( black,white,175px,white,black,180px,white,black,290px,240px);
   &__content{
-    background-color: white;
+    background-color: $color__primary_white;
+
+
     @include mobile{
-      background-color: black;
+      background-color: $color__primary_black;
     };
+  }
+}
+
+.portfolio__projects{
+  width: 100%;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__project{
+    // border: 1px solid $color__primary_white;
+    margin-top: 15px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    &__no{
+      width: 12%;
+      background-color: $color__primary_white;
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Rokkitt',serif;
+      align-items: center;
+      font-size: 40px;
+      line-height: 40px;
+      // border: 1px solid $color__primary_white;
+    }
+    &__main{
+      width: 88%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: $color__primary_black;
+      color: $color__primary_white;
+      @each $i in green,orange,olive,yellow,grey {
+        &_#{$i}{
+          @include pseudoEl($i);
+        }
+      }
+      &__icon{
+        // background-color: $color__primary_white;
+        height: 40px;
+        width: 58%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // border-radius: 15px;
+        @each $i in ultramarathon,cvproject {
+          &_#{$i}{
+            background-image: url('./components/cv-page/main/portfolio/images/#{$i}.svg');
+          }
+        }
+      }
+      &__link{
+        font: bold 15px 'rokkitt',serif;
+        width: 50px;
+        height: 50px;
+        border-radius: 29px;
+        // color: rgba(0,237,0,255);
+        // background-color: $color__primary_white;
+        color: $color__primary_black;
+        background-color:$color__primary_white;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        @each $i in ultramarathon {
+          &_#{$i}{
+            background-image: url('./components/cv-page/main/portfolio/images/#{$i}.svg');
+          }
+        }
+        &:hover{
+        }
+      }
+    }
   }
 }

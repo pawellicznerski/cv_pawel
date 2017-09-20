@@ -18,7 +18,7 @@
       width: 39px;
       background-color: $color__primary_olive;
       border-radius: 20px;
-      @each $i in competence, education, experience, interests {
+      @each $i in competence, education, experience, interests, portfolio {
         &_#{$i}{
           background-image: url("./components/cv-page/main/__section__el_header/section__el_header_#{$i}.svg");
         }
@@ -34,7 +34,6 @@
         border-radius: 29px;
       };
     }
-
     &__text{
       padding-left: 4px;
       text-transform: capitalize;
@@ -43,7 +42,6 @@
       font-size: 32px;
       line-height: 32px;
       margin-top: 13px;
-
      @include mobile{
        font-size: 28px;
        margin: 2vw 0 2vw 0;
@@ -65,5 +63,4 @@
        }
      };
    }//__text_competence
-
   }//__section-name

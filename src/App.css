@@ -136,7 +136,7 @@
   flex-wrap: wrap; }
   .portfolio__el {
     width: 100vw;
-    height: 300px; }
+    height: 500px; }
     @media (min-width: 600px) {
       .portfolio__el {
         width: 50%;
@@ -175,10 +175,155 @@
           line-height: 80px;
           height: 240px; } }
   .portfolio__content {
-    background-color: white; }
+    background-color: #fdfdfd; }
     @media (min-width: 600px) {
       .portfolio__content {
-        background-color: black; } }
+        background-color: #000005; } }
+
+.portfolio__projects {
+  width: 100%;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio__projects__project {
+    margin-top: 15px;
+    width: 90%;
+    height: 70px;
+    display: flex; }
+    .portfolio__projects__project__no {
+      width: 12%;
+      background-color: #fdfdfd;
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Rokkitt',serif;
+      align-items: center;
+      font-size: 40px;
+      line-height: 40px; }
+    .portfolio__projects__project__main {
+      width: 88%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: #000005;
+      color: #fdfdfd; }
+      .portfolio__projects__project__main_green::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top: 35px;
+        left: -7px;
+        background-color: #00ed00;
+        transform: skewX(13deg); }
+      .portfolio__projects__project__main_green::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top: 0px;
+        left: -7px;
+        background-color: #00ed00;
+        transform: skewX(-13deg); }
+      .portfolio__projects__project__main_orange::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top: 35px;
+        left: -7px;
+        background-color: #f74e17;
+        transform: skewX(13deg); }
+      .portfolio__projects__project__main_orange::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top: 0px;
+        left: -7px;
+        background-color: #f74e17;
+        transform: skewX(-13deg); }
+      .portfolio__projects__project__main_olive::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top: 35px;
+        left: -7px;
+        background-color: #bfc215;
+        transform: skewX(13deg); }
+      .portfolio__projects__project__main_olive::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top: 0px;
+        left: -7px;
+        background-color: #bfc215;
+        transform: skewX(-13deg); }
+      .portfolio__projects__project__main_yellow::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top: 35px;
+        left: -7px;
+        background-color: #c19f13;
+        transform: skewX(13deg); }
+      .portfolio__projects__project__main_yellow::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top: 0px;
+        left: -7px;
+        background-color: #c19f13;
+        transform: skewX(-13deg); }
+      .portfolio__projects__project__main_grey::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 50%;
+        top: 35px;
+        left: -7px;
+        background-color: #bebebe;
+        transform: skewX(13deg); }
+      .portfolio__projects__project__main_grey::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 51%;
+        top: 0px;
+        left: -7px;
+        background-color: #bebebe;
+        transform: skewX(-13deg); }
+      .portfolio__projects__project__main__icon {
+        height: 40px;
+        width: 58%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+        .portfolio__projects__project__main__icon_ultramarathon {
+          background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.svg"); }
+        .portfolio__projects__project__main__icon_cvproject {
+          background-image: url("./components/cv-page/main/portfolio/images/cvproject.svg"); }
+      .portfolio__projects__project__main__link {
+        font: bold 15px 'rokkitt',serif;
+        width: 50px;
+        height: 50px;
+        border-radius: 29px;
+        color: #000005;
+        background-color: #fdfdfd;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none; }
+        .portfolio__projects__project__main__link_ultramarathon {
+          background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.svg"); }
 
 .competence {
   width: 100vw;
@@ -260,7 +405,7 @@
     .competence-bars__el__bar {
       width: 50%;
       height: 14px;
-      border: 3px solid black;
+      border: 3px solid #000005;
       border-radius: 9px;
       display: flex;
       justify-content: flex-start; }
@@ -276,24 +421,30 @@
       .competence-bars__el__bar_filling {
         height: 8px;
         border-radius: 8px;
-        background-color: black;
-        border: 3px solid black; }
+        background-color: #000005;
+        border: 3px solid #000005; }
         @media (min-width: 1000px) {
           .competence-bars__el__bar_filling {
             height: 20px;
             border-radius: 7px; } }
       .competence-bars__el__bar_filling_first {
-        width: 90%; }
+        width: 90%;
+        background-color: #bfc215;
+        border: 3px solid #bfc215; }
       .competence-bars__el__bar_filling_second {
         width: 40%; }
       .competence-bars__el__bar_filling_third {
-        width: 30%; }
+        width: 30%;
+        background-color: #153a54;
+        border: 3px solid #153a54; }
       .competence-bars__el__bar_filling_fourth {
         width: 40%; }
       .competence-bars__el__bar_filling_fifth {
         width: 40%; }
       .competence-bars__el__bar_filling_sixth {
-        width: 30%; }
+        width: 30%;
+        background-color: #153a54;
+        border: 3px solid #153a54; }
       .competence-bars__el__bar_filling_last {
         width: 40%; }
 
@@ -898,6 +1049,8 @@
       background-image: url("./components/cv-page/main/__section__el_header/section__el_header_experience.svg"); }
     .section-el-header__icon_interests {
       background-image: url("./components/cv-page/main/__section__el_header/section__el_header_interests.svg"); }
+    .section-el-header__icon_portfolio {
+      background-image: url("./components/cv-page/main/__section__el_header/section__el_header_portfolio.svg"); }
     @media (min-width: 600px) {
       .section-el-header__icon {
         margin: 1.5vw 0 2vw 0; } }
