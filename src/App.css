@@ -971,6 +971,7 @@
       background-color: inherit;
       font-weight: bold;
       font-size: 20px;
+      word-wrap: break-word;
       color: #bfc215; }
       @media (min-width: 600px) {
         .experience__content__section__el__text_date {
