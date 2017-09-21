@@ -68,6 +68,9 @@
       @include laptop{
         min-height: 220px;
       };
+      @include desktop{
+        min-height: 250px;
+      };
       &__text_title{
         margin: 3px;
         background-color: inherit;
@@ -83,6 +86,9 @@
         };
         @include laptop{
           font-size: 20px;
+        };
+        @include desktop{
+          min-height: 25px;
         };
       }
       &__text_main{
@@ -100,6 +106,9 @@
         };
         @include laptop{
           font-size: 18px;
+        };
+        @include desktop{
+          min-height: 24px;
         };
       }
       &__text_date{
@@ -120,6 +129,9 @@
           };
           @include laptop{
             font-size: 22px;
+          };
+          @include desktop{
+            min-height: 26px;
           };
         }
     }

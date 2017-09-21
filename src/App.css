@@ -11,10 +11,13 @@
         height: 50vw; } }
   .header__pic {
     background-color: #000005;
-    background-image: url("./components/cv-page/header/__header__contact-info__images/main-pic.png");
+    background-image: url("./components/cv-page/header/__header__contact-info__images/main2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
+    @media (min-width: 600px) {
+      .header__pic {
+        background-image: url("./components/cv-page/header/__header__contact-info__images/main.jpg"); } }
   .header__about-me {
     background-color: #fdfdfd;
     display: flex;
@@ -137,7 +140,7 @@
   flex-wrap: wrap; }
   .portfolio__el {
     width: 100vw;
-    height: 500px; }
+    height: 300px; }
     @media (min-width: 600px) {
       .portfolio__el {
         width: 50%;
@@ -176,10 +179,12 @@
           line-height: 80px;
           height: 240px; } }
   .portfolio__content {
-    background-color: #fdfdfd; }
+    background-color: #fdfdfd;
+    height: 500px; }
     @media (min-width: 600px) {
       .portfolio__content {
-        background-color: #000005; } }
+        background-color: #000005;
+        height: 50vw; } }
 
 .portfolio__projects {
   width: 100%;
@@ -192,6 +197,10 @@
     .portfolio__projects {
       width: 100%;
       height: 77%; } }
+  @media (min-width: 1000px) {
+    .portfolio__projects {
+      width: 100%;
+      height: 85%; } }
   .portfolio__projects__project {
     margin-top: 15px;
     width: 90%;
@@ -525,6 +534,9 @@
     @media (min-width: 760px) {
       .education__education-progress-bar__el {
         height: 13vw; } }
+    @media (min-width: 1400px) {
+      .education__education-progress-bar__el {
+        min-height: 250px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -549,12 +561,12 @@
     left: 0;
     width: 4px;
     height: 100px;
-    background-color: #000005; }
+    background-color: #bfc215; }
     @media (min-width: 600px) {
       .education__education-progress-bar .education__education-progress-bar__el__item_line::before {
         width: 25%;
         height: 4px;
-        background-color: #fdfdfd; } }
+        background-color: #bfc215; } }
   .education__education-progress-bar .education__education-progress-bar__el__item_line_0::before {
     top: 50px; }
     @media (min-width: 600px) {
@@ -588,6 +600,9 @@
     @media (min-width: 1000px) {
       .education__education-progress-bar .education__education-progress-bar__el__item__text {
         font-size: 18px; } }
+    @media (min-width: 1400px) {
+      .education__education-progress-bar .education__education-progress-bar__el__item__text {
+        font-size: 24px; } }
     .education__education-progress-bar .education__education-progress-bar__el__item__text_color-background {
       font-weight: normal;
       color: #fdfdfd;
@@ -605,14 +620,14 @@
       left: -7px;
       width: 10px;
       height: 10px;
-      border: 4px solid #000005;
+      background-color: #fdfdfd;
       border-radius: 50%;
       background-color: white; }
       @media (min-width: 600px) {
         .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-0::after {
           left: 12.5%;
           top: -7px;
-          border: 4px solid #fdfdfd;
+          border: 4px solid #bfc215;
           background-color: #000005; } }
     .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-1::after {
       content: "";
@@ -621,14 +636,14 @@
       left: -7px;
       width: 10px;
       height: 10px;
-      border: 4px solid #000005;
+      background-color: #fdfdfd;
       border-radius: 50%;
       background-color: white; }
       @media (min-width: 600px) {
         .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-1::after {
           left: 37.5%;
           top: -7px;
-          border: 4px solid #fdfdfd;
+          border: 4px solid #bfc215;
           background-color: #000005; } }
     .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-2::after {
       content: "";
@@ -637,14 +652,14 @@
       left: -7px;
       width: 10px;
       height: 10px;
-      border: 4px solid #000005;
+      background-color: #fdfdfd;
       border-radius: 50%;
       background-color: white; }
       @media (min-width: 600px) {
         .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-2::after {
           left: 62.5%;
           top: -7px;
-          border: 4px solid #fdfdfd;
+          border: 4px solid #bfc215;
           background-color: #000005; } }
     .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-3::after {
       content: "";
@@ -653,14 +668,14 @@
       left: -7px;
       width: 10px;
       height: 10px;
-      border: 4px solid #000005;
+      background-color: #fdfdfd;
       border-radius: 50%;
       background-color: white; }
       @media (min-width: 600px) {
         .education__education-progress-bar .education__education-progress-bar__el__item__text__circle-3::after {
           left: 87.5%;
           top: -7px;
-          border: 4px solid #fdfdfd;
+          border: 4px solid #bfc215;
           background-color: #000005; } }
 
 .education {
@@ -808,6 +823,9 @@
     @media (min-width: 1000px) {
       .experience__content__section__el {
         min-height: 220px; } }
+    @media (min-width: 1400px) {
+      .experience__content__section__el {
+        min-height: 250px; } }
     .experience__content__section__el__text_title {
       margin: 3px;
       background-color: inherit;
@@ -824,6 +842,9 @@
       @media (min-width: 1000px) {
         .experience__content__section__el__text_title {
           font-size: 20px; } }
+      @media (min-width: 1400px) {
+        .experience__content__section__el__text_title {
+          min-height: 25px; } }
     .experience__content__section__el__text_main {
       margin: 3px;
       background-color: inherit;
@@ -840,6 +861,9 @@
       @media (min-width: 1000px) {
         .experience__content__section__el__text_main {
           font-size: 18px; } }
+      @media (min-width: 1400px) {
+        .experience__content__section__el__text_main {
+          min-height: 24px; } }
     .experience__content__section__el__text_date {
       padding: 3px 3px 3px 6px;
       order: 2;
@@ -859,6 +883,9 @@
       @media (min-width: 1000px) {
         .experience__content__section__el__text_date {
           font-size: 22px; } }
+      @media (min-width: 1400px) {
+        .experience__content__section__el__text_date {
+          min-height: 26px; } }
 
 .experience__content__section__el__text_arrow::before {
   width: 14px;
@@ -1080,6 +1107,9 @@
   @media (min-width: 600px) {
     .section-el-header {
       padding-bottom: 0; } }
+  @media (min-width: 1400px) {
+    .section-el-header {
+      margin: 8vw 0 2vw 0; } }
   .section-el-header__icon {
     background-position: center;
     background-repeat: no-repeat;
@@ -1109,6 +1139,9 @@
         height: 58px;
         width: 58px;
         border-radius: 29px; } }
+    @media (min-width: 1400px) {
+      .section-el-header__icon {
+        margin: 2vw 0 3vw 0; } }
   .section-el-header__text {
     padding-left: 4px;
     text-transform: capitalize;
@@ -1128,6 +1161,10 @@
     @media (min-width: 1000px) {
       .section-el-header__text {
         font-size: 50px;
+        margin: 3vw 0 2vw 0; } }
+    @media (min-width: 1400px) {
+      .section-el-header__text {
+        font-size: 69px;
         margin: 3vw 0 2vw 0; } }
     @media (min-width: 600px) {
       .section-el-header__text_color-change {

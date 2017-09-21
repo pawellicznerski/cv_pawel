@@ -16,13 +16,13 @@
   }
   &__pic{
     background-color: $color__primary_black;
-    background-image: url("./components/cv-page/header/__header__contact-info__images/main-pic.png");
+    background-image: url("./components/cv-page/header/__header__contact-info__images/main2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     // height: 300px;
     @include mobile{
-      // height: 50vw;
+      background-image: url("./components/cv-page/header/__header__contact-info__images/main.jpg");
     };
   }
   &__about-me{

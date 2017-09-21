@@ -41,6 +41,12 @@
         // border: 1px solid red;
         height: $text-height-3;
       };
+      // @include desktop{
+      //   font-size: 120px;
+      //   line-height: 80px;
+      //   // border: 1px solid red;
+      //   height: $text-height-3;
+      // };
     }
   }
 }

@@ -9,6 +9,9 @@
     @include mobile{
       padding-bottom: 0;
     };
+    @include desktop{
+      margin: 8vw 0 2vw 0;
+    };
     &__icon{
       background-position: center;
       background-repeat: no-repeat;
@@ -33,6 +36,9 @@
         width: 58px;
         border-radius: 29px;
       };
+      @include desktop{
+        margin: 2vw 0 3vw 0;
+      };
     }
     &__text{
       padding-left: 4px;
@@ -53,6 +59,10 @@
      };
      @include laptop{
        font-size: 50px;
+       margin: 3vw 0 2vw 0;
+     };
+     @include desktop{
+       font-size: 69px;
        margin: 3vw 0 2vw 0;
      };
      //switch background and font color in case of different window size
