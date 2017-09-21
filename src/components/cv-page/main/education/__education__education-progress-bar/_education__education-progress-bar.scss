@@ -25,6 +25,9 @@
     width: 100%;
     min-height: 300px;
   };
+  @include desktop{
+    width: 90%;
+  };
 // the bars section is devided into three elements. Each has class el---------
   &__el{
     // border: 1px solid red;
@@ -44,7 +47,7 @@
       height: 13vw;
     };
     @include desktop{
-      min-height: 250px;
+      min-height: 210px;
     };
 // each element has four items each of them has class __item-----------
     &__item{
@@ -115,7 +118,7 @@
     font-size: 18px;
   };
   @include desktop{
-    font-size: 24px;
+    font-size: 26px;
   };
   &_color-background{
     font-weight: normal;

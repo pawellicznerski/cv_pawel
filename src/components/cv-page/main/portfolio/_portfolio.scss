@@ -33,7 +33,7 @@
   }
   //-------------------------------------LEFT SECTION or TOP
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,175px,white,black,180px,white,black,290px,240px);
+  @include section-text-mixin( black,white,175px,white,black,180px,white,black,290px,240px,white,black,340px,280px);
   &__content{
     background-color: $color__primary_white;
     height: 500px;
@@ -76,6 +76,10 @@
     @include tablet{
       margin-top: 1vw;
     };
+    @include desktop{
+      width: 80%;
+      height: 80px;
+    };
 
     &__no{
       width: 12%;
@@ -90,6 +94,10 @@
         background-color: $color__primary_black;
         color: $color__primary_white;
         width: 11.5%;
+      };
+      @include desktop{
+        font-size: 48px;
+        line-height: 48px;
       };
     }
     &__main{
@@ -149,6 +157,9 @@
           padding-top: 5px;
           font-size: 23px;
         };
+        @include desktop{
+          height: 70px;
+        };
         @each $i in ultramarathon, cvproject, findyourfilm {
           &_#{$i}{
             background-image: url('./components/cv-page/main/portfolio/images/#{$i}.png');
@@ -164,7 +175,12 @@
           @include tablet{
             font-size: 20.5px;
             line-height: 20px;
-            padding: 15px 0 0 0;
+            padding-top: 15px;
+          };
+          @include desktop{
+            font-size: 25px;
+            line-height: 25px;
+            padding-top: 15px;
           };
         }
       }
@@ -194,6 +210,11 @@
           width: 44px;
           height: 44px;
           font-size: 13.5px;
+        };
+        @include desktop{
+          width: 50px;
+          height: 50px;
+          font-size: 15px;
         };
         @each $i in ultramarathon {
           &_#{$i}{

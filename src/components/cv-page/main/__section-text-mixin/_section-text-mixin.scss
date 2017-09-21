@@ -4,6 +4,7 @@
   $text-background-color,$text-color,$text-width,
   $text-background-color-2,$text-color-2,$text-width-2,
   $text-background-color-3,$text-color-3,$text-width-3,$text-height-3
+  $text-background-color-4,$text-color-4,$text-width-4,$text-height-4
   ) {
   &__text{
     display: flex;
@@ -41,12 +42,14 @@
         // border: 1px solid red;
         height: $text-height-3;
       };
-      // @include desktop{
-      //   font-size: 120px;
-      //   line-height: 80px;
-      //   // border: 1px solid red;
-      //   height: $text-height-3;
-      // };
+      @include desktop{
+        color: $text-color-4;//--------------
+        width: $text-width-4;//------------------
+        font-size: 150px;
+        line-height: 100px;
+        // border: 1px solid red;
+        height: $text-height-4;
+      };
     }
   }
 }

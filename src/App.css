@@ -77,6 +77,9 @@
         @media (min-width: 600px) {
           .header__about-me__me_profession {
             font-size: 12px; } }
+        @media (min-width: 1400px) {
+          .header__about-me__me_profession {
+            font-size: 20px; } }
     .header__about-me__contact-info {
       display: flex;
       flex-direction: column;
@@ -90,6 +93,9 @@
       @media (min-width: 760px) {
         .header__about-me__contact-info {
           width: 300px; } }
+      @media (min-width: 1400px) {
+        .header__about-me__contact-info {
+          font-size: 20px; } }
       .header__about-me__contact-info__item {
         display: flex;
         justify-content: flex-start;
@@ -133,6 +139,9 @@
           width: 70%;
           font-size: 14px;
           margin-bottom: 3vw; } }
+      @media (min-width: 1400px) {
+        .header__about-me__welcome-text {
+          font-size: 20px; } }
 
 .portfolio {
   width: 100vw;
@@ -215,6 +224,10 @@
     @media (min-width: 760px) {
       .portfolio__projects__project {
         margin-top: 1vw; } }
+    @media (min-width: 1400px) {
+      .portfolio__projects__project {
+        width: 80%;
+        height: 80px; } }
     .portfolio__projects__project__no {
       width: 12%;
       background-color: #fdfdfd;
@@ -229,6 +242,10 @@
           background-color: #000005;
           color: #fdfdfd;
           width: 11.5%; } }
+      @media (min-width: 1400px) {
+        .portfolio__projects__project__no {
+          font-size: 48px;
+          line-height: 48px; } }
     .portfolio__projects__project__main {
       width: 85%;
       position: relative;
@@ -324,6 +341,9 @@
             width: 63%;
             padding-top: 5px;
             font-size: 23px; } }
+        @media (min-width: 1400px) {
+          .portfolio__projects__project__main__icon {
+            height: 70px; } }
         .portfolio__projects__project__main__icon_ultramarathon {
           background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.png"); }
         .portfolio__projects__project__main__icon_cvproject {
@@ -341,7 +361,12 @@
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 20.5px;
               line-height: 20px;
-              padding: 15px 0 0 0; } }
+              padding-top: 15px; } }
+          @media (min-width: 1400px) {
+            .portfolio__projects__project__main__icon_pawellicznerski {
+              font-size: 25px;
+              line-height: 25px;
+              padding-top: 15px; } }
       .portfolio__projects__project__main__link {
         font: bold 15px 'rokkitt',serif;
         width: 50px;
@@ -369,6 +394,11 @@
             width: 44px;
             height: 44px;
             font-size: 13.5px; } }
+        @media (min-width: 1400px) {
+          .portfolio__projects__project__main__link {
+            width: 50px;
+            height: 50px;
+            font-size: 15px; } }
         .portfolio__projects__project__main__link_ultramarathon {
           background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.svg"); }
         .portfolio__projects__project__main__link:hover {
@@ -448,6 +478,9 @@
     @media (min-width: 760px) {
       .competence-bars__el {
         padding: 8px 0; } }
+    @media (min-width: 1400px) {
+      .competence-bars__el {
+        padding: 11px 0; } }
     .competence-bars__el__text {
       padding: 0 5px 0 18px;
       font-size: 15px;
@@ -459,6 +492,10 @@
         .competence-bars__el__text {
           padding-left: 2vw;
           font-size: 27px; } }
+      @media (min-width: 1400px) {
+        .competence-bars__el__text {
+          padding-left: 3vw;
+          font-size: 30px; } }
     .competence-bars__el__bar {
       width: 50%;
       height: 14px;
@@ -518,6 +555,9 @@
     .education__education-progress-bar {
       width: 100%;
       min-height: 300px; } }
+  @media (min-width: 1400px) {
+    .education__education-progress-bar {
+      width: 90%; } }
   .education__education-progress-bar__el {
     list-style-type: none;
     position: relative;
@@ -536,7 +576,7 @@
         height: 13vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
-        min-height: 250px; } }
+        min-height: 210px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -602,7 +642,7 @@
         font-size: 18px; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar .education__education-progress-bar__el__item__text {
-        font-size: 24px; } }
+        font-size: 26px; } }
     .education__education-progress-bar .education__education-progress-bar__el__item__text_color-background {
       font-weight: normal;
       color: #fdfdfd;
@@ -844,7 +884,7 @@
           font-size: 20px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_title {
-          min-height: 25px; } }
+          font-size: 25px; } }
     .experience__content__section__el__text_main {
       margin: 3px;
       background-color: inherit;
@@ -863,7 +903,7 @@
           font-size: 18px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_main {
-          min-height: 24px; } }
+          font-size: 24px; } }
     .experience__content__section__el__text_date {
       padding: 3px 3px 3px 6px;
       order: 2;
@@ -885,7 +925,7 @@
           font-size: 22px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_date {
-          min-height: 26px; } }
+          font-size: 26px; } }
 
 .experience__content__section__el__text_arrow::before {
   width: 14px;
@@ -1098,6 +1138,34 @@
           width: 132px;
           height: 132px;
           position: absolute; } }
+    @media (min-width: 1400px) {
+      .interests__content .interests__cirles_item_dark-main {
+        font-size: 26.4px;
+        width: 240px;
+        height: 240px;
+        border: 8px solid #bfc215;
+        position: relative; }
+        .interests__content .interests__cirles_item_dark-main_lightest {
+          font-size: 21.6px;
+          left: -141.6px;
+          top: 84px;
+          width: 168px;
+          height: 168px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 26.4px;
+          left: -88.8px;
+          top: -24px;
+          width: 144px;
+          height: 144px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_darkest {
+          font-size: 26.4px;
+          right: -88.8px;
+          top: 132px;
+          width: 144px;
+          height: 144px;
+          position: absolute; } }
 
 .section-el-header {
   padding-bottom: 10px;
@@ -1109,7 +1177,7 @@
       padding-bottom: 0; } }
   @media (min-width: 1400px) {
     .section-el-header {
-      margin: 8vw 0 2vw 0; } }
+      margin: 5vw 0 2vw 0; } }
   .section-el-header__icon {
     background-position: center;
     background-repeat: no-repeat;

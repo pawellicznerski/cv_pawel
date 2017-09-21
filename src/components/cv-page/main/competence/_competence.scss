@@ -15,7 +15,7 @@
     };
   }
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,175px,black,white,180px,black,white,290px,240px);
+  @include section-text-mixin( black,white,175px,black,white,180px,black,white,290px,240px,black,white,350px,300px);
   &__content{
     background-color: white;
   }
@@ -41,6 +41,9 @@
     @include tablet{
       padding: 8px 0;
     };
+    @include desktop{
+      padding: 11px 0;
+    };
     &__text{
       // border: 1px solid blue;
       padding: 0 5px 0 18px;
@@ -52,6 +55,10 @@
       @include laptop{
         padding-left: 2vw;
         font-size: 27px;
+      };
+      @include desktop{
+        padding-left: 3vw;
+        font-size: 30px;
       };
     }
     &__bar{
