@@ -47,7 +47,7 @@
       height: 13vw;
     };
     @include desktop{
-      min-height: 110px;
+      height: auto;
     };
 // each element has four items each of them has class __item-----------
     &__item{

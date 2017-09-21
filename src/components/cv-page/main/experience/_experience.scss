@@ -16,7 +16,7 @@
     };
   }
   //mixin where was pass correspondingly: color,background-color,width,height.
-  @include section-text-mixin( black,white,259px/*mobile*/,black,white,259px/*tablet*/,black,white,340px,310px/*laptop*/,black,white,490px,440px/*laptop*/);
+  @include section-text-mixin( black,white,259px/*mobile*/,black,white,259px/*tablet*/,black,white,340px,310px/*laptop*/,black,white,510px,475px/*laptop*/);
 }
   .experience__content{
     background-color: $color__primary_white;
