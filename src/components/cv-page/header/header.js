@@ -32,7 +32,7 @@ export class Header extends Component {
             </div>
             <div className="header__about-me__contact-info__item">
               <div className="header__about-me__contact-info__item__icon header__about-me__contact-info__item__icon_address"></div>
-              <p className="header__about-me__contact-info__item__text header__about-me__contact-info__item__text_last">87-162 Lubicz Dolny ul.toruńska 55 (chętnie sie przeprowadzę)</p>
+              <p className="header__about-me__contact-info__item__text header__about-me__contact-info__item__text_last">87-162 Lubicz Dolny ul.Toruńska 55 (chętnie sie przeprowadzę)</p>
             </div>
           </div>
 
