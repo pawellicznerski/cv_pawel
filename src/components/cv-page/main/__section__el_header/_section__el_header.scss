@@ -5,12 +5,12 @@
     background-color: rgba(10,10,10,0);
     display: flex;
     justify-content: center;
-    // border: 1px solid blue;
+    border: 1px solid blue;
     @include mobile{
       padding-bottom: 0;
     };
     @include desktop{
-      margin: 5vw 0 2vw 0;
+      margin: 2.5vw 0 1vw 0;
     };
     &__icon{
       background-position: center;
@@ -37,7 +37,7 @@
         border-radius: 29px;
       };
       @include desktop{
-        margin: 1.5vw 0 3vw 0;
+        margin: 2vw 0 3vw 0;
       };
     }
     &__text{
