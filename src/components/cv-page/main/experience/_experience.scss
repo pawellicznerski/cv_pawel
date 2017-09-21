@@ -69,7 +69,7 @@
         min-height: 220px;
       };
       @include desktop{
-        min-height: 250px;
+        min-height: 260px;
       };
       &__text_title{
         margin: 3px;
@@ -89,6 +89,7 @@
         };
         @include desktop{
           font-size: 25px;
+          font-weight: bold;
         };
       }
       &__text_main{
@@ -108,7 +109,7 @@
           font-size: 18px;
         };
         @include desktop{
-          font-size: 24px;
+          font-size: 21px;
         };
       }
       &__text_date{
@@ -131,7 +132,7 @@
             font-size: 22px;
           };
           @include desktop{
-            font-size: 26px;
+            font-size: 29px;
           };
         }
     }
