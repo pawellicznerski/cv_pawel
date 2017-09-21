@@ -26,8 +26,9 @@
       background-position: -20px 0; }
       @media (min-width: 600px) {
         .header__pic_style {
-          width: 60%;
-          height: 60%; } }
+          width: 70%;
+          height: 70%;
+          margin-bottom: 2vw; } }
   .header__about-me {
     background-color: #fdfdfd;
     display: flex;
