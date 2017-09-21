@@ -169,6 +169,7 @@
     .portfolio__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
+      border: 1px solid red;
       width: 175px;
       height: 180px;
       font-size: 74px;
@@ -190,10 +191,10 @@
       @media (min-width: 1400px) {
         .portfolio__text_break {
           color: black;
-          width: 340px;
-          font-size: 170px;
+          width: 350px;
+          font-size: 180px;
           line-height: 120px;
-          height: 280px; } }
+          height: 340px; } }
   .portfolio__content {
     background-color: #fdfdfd;
     height: 500px; }
@@ -449,6 +450,7 @@
     .competence__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
+      border: 1px solid red;
       width: 175px;
       height: 180px;
       font-size: 74px;
@@ -470,10 +472,10 @@
       @media (min-width: 1400px) {
         .competence__text_break {
           color: white;
-          width: 350px;
-          font-size: 170px;
+          width: 310px;
+          font-size: 180px;
           line-height: 120px;
-          height: 300px; } }
+          height: 340px; } }
   .competence__content {
     background-color: white; }
 
@@ -498,7 +500,7 @@
         padding: 8px 0; } }
     @media (min-width: 1400px) {
       .competence-bars__el {
-        padding: 11px 0; } }
+        padding: 14px 0; } }
     .competence-bars__el__text {
       padding: 0 5px 0 18px;
       font-size: 15px;
@@ -594,7 +596,7 @@
         height: 13vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
-        min-height: 180px; } }
+        min-height: 140px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -762,6 +764,7 @@
     .education__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
+      border: 1px solid red;
       width: 190px;
       height: 180px;
       font-size: 74px;
@@ -782,11 +785,11 @@
           height: 240px; } }
       @media (min-width: 1400px) {
         .education__text_break {
-          color: white;
-          width: 350px;
-          font-size: 170px;
+          color: black;
+          width: 360px;
+          font-size: 180px;
           line-height: 120px;
-          height: 290px; } }
+          height: 330px; } }
   .education__content {
     background-color: white;
     display: flex;
@@ -825,6 +828,7 @@
     .experience__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
+      border: 1px solid red;
       width: 259px;
       height: 180px;
       font-size: 74px;
@@ -846,10 +850,10 @@
       @media (min-width: 1400px) {
         .experience__text_break {
           color: white;
-          width: 400px;
-          font-size: 170px;
+          width: 440px;
+          font-size: 180px;
           line-height: 120px;
-          height: 350px; } }
+          height: 400px; } }
 
 .experience__content {
   background-color: #fdfdfd;
@@ -1009,6 +1013,7 @@
     .interests__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
+      border: 1px solid red;
       width: 290px;
       height: 180px;
       font-size: 74px;
@@ -1030,10 +1035,10 @@
       @media (min-width: 1400px) {
         .interests__text_break {
           color: black;
-          width: 410px;
-          font-size: 170px;
+          width: 480px;
+          font-size: 180px;
           line-height: 120px;
-          height: 350px; } }
+          height: 420px; } }
   @media (min-width: 600px) {
     .interests__content {
       background-color: black;
@@ -1081,7 +1086,7 @@
         height: 112px;
         position: absolute; }
       .interests__content .interests__cirles_item_dark-main_light {
-        font-size: 17.6px;
+        font-size: 17.12px;
         left: -59.2px;
         top: -16px;
         width: 96px;
@@ -1109,7 +1114,7 @@
           height: 98px;
           position: absolute; }
         .interests__content .interests__cirles_item_dark-main_light {
-          font-size: 15.4px;
+          font-size: 14.98px;
           left: -51.8px;
           top: -14px;
           width: 84px;
@@ -1137,7 +1142,7 @@
           height: 126px;
           position: absolute; }
         .interests__content .interests__cirles_item_dark-main_light {
-          font-size: 19.8px;
+          font-size: 19.26px;
           left: -66.6px;
           top: -18px;
           width: 108px;
@@ -1165,7 +1170,7 @@
           height: 154px;
           position: absolute; }
         .interests__content .interests__cirles_item_dark-main_light {
-          font-size: 24.2px;
+          font-size: 23.54px;
           left: -81.4px;
           top: -22px;
           width: 132px;
@@ -1180,31 +1185,31 @@
           position: absolute; } }
     @media (min-width: 1400px) {
       .interests__content .interests__cirles_item_dark-main {
-        font-size: 30.8px;
-        width: 280px;
-        height: 280px;
+        font-size: 31.9px;
+        width: 290px;
+        height: 290px;
         border: 8px solid #bfc215;
         position: relative; }
         .interests__content .interests__cirles_item_dark-main_lightest {
-          font-size: 25.2px;
-          left: -165.2px;
-          top: 98px;
-          width: 196px;
-          height: 196px;
+          font-size: 26.1px;
+          left: -171.1px;
+          top: 101.5px;
+          width: 203px;
+          height: 203px;
           position: absolute; }
         .interests__content .interests__cirles_item_dark-main_light {
-          font-size: 30.8px;
-          left: -103.6px;
-          top: -28px;
-          width: 168px;
-          height: 168px;
+          font-size: 31.03px;
+          left: -107.3px;
+          top: -29px;
+          width: 174px;
+          height: 174px;
           position: absolute; }
         .interests__content .interests__cirles_item_dark-main_darkest {
-          font-size: 30.8px;
-          right: -103.6px;
-          top: 154px;
-          width: 168px;
-          height: 168px;
+          font-size: 31.9px;
+          right: -107.3px;
+          top: 159.5px;
+          width: 174px;
+          height: 174px;
           position: absolute; } }
 
 .section-el-header {

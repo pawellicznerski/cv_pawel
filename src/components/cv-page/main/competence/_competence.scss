@@ -15,7 +15,7 @@
     };
   }
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,175px,black,white,180px,black,white,290px,240px,black,white,350px,300px);
+  @include section-text-mixin( black,white,175px,black,white,180px,black,white,290px,240px,black,white,310px,340px);
   &__content{
     background-color: white;
   }
@@ -42,7 +42,7 @@
       padding: 8px 0;
     };
     @include desktop{
-      padding: 11px 0;
+      padding: 14px 0;
     };
     &__text{
       // border: 1px solid blue;

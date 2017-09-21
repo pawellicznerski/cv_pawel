@@ -20,7 +20,7 @@
       position: absolute;
     }
     &_light{
-      font-size: $biggestCircleSize*0.11;
+      font-size: $biggestCircleSize*0.107;
       left: -$biggestCircleSize*0.37;
       top:-$biggestCircleSize*0.1;
       width: $biggestCircleSize*0.6;
@@ -55,7 +55,7 @@
     };
   }
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,290px,white,black,290px,white,black,370px,320px,white,black,410px,350px);
+  @include section-text-mixin( black,white,290px,white,black,290px,white,black,370px,320px,white,black,480px,420px);
   &__content{
     @include mobile{
       background-color: black;
@@ -107,7 +107,7 @@
         @include circles(220px);
       };
       @include desktop{
-        @include circles(280px);
+        @include circles(290px);
       };
     }
   }
