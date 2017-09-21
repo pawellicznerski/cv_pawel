@@ -32,18 +32,18 @@ export class Experience extends Component {
 
           <div className="experience__content__chart">
             <div className="experience__content__section experience__content__section_left">
-              <Job company="Manpower/Sharp Polska" year="2011-2012" arrow="left"
+              <Job company="Manpower/Sharp Polska" year="2011 - 2012" arrow="left"
                 duties="Kontroler jakości: kontrolowanie prawidłowości procesu produkcji i jakości komponentów do telewizorów."
                 />
-              <Job company="Esada Błażej Martuszewski" year="2013-2016" arrow="left"
+              <Job company="Esada Błażej Martuszewski" year="2013 - 2016" arrow="left"
                 duties="Logistyk/operator vendingowy: zamawianie towaru, organizacja pracy pracowników."
                 />
             </div>
             <div className="experience__content__section experience__content__section_right">
-              <Job company="Własna firma P.H. Paweł Licznerski" year="2012-2013" arrow="right"
+              <Job company="Własna firma P.H. Paweł Licznerski" year="2012 - 2013" arrow="right"
                 duties="Firma vendingowa jednoosobowa, zajmująca się sprzedażą kanapek z automatów."
                 />
-              <Job company="Limito S.A." year="2016-2017" arrow="right"
+              <Job company="Limito S.A." year="2016 - 2017" arrow="right"
                 duties="Spec. ds. zakupów: dokonywanie zakupów opakowao do łososia, negocjacja cen."
                 />
             </div>
