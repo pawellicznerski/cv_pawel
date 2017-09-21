@@ -191,7 +191,7 @@
       @media (min-width: 1400px) {
         .portfolio__text_break {
           color: black;
-          width: 390px;
+          width: 400px;
           font-size: 180px;
           line-height: 120px;
           height: 380px; } }
@@ -472,7 +472,7 @@
       @media (min-width: 1400px) {
         .competence__text_break {
           color: white;
-          width: 380px;
+          width: 400px;
           font-size: 180px;
           line-height: 120px;
           height: 380px; } }
@@ -566,7 +566,8 @@
   width: 290px;
   min-height: 300px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid yellow; }
   @media (min-width: 600px) {
     .education__education-progress-bar {
       flex-direction: column;
@@ -579,6 +580,7 @@
     .education__education-progress-bar {
       width: 90%; } }
   .education__education-progress-bar__el {
+    border: 1px solid red;
     list-style-type: none;
     position: relative;
     padding: 0;
@@ -596,11 +598,12 @@
         height: 13vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
-        min-height: 140px; } }
+        min-height: 110px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
       min-width: 18px;
+      border: 1px solid blue;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -786,7 +789,7 @@
       @media (min-width: 1400px) {
         .education__text_break {
           color: black;
-          width: 390px;
+          width: 410px;
           font-size: 180px;
           line-height: 120px;
           height: 380px; } }
@@ -850,10 +853,10 @@
       @media (min-width: 1400px) {
         .experience__text_break {
           color: white;
-          width: 460px;
+          width: 490px;
           font-size: 180px;
           line-height: 120px;
-          height: 420px; } }
+          height: 440px; } }
 
 .experience__content {
   background-color: #fdfdfd;
@@ -1035,7 +1038,7 @@
       @media (min-width: 1400px) {
         .interests__text_break {
           color: black;
-          width: 480px;
+          width: 520px;
           font-size: 180px;
           line-height: 120px;
           height: 480px; } }
