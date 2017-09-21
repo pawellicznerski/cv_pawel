@@ -3,7 +3,7 @@
 @mixin section-text-mixin(
   $text-background-color,$text-color,$text-width,
   $text-background-color-2,$text-color-2,$text-width-2,
-  $text-background-color-3,$text-color-3,$text-width-3,$text-height-3
+  $text-background-color-3,$text-color-3,$text-width-3,$text-height-3,
   $text-background-color-4,$text-color-4,$text-width-4,$text-height-4
   ) {
   &__text{

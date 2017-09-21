@@ -187,6 +187,13 @@
           font-size: 120px;
           line-height: 80px;
           height: 240px; } }
+      @media (min-width: 1400px) {
+        .portfolio__text_break {
+          color: black;
+          width: 340px;
+          font-size: 170px;
+          line-height: 120px;
+          height: 280px; } }
   .portfolio__content {
     background-color: #fdfdfd;
     height: 500px; }
@@ -210,6 +217,9 @@
     .portfolio__projects {
       width: 100%;
       height: 85%; } }
+  @media (min-width: 1400px) {
+    .portfolio__projects {
+      height: 80%; } }
   .portfolio__projects__project {
     margin-top: 15px;
     width: 90%;
@@ -227,7 +237,7 @@
     @media (min-width: 1400px) {
       .portfolio__projects__project {
         width: 80%;
-        height: 80px; } }
+        height: 70px; } }
     .portfolio__projects__project__no {
       width: 12%;
       background-color: #fdfdfd;
@@ -339,11 +349,12 @@
           .portfolio__projects__project__main__icon {
             height: 50px;
             width: 63%;
-            padding-top: 5px;
             font-size: 23px; } }
         @media (min-width: 1400px) {
           .portfolio__projects__project__main__icon {
-            height: 70px; } }
+            padding-top: 12px;
+            height: 65px;
+            font-size: 27px; } }
         .portfolio__projects__project__main__icon_ultramarathon {
           background-image: url("./components/cv-page/main/portfolio/images/ultramarathon.png"); }
         .portfolio__projects__project__main__icon_cvproject {
@@ -366,7 +377,7 @@
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 25px;
               line-height: 25px;
-              padding-top: 15px; } }
+              padding-top: 22px; } }
       .portfolio__projects__project__main__link {
         font: bold 15px 'rokkitt',serif;
         width: 50px;
@@ -456,6 +467,13 @@
           font-size: 120px;
           line-height: 80px;
           height: 240px; } }
+      @media (min-width: 1400px) {
+        .competence__text_break {
+          color: white;
+          width: 350px;
+          font-size: 170px;
+          line-height: 120px;
+          height: 300px; } }
   .competence__content {
     background-color: white; }
 
@@ -576,7 +594,7 @@
         height: 13vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
-        min-height: 210px; } }
+        min-height: 180px; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -762,6 +780,13 @@
           font-size: 120px;
           line-height: 80px;
           height: 240px; } }
+      @media (min-width: 1400px) {
+        .education__text_break {
+          color: white;
+          width: 350px;
+          font-size: 170px;
+          line-height: 120px;
+          height: 290px; } }
   .education__content {
     background-color: white;
     display: flex;
@@ -818,6 +843,13 @@
           font-size: 120px;
           line-height: 80px;
           height: 310px; } }
+      @media (min-width: 1400px) {
+        .experience__text_break {
+          color: white;
+          width: 400px;
+          font-size: 170px;
+          line-height: 120px;
+          height: 350px; } }
 
 .experience__content {
   background-color: #fdfdfd;
@@ -865,7 +897,7 @@
         min-height: 220px; } }
     @media (min-width: 1400px) {
       .experience__content__section__el {
-        min-height: 250px; } }
+        min-height: 260px; } }
     .experience__content__section__el__text_title {
       margin: 3px;
       background-color: inherit;
@@ -884,7 +916,8 @@
           font-size: 20px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_title {
-          font-size: 25px; } }
+          font-size: 25px;
+          font-weight: bold; } }
     .experience__content__section__el__text_main {
       margin: 3px;
       background-color: inherit;
@@ -903,7 +936,7 @@
           font-size: 18px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_main {
-          font-size: 24px; } }
+          font-size: 21px; } }
     .experience__content__section__el__text_date {
       padding: 3px 3px 3px 6px;
       order: 2;
@@ -925,7 +958,7 @@
           font-size: 22px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_date {
-          font-size: 26px; } }
+          font-size: 29px; } }
 
 .experience__content__section__el__text_arrow::before {
   width: 14px;
@@ -994,6 +1027,13 @@
           font-size: 120px;
           line-height: 80px;
           height: 320px; } }
+      @media (min-width: 1400px) {
+        .interests__text_break {
+          color: black;
+          width: 410px;
+          font-size: 170px;
+          line-height: 120px;
+          height: 350px; } }
   @media (min-width: 600px) {
     .interests__content {
       background-color: black;
@@ -1140,44 +1180,45 @@
           position: absolute; } }
     @media (min-width: 1400px) {
       .interests__content .interests__cirles_item_dark-main {
-        font-size: 26.4px;
-        width: 240px;
-        height: 240px;
+        font-size: 30.8px;
+        width: 280px;
+        height: 280px;
         border: 8px solid #bfc215;
         position: relative; }
         .interests__content .interests__cirles_item_dark-main_lightest {
-          font-size: 21.6px;
-          left: -141.6px;
-          top: 84px;
+          font-size: 25.2px;
+          left: -165.2px;
+          top: 98px;
+          width: 196px;
+          height: 196px;
+          position: absolute; }
+        .interests__content .interests__cirles_item_dark-main_light {
+          font-size: 30.8px;
+          left: -103.6px;
+          top: -28px;
           width: 168px;
           height: 168px;
           position: absolute; }
-        .interests__content .interests__cirles_item_dark-main_light {
-          font-size: 26.4px;
-          left: -88.8px;
-          top: -24px;
-          width: 144px;
-          height: 144px;
-          position: absolute; }
         .interests__content .interests__cirles_item_dark-main_darkest {
-          font-size: 26.4px;
-          right: -88.8px;
-          top: 132px;
-          width: 144px;
-          height: 144px;
+          font-size: 30.8px;
+          right: -103.6px;
+          top: 154px;
+          width: 168px;
+          height: 168px;
           position: absolute; } }
 
 .section-el-header {
   padding-bottom: 10px;
-  background-color: rgba(10, 10, 10, 0);
+  background-color: rgba(10, 10, 100, 0);
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border: 1px solid blue; }
   @media (min-width: 600px) {
     .section-el-header {
       padding-bottom: 0; } }
   @media (min-width: 1400px) {
     .section-el-header {
-      margin: 5vw 0 2vw 0; } }
+      margin: 2.5vw 0 1vw 0; } }
   .section-el-header__icon {
     background-position: center;
     background-repeat: no-repeat;
