@@ -30,5 +30,8 @@
       background-color: black;
       height: 50vw;
     };
+    @include mobile{
+      justify-content: flex-start;
+    };
   }
 }

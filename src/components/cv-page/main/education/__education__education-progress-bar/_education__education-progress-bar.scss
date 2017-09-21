@@ -48,6 +48,7 @@
     };
     @include desktop{
       height: auto;
+      width:95%;
     };
 // each element has four items each of them has class __item-----------
     &__item{

@@ -55,10 +55,10 @@
     };
   }
   //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,290px,white,black,290px,white,black,370px,320px,white,black,540px,480px);
+  @include section-text-mixin( black,white,290px,white,black,290px,white,black,370px,320px,white,black,560px,480px);
   &__content{
     @include mobile{
-      background-color: black;
+      background-color: $color__primary_black;
       height: 50vw;
     };
   }

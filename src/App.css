@@ -191,7 +191,7 @@
       @media (min-width: 1400px) {
         .portfolio__text_break {
           color: black;
-          width: 410px;
+          width: 420px;
           font-size: 180px;
           line-height: 120px;
           height: 380px; } }
@@ -598,7 +598,8 @@
         height: 13vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
-        height: auto; } }
+        height: auto;
+        width: 95%; } }
     .education__education-progress-bar__el__item {
       margin: 0 9px;
       height: 100px;
@@ -804,6 +805,9 @@
       .education__content {
         background-color: black;
         height: 50vw; } }
+    @media (min-width: 600px) {
+      .education__content {
+        justify-content: flex-start; } }
 
 .experience {
   width: 100vw;
@@ -1038,13 +1042,13 @@
       @media (min-width: 1400px) {
         .interests__text_break {
           color: black;
-          width: 540px;
+          width: 560px;
           font-size: 180px;
           line-height: 120px;
           height: 480px; } }
   @media (min-width: 600px) {
     .interests__content {
-      background-color: black;
+      background-color: #000005;
       height: 50vw; } }
 
 .interests__content {
