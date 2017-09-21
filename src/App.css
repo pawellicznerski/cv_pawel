@@ -984,7 +984,8 @@
           font-size: 22px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_date {
-          font-size: 36px; } }
+          font-size: 36px;
+          line-height: 37px; } }
 
 .experience__content__section__el__text_arrow::before {
   width: 14px;
