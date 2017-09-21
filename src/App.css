@@ -10,14 +10,24 @@
         width: 50%;
         height: 50vw; } }
   .header__pic {
-    background-color: #000005;
-    background-image: url("./components/cv-page/header/__header__contact-info__images/main2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-    @media (min-width: 600px) {
-      .header__pic {
-        background-image: url("./components/cv-page/header/__header__contact-info__images/main.jpg"); } }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000005; }
+    .header__pic_style {
+      width: 270px;
+      height: 270px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: #000005;
+      background-image: url("./components/cv-page/header/__header__contact-info__images/main.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -20px 0; }
+      @media (min-width: 600px) {
+        .header__pic_style {
+          width: 60%;
+          height: 60%; } }
   .header__about-me {
     background-color: #fdfdfd;
     display: flex;
@@ -71,6 +81,9 @@
         @media (min-width: 1000px) {
           .header__about-me__me_name {
             font-size: 50px; } }
+        @media (min-width: 1400px) {
+          .header__about-me__me_name {
+            font-size: 69px; } }
       .header__about-me__me_profession {
         font-size: 15px;
         text-transform: uppercase; }
@@ -79,7 +92,7 @@
             font-size: 12px; } }
         @media (min-width: 1400px) {
           .header__about-me__me_profession {
-            font-size: 20px; } }
+            font-size: 25px; } }
     .header__about-me__contact-info {
       display: flex;
       flex-direction: column;
@@ -95,7 +108,8 @@
           width: 300px; } }
       @media (min-width: 1400px) {
         .header__about-me__contact-info {
-          font-size: 20px; } }
+          font-size: 25px;
+          width: 450px; } }
       .header__about-me__contact-info__item {
         display: flex;
         justify-content: flex-start;
@@ -119,6 +133,13 @@
           min-width: 25px;
           min-height: 25px;
           margin: 3px; }
+          @media (min-width: 1400px) {
+            .header__about-me__contact-info__item__icon {
+              border: 4px;
+              background-size: 25px 25px;
+              min-width: 35px;
+              min-height: 35px;
+              margin: 4px; } }
         .header__about-me__contact-info__item__icon_birth-date {
           background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_birth-date.svg"); }
         .header__about-me__contact-info__item__icon_phone {
@@ -141,7 +162,7 @@
           margin-bottom: 3vw; } }
       @media (min-width: 1400px) {
         .header__about-me__welcome-text {
-          font-size: 20px; } }
+          font-size: 25px; } }
 
 .portfolio {
   width: 100vw;
@@ -169,7 +190,6 @@
     .portfolio__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
-      border: 1px solid red;
       width: 175px;
       height: 180px;
       font-size: 74px;
@@ -450,7 +470,6 @@
     .competence__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
-      border: 1px solid red;
       width: 175px;
       height: 180px;
       font-size: 74px;
@@ -566,8 +585,7 @@
   width: 290px;
   min-height: 300px;
   display: flex;
-  flex-wrap: wrap;
-  border: 1px solid yellow; }
+  flex-wrap: wrap; }
   @media (min-width: 600px) {
     .education__education-progress-bar {
       flex-direction: column;
@@ -580,7 +598,6 @@
     .education__education-progress-bar {
       width: 90%; } }
   .education__education-progress-bar__el {
-    border: 1px solid red;
     list-style-type: none;
     position: relative;
     padding: 0;
@@ -604,7 +621,6 @@
       margin: 0 9px;
       height: 100px;
       min-width: 18px;
-      border: 1px solid blue;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -768,7 +784,6 @@
     .education__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
-      border: 1px solid red;
       width: 190px;
       height: 180px;
       font-size: 74px;
@@ -835,7 +850,6 @@
     .experience__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
-      border: 1px solid red;
       width: 259px;
       height: 180px;
       font-size: 74px;
@@ -969,7 +983,7 @@
           font-size: 22px; } }
       @media (min-width: 1400px) {
         .experience__content__section__el__text_date {
-          font-size: 29px; } }
+          font-size: 34px; } }
 
 .experience__content__section__el__text_arrow::before {
   width: 14px;
@@ -1020,7 +1034,6 @@
     .interests__text_break {
       color: white;
       font-family: 'Rokkitt', serif;
-      border: 1px solid red;
       width: 290px;
       height: 180px;
       font-size: 74px;
@@ -1221,8 +1234,7 @@
   padding-bottom: 10px;
   background-color: rgba(10, 10, 100, 0);
   display: flex;
-  justify-content: center;
-  border: 1px solid blue; }
+  justify-content: center; }
   @media (min-width: 600px) {
     .section-el-header {
       padding-bottom: 0; } }
@@ -1289,6 +1301,28 @@
       .section-el-header__text_color-change {
         color: #fdfdfd;
         background-color: #000005; } }
+
+.footer {
+  width: 100vw; }
+  @media (min-width: 600px) {
+    .footer {
+      display: flex;
+      flex-wrap: wrap; } }
+  .footer__section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    @media (min-width: 600px) {
+      .footer__section {
+        width: 50vw; } }
+    .footer__section_left {
+      background-color: #000005;
+      color: #fdfdfd;
+      font-size: 1em; }
+    .footer__section_right {
+      font-size: 0.8em; }
 
 .page {
   font-family: 'Lora', serif; }

@@ -15,16 +15,27 @@
     };
   }
   &__pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $color__primary_black;
-    background-image: url("./components/cv-page/header/__header__contact-info__images/main2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    // height: 300px;
-    @include mobile{
+    &_style{
+      width: 270px;
+      height: 270px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: $color__primary_black;
       background-image: url("./components/cv-page/header/__header__contact-info__images/main.jpg");
-    };
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -20px 0;
+      @include mobile{
+        width: 60%;
+        height: 60%;
+      };
+    }
   }
+
   &__about-me{
     // padding-left: 20px;
     background-color: $color__primary_white;
@@ -32,8 +43,6 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    @include mobile{
-    };
     &__cv{
       display: flex;
       align-items: center;
@@ -83,6 +92,9 @@
           // margin: 0vw 0 3vw 0;
           font-size: 50px;
         };
+        @include desktop{
+          font-size: 69px;
+        };
       }
       &_profession{
         font-size: 15px;
@@ -91,7 +103,7 @@
           font-size: 12px;
         };
         @include desktop{
-          font-size: 20px;
+          font-size: 25px;
         };
       }
     }
@@ -109,7 +121,8 @@
         width: 300px;
       };
       @include desktop{
-        font-size: 20px;
+        font-size: 25px;
+        width: 450px;
       };
       &__item{
         display: flex;
@@ -138,6 +151,14 @@
           min-width:25px;
           min-height:25px;
           margin: 3px;
+          @include desktop{
+            border: 4px;
+            background-size: 25px 25px;
+            min-width:35px;
+            min-height:35px;
+            margin: 4px;
+          };
+
         }
         @each $icon in birth-date, phone, e-mail, address{
           &__icon_#{$icon}{
@@ -159,7 +180,7 @@
         margin-bottom: 3vw;
       };
       @include desktop{
-        font-size: 20px;
+        font-size: 25px;
       };
     }
   }//about-me

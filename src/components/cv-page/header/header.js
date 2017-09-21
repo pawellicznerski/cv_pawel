@@ -6,7 +6,9 @@ export class Header extends Component {
     return (
       <div className="header">
 
-        <div  className="header__el header__pic"></div>
+        <div  className="header__el header__pic">
+          <div  className="header__pic_style"></div>
+        </div>
 
         <div  className="header__el header__about-me">
 
