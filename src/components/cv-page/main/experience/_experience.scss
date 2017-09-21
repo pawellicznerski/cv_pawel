@@ -116,7 +116,6 @@
         padding: 3px 3px 3px 6px;
         order: 2;
         width: 35%;
-        word-wrap: break-word;
         border-left: 2px solid $color__primary_white;
         background-color: inherit;
         font-weight: bold;
@@ -132,7 +131,7 @@
             font-size: 22px;
           };
           @include desktop{
-            font-size: 34px;
+            font-size: 36px;
           };
         }
     }

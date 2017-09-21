@@ -10,6 +10,12 @@
     height: $biggestCircleSize;
     border: 8px solid $color__primary_olive;
     position: relative;
+    @include tablet{
+      border: 14px solid $color__primary_olive;
+    };
+    @include desktop{
+      border: 18px solid $color__primary_olive;
+    };
     &_lightest{
       font-size: $biggestCircleSize*0.09;
       left: -$biggestCircleSize*0.59;
