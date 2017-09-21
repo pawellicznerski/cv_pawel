@@ -191,10 +191,10 @@
       @media (min-width: 1400px) {
         .portfolio__text_break {
           color: black;
-          width: 350px;
+          width: 390px;
           font-size: 180px;
           line-height: 120px;
-          height: 340px; } }
+          height: 380px; } }
   .portfolio__content {
     background-color: #fdfdfd;
     height: 500px; }
@@ -472,10 +472,10 @@
       @media (min-width: 1400px) {
         .competence__text_break {
           color: white;
-          width: 310px;
+          width: 380px;
           font-size: 180px;
           line-height: 120px;
-          height: 340px; } }
+          height: 380px; } }
   .competence__content {
     background-color: white; }
 
@@ -786,10 +786,10 @@
       @media (min-width: 1400px) {
         .education__text_break {
           color: black;
-          width: 360px;
+          width: 390px;
           font-size: 180px;
           line-height: 120px;
-          height: 330px; } }
+          height: 380px; } }
   .education__content {
     background-color: white;
     display: flex;
@@ -850,10 +850,10 @@
       @media (min-width: 1400px) {
         .experience__text_break {
           color: white;
-          width: 440px;
+          width: 460px;
           font-size: 180px;
           line-height: 120px;
-          height: 400px; } }
+          height: 420px; } }
 
 .experience__content {
   background-color: #fdfdfd;
@@ -1038,7 +1038,7 @@
           width: 480px;
           font-size: 180px;
           line-height: 120px;
-          height: 420px; } }
+          height: 480px; } }
   @media (min-width: 600px) {
     .interests__content {
       background-color: black;

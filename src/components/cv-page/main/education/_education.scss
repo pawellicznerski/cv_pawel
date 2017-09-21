@@ -18,7 +18,7 @@
     };
   }
 //mixin where was pass correspondingly: color,background-color,width,height in mobile,tablet and laptop.
-  @include section-text-mixin( black,white,190px,white,black,190px,white,black,290px,240px,white,black,360px,330px);
+  @include section-text-mixin( black,white,190px,white,black,190px,white,black,290px,240px,white,black,390px,380px);
   &__content{
     background-color: white;
     display: flex;
