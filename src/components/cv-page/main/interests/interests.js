@@ -10,11 +10,8 @@ export class Interests extends Component {
           <p className="interests__el interests__text_break">zainteresowania~</p>
         </div>
 
-        <div className="interests__el">
-          <div className="interests__content">
-
+        <div className="interests__el interests__content">
             <SectionElHeader text="Moje hobby" icon="interests" colorChange="true"/>
-
             <div className="interests__cirles">
               <div className="interests__cirles_item interests__cirles_item_dark-main">Front-end
                 <div className="interests__cirles_item interests__cirles_item_dark-main_lightest">Ultramaratony rowerowe</div>
@@ -22,8 +19,6 @@ export class Interests extends Component {
                 <div className="interests__cirles_item interests__cirles_item_dark-main_darkest">Kino</div>
               </div>
             </div>
-
-          </div>
         </div>
 
       </div>
