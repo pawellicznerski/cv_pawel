@@ -9,9 +9,7 @@ class Footer extends Component {
           &copy; Paweł Licznerski
         </p>
         <p className="footer__section footer__section_right">
-          Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w moim zgłoszeniu przez dla potrzeb niezbędnych
-          przy realizacji procesów rekrutacji prowadzonych przez PGS Software S.A. z siedzibą we Wrocławiu przy ul.Klecioskiej 123
-          (zgodnie z Ustawą z dnia 29.08.97 o Ochronie Danych Osobowych; tekst jednolity: DZ.U. z 2002 nr 133 poz.883 ze zm.)
+          Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). 
         </p>
       </div>
     );

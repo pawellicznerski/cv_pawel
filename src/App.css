@@ -593,7 +593,7 @@
       min-height: 244px; } }
   @media (min-width: 760px) {
     .education__education-progress-bar {
-      width: 100%;
+      width: 85%;
       min-height: 300px; } }
   @media (min-width: 1400px) {
     .education__education-progress-bar {
@@ -613,7 +613,7 @@
         height: 80px; } }
     @media (min-width: 760px) {
       .education__education-progress-bar__el {
-        height: 13vw; } }
+        height: 11.5vw; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar__el {
         height: auto;
@@ -680,7 +680,7 @@
         font-size: 14px; } }
     @media (min-width: 1000px) {
       .education__education-progress-bar .education__education-progress-bar__el__item__text {
-        font-size: 18px; } }
+        font-size: 19px; } }
     @media (min-width: 1400px) {
       .education__education-progress-bar .education__education-progress-bar__el__item__text {
         font-size: 26px; } }
@@ -905,7 +905,7 @@
     width: 42vw;
     min-height: 220px;
     max-height: 250px;
-    margin: 0 0 10px 10px;
+    margin: 0 0 2vw 10px;
     position: relative;
     display: flex;
     flex-wrap: wrap;

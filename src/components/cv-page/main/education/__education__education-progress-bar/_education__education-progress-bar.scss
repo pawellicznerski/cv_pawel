@@ -22,7 +22,7 @@
     min-height: 244px;
   };
   @include tablet{
-    width: 100%;
+    width: 85%;
     min-height: 300px;
   };
   @include desktop{
@@ -44,7 +44,7 @@
       height: 80px;
     };
     @include tablet{
-      height: 13vw;
+      height: 11.5vw;
     };
     @include desktop{
       height: auto;
@@ -116,7 +116,7 @@
     font-size: 14px;
   };
   @include laptop{
-    font-size: 18px;
+    font-size: 19px;
   };
   @include desktop{
     font-size: 26px;
