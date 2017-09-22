@@ -386,6 +386,9 @@
         .portfolio__projects__project__main__icon_pawellicznerski {
           font: normal 15px 'Rokkitt',cursive;
           padding-top: 10px; }
+          @media (max-width: 360px) {
+            .portfolio__projects__project__main__icon_pawellicznerski {
+              font-size: 12px; } }
           @media (min-width: 600px) {
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 13px;
