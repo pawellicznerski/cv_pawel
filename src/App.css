@@ -949,8 +949,7 @@
       background-color: inherit;
       order: 3;
       word-wrap: break-word;
-      color: #fdfdfd;
-      text-align: justify; }
+      color: #fdfdfd; }
       @media (min-width: 600px) {
         .experience__content__section__el__text_main {
           font-size: 11px; } }
@@ -970,7 +969,7 @@
       border-left: 2px solid #fdfdfd;
       background-color: inherit;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       word-wrap: break-word;
       color: #bfc215; }
       @media (min-width: 600px) {

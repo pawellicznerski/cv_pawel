@@ -19,10 +19,6 @@ export class Header extends Component {
 
           <div className="header__about-me__contact-info">
             <div className="header__about-me__contact-info__item">
-              <div className="header__about-me__contact-info__item__icon header__about-me__contact-info__item__icon_birth-date"></div>
-              <p className="header__about-me__contact-info__item__text">12/05/1984</p>
-            </div>
-            <div className="header__about-me__contact-info__item">
               <div className="header__about-me__contact-info__item__icon header__about-me__contact-info__item__icon_phone"></div>
                 <p className="header__about-me__contact-info__item__text">(+48) 663-969-898</p>
             </div>
@@ -43,3 +39,9 @@ export class Header extends Component {
     );
   }
 }
+
+
+// <div className="header__about-me__contact-info__item">
+//   <div className="header__about-me__contact-info__item__icon header__about-me__contact-info__item__icon_birth-date"></div>
+//   <p className="header__about-me__contact-info__item__text">12/05/1984</p>
+// </div>

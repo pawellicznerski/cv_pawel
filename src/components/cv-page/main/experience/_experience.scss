@@ -98,7 +98,6 @@
         order: 3;
         word-wrap: break-word;
         color: $color__primary_white;
-        text-align: justify;
         @include mobile{
           font-size: 11px;
         };
@@ -119,7 +118,7 @@
         border-left: 2px solid $color__primary_white;
         background-color: inherit;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         word-wrap: break-word;
         color: $color__primary_olive;
           @include mobile{
