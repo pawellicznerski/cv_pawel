@@ -1,9 +1,9 @@
 .header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .header__el {
-    width: 100vw;
+    width: 100%;
     height: 300px; }
     @media (min-width: 600px) {
       .header__el {
@@ -166,11 +166,11 @@
           font-size: 25px; } }
 
 .portfolio {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .portfolio__el {
-    width: 100vw;
+    width: 100%;
     height: 300px; }
     @media (min-width: 600px) {
       .portfolio__el {
@@ -449,15 +449,15 @@
     background-color: #fdfdfd; } }
 
 .competence {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .competence__el {
-    width: 100vw;
+    width: 100%;
     height: 300px; }
     @media (min-width: 600px) {
       .competence__el {
-        width: 50vw;
+        width: 50%;
         height: 50vw; } }
   .competence__text {
     display: flex;
@@ -763,15 +763,15 @@
           background-color: #000005; } }
 
 .education {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .education__el {
-    width: 100vw;
+    width: 100%;
     min-height: 300px; }
     @media (min-width: 600px) {
       .education__el {
-        width: 50vw;
+        width: 50%;
         height: 50vw; } }
   .education__text {
     display: flex;
@@ -829,11 +829,11 @@
         justify-content: flex-start; } }
 
 .experience {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .experience__el {
-    width: 100vw;
+    width: 100%;
     height: 300px; }
     @media (min-width: 600px) {
       .experience__el {
@@ -890,12 +890,12 @@
       height: 460px; } }
   @media (min-width: 600px) {
     .experience__content {
-      width: 50vw;
+      width: 50%;
       height: 56vw; } }
   .experience__content__chart {
     display: flex; }
   .experience__content__section {
-    width: 49vw;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -1025,15 +1025,15 @@
   top: 20px; }
 
 .interests {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .interests__el {
-    width: 100vw;
+    width: 100%;
     height: 300px; }
     @media (min-width: 600px) {
       .interests__el {
-        width: 50vw;
+        width: 50%;
         height: 50vw; } }
   .interests__text {
     display: flex;
@@ -1353,20 +1353,20 @@
         background-color: #000005; } }
 
 .footer {
-  width: 100vw; }
+  width: 100%; }
   @media (min-width: 600px) {
     .footer {
       display: flex;
       flex-wrap: wrap; } }
   .footer__section {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px; }
     @media (min-width: 600px) {
       .footer__section {
-        width: 50vw; } }
+        width: 50%; } }
     .footer__section_left {
       background-color: #000005;
       color: #fdfdfd;

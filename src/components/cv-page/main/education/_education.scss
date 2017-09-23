@@ -6,14 +6,14 @@
 @import "./__education__education-progress-bar/education__education-progress-bar.scss" ;
 
 .education{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   &__el{
-    width: 100vw;
+    width: 100%;
     min-height: 300px;
     @include mobile{
-      width: 50vw;
+      width: 50%;
       height: 50vw;
     };
   }

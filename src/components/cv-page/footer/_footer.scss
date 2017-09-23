@@ -2,19 +2,19 @@
 @import "./../_cv-page__base/_media-query-mixins";
 
 .footer{
-  width: 100vw;
+  width: 100%;
   @include mobile{
     display: flex;
     flex-wrap: wrap;
   };
   &__section{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     @include mobile{
-      width: 50vw;
+      width: 50%;
     };
     &_left{
       background-color: $color__primary_black;

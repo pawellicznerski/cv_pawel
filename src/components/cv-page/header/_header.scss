@@ -2,11 +2,11 @@
 @import "./../_cv-page__base/cv-page__base__variables.scss";
 
 .header{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   &__el{
-    width: 100vw;
+    width: 100%;
     height: 300px;
     // border: 1px solid green;
     @include mobile{
