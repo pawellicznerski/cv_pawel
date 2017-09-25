@@ -134,6 +134,9 @@
           min-width: 25px;
           min-height: 25px;
           margin: 3px; }
+          @media (min-width: 220px) and (max-width: 360px) {
+            .header__about-me__contact-info__item__icon {
+              margin: 10px; } }
           @media (min-width: 1400px) {
             .header__about-me__contact-info__item__icon {
               border: 4px;
@@ -153,6 +156,10 @@
         color: #153a54;
         padding: 10px;
         margin-left: 60px; }
+        @media (min-width: 220px) and (max-width: 360px) {
+          .header__about-me__contact-info__relocation-text {
+            font-size: 12px;
+            margin-left: 75px; } }
         @media (min-width: 600px) {
           .header__about-me__contact-info__relocation-text {
             margin-left: 35px; } }

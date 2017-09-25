@@ -152,6 +152,9 @@
           min-width:25px;
           min-height:25px;
           margin: 3px;
+          @include iphone{
+            margin: 10px;
+          };
           @include desktop{
             border: 4px;
             background-size: 25px 25px;
@@ -171,6 +174,10 @@
         color: $color__primary_navy-blue;
         padding: 10px;
         margin-left: 60px;
+        @include iphone{
+          font-size: 12px;
+          margin-left: 75px;
+        };
         @include mobile{
           margin-left: 35px;
         };
