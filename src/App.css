@@ -133,10 +133,8 @@
           background-size: 15px 15px;
           min-width: 25px;
           min-height: 25px;
-          margin: 3px; }
-          @media (min-width: 220px) and (max-width: 360px) {
-            .header__about-me__contact-info__item__icon {
-              margin: 10px; } }
+          margin: 3px;
+          margin: 10px; }
           @media (min-width: 1400px) {
             .header__about-me__contact-info__item__icon {
               border: 4px;
@@ -155,11 +153,9 @@
       .header__about-me__contact-info__relocation-text {
         color: #153a54;
         padding: 10px;
-        margin-left: 60px; }
-        @media (min-width: 220px) and (max-width: 360px) {
-          .header__about-me__contact-info__relocation-text {
-            font-size: 12px;
-            margin-left: 75px; } }
+        margin-left: 60px;
+        font-size: 12px;
+        margin-left: 75px; }
         @media (min-width: 600px) {
           .header__about-me__contact-info__relocation-text {
             margin-left: 35px; } }
@@ -406,10 +402,8 @@
           background-image: url("./components/cv-page/main/portfolio/images/findyourfilm.png"); }
         .portfolio__projects__project__main__icon_pawellicznerski {
           font: normal 15px 'Rokkitt',cursive;
-          padding-top: 10px; }
-          @media (min-width: 220px) and (max-width: 360px) {
-            .portfolio__projects__project__main__icon_pawellicznerski {
-              font-size: 12px; } }
+          padding-top: 10px;
+          font-size: 12px; }
           @media (min-width: 600px) {
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 13px;
@@ -905,10 +899,8 @@
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
-  height: 570px; }
-  @media (min-width: 220px) and (max-width: 360px) {
-    .experience__content {
-      height: 460px; } }
+  height: 570px;
+  height: 460px; }
   @media (min-width: 600px) {
     .experience__content {
       width: 50%;
@@ -937,10 +929,8 @@
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #bfc215;
-    border-radius: 14px; }
-    @media (min-width: 220px) and (max-width: 360px) {
-      .experience__content__section__el {
-        min-height: 170px; } }
+    border-radius: 14px;
+    min-height: 170px; }
     @media (min-width: 600px) {
       .experience__content__section__el {
         width: 21vw;
@@ -979,10 +969,8 @@
       background-color: inherit;
       order: 3;
       word-wrap: break-word;
-      color: #fdfdfd; }
-      @media (min-width: 220px) and (max-width: 360px) {
-        .experience__content__section__el__text_main {
-          font-size: 10.7px; } }
+      color: #fdfdfd;
+      font-size: 10.7px; }
       @media (min-width: 600px) {
         .experience__content__section__el__text_main {
           font-size: 11px; } }
@@ -1004,10 +992,8 @@
       font-weight: bold;
       font-size: 18px;
       word-wrap: break-word;
-      color: #bfc215; }
-      @media (min-width: 220px) and (max-width: 360px) {
-        .experience__content__section__el__text_date {
-          font-size: 12px; } }
+      color: #bfc215;
+      font-size: 12px; }
       @media (min-width: 600px) {
         .experience__content__section__el__text_date {
           font-size: 13px; } }
