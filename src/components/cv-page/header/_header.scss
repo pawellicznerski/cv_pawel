@@ -170,7 +170,6 @@
       &__relocation-text{
         color: $color__primary_navy-blue;
         padding: 10px;
-        // text-align: center;
         margin-left: 60px;
         @include mobile{
           margin-left: 35px;
@@ -193,42 +192,12 @@
       background-image: url("./components/cv-page/header/__header__contact-info__images/header_arrow.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 30px 30px;
       @include laptop{
         height: 42px;
         width: 42px;
+        background-size: 40px 40px;
       };
     }
-    // &__welcome-text{
-    //   // border: 1px solid red;
-    //   min-width: 80%;
-    //   display: flex;
-    //   justify-content: center;
-    //   &_arrow{
-    //     height: 20px;
-    //     width: 20px;
-    //     background-image: url("./components/cv-page/header/__header__contact-info__images/header_arrow.svg");
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //   }
-    //   &_text{
-    //     font-size: 11px;
-    //     margin-bottom: 14px;
-    //     text-align: center;
-    //     width: 80%;
-    //     @include mobile{
-    //       width: 90%;
-    //     };
-    //     @include tablet{
-    //       width: 70%;
-    //       font-size: 14px;
-    //       margin-bottom: 3vw;
-    //     };
-    //     @include desktop{
-    //       font-size: 25px;
-    //     };
-    //   }
-    // }
   }//about-me
 }//header

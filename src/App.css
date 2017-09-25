@@ -172,11 +172,12 @@
       background-image: url("./components/cv-page/header/__header__contact-info__images/header_arrow.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: 30px 30px; }
       @media (min-width: 1000px) {
         .header__about-me__welcome-text_arrow {
           height: 42px;
-          width: 42px; } }
+          width: 42px;
+          background-size: 40px 40px; } }
 
 .portfolio {
   width: 100%;
@@ -399,7 +400,7 @@
         .portfolio__projects__project__main__icon_pawellicznerski {
           font: normal 15px 'Rokkitt',cursive;
           padding-top: 10px; }
-          @media (max-width: 360px) {
+          @media (min-width: 220px) and (max-width: 360px) {
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 12px; } }
           @media (min-width: 600px) {
@@ -898,7 +899,7 @@
   display: flex;
   flex-direction: column;
   height: 570px; }
-  @media (max-width: 360px) {
+  @media (min-width: 220px) and (max-width: 360px) {
     .experience__content {
       height: 460px; } }
   @media (min-width: 600px) {
@@ -930,7 +931,7 @@
     flex-wrap: wrap;
     border: 1px solid #bfc215;
     border-radius: 14px; }
-    @media (max-width: 360px) {
+    @media (min-width: 220px) and (max-width: 360px) {
       .experience__content__section__el {
         min-height: 170px; } }
     @media (min-width: 600px) {
@@ -972,7 +973,7 @@
       order: 3;
       word-wrap: break-word;
       color: #fdfdfd; }
-      @media (max-width: 360px) {
+      @media (min-width: 220px) and (max-width: 360px) {
         .experience__content__section__el__text_main {
           font-size: 10.7px; } }
       @media (min-width: 600px) {
@@ -997,7 +998,7 @@
       font-size: 18px;
       word-wrap: break-word;
       color: #bfc215; }
-      @media (max-width: 360px) {
+      @media (min-width: 220px) and (max-width: 360px) {
         .experience__content__section__el__text_date {
           font-size: 12px; } }
       @media (min-width: 600px) {
