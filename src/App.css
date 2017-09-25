@@ -149,21 +149,34 @@
           background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_e-mail.svg"); }
         .header__about-me__contact-info__item__icon_address {
           background-image: url("./components/cv-page/header/__header__contact-info__images/header__contact-info__image_address.svg"); }
-    .header__about-me__welcome-text {
-      margin-bottom: 14px;
-      text-align: center;
-      width: 80%; }
-      @media (min-width: 600px) {
-        .header__about-me__welcome-text {
-          width: 90%; } }
-      @media (min-width: 760px) {
-        .header__about-me__welcome-text {
-          width: 70%;
-          font-size: 14px;
-          margin-bottom: 3vw; } }
-      @media (min-width: 1400px) {
-        .header__about-me__welcome-text {
-          font-size: 25px; } }
+      .header__about-me__contact-info__relocation-text {
+        color: #153a54;
+        padding: 10px;
+        margin-left: 60px; }
+        @media (min-width: 600px) {
+          .header__about-me__contact-info__relocation-text {
+            margin-left: 35px; } }
+        @media (min-width: 760px) {
+          .header__about-me__contact-info__relocation-text {
+            margin-left: 48px; } }
+        @media (min-width: 1000px) {
+          .header__about-me__contact-info__relocation-text {
+            margin-left: 56px; } }
+        @media (min-width: 1400px) {
+          .header__about-me__contact-info__relocation-text {
+            margin-left: 64px; } }
+    .header__about-me__welcome-text_arrow {
+      margin: 10px;
+      height: 33px;
+      width: 33px;
+      background-image: url("./components/cv-page/header/__header__contact-info__images/header_arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media (min-width: 1000px) {
+        .header__about-me__welcome-text_arrow {
+          height: 42px;
+          width: 42px; } }
 
 .portfolio {
   width: 100%;

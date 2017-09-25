@@ -28,11 +28,13 @@ export class Header extends Component {
             </div>
             <div className="header__about-me__contact-info__item">
               <div className="header__about-me__contact-info__item__icon header__about-me__contact-info__item__icon_address"></div>
-              <p className="header__about-me__contact-info__item__text header__about-me__contact-info__item__text_last">87-162 Lubicz Dolny ul.Toruńska 55 (chętnie sie przeprowadzę)</p>
+              <p className="header__about-me__contact-info__item__text header__about-me__contact-info__item__text_last">87-162 Lubicz Dolny ul.Toruńska 55 </p>
             </div>
+            <strong  className="header__about-me__contact-info__relocation-text">Jestem otwarty na relokację.</strong>
           </div>
 
-          <span className="header__about-me__welcome-text">Zapraszam do obejrzenia mojego CV i portfolio</span>
+          <div className="header__about-me__welcome-text_arrow"></div>
+
         </div>
 
       </div>
