@@ -5,7 +5,7 @@
   .header__el {
     width: 100%;
     height: 300px; }
-    @media only screen and (min-width: 600px) {
+    @media (min-width: 600px) {
       .header__el {
         width: 50%;
         height: 50vw; } }
@@ -153,6 +153,10 @@
         color: #153a54;
         padding: 10px;
         margin-left: 60px; }
+        @media (min-width: 220px) and (max-width: 360px) {
+          .header__about-me__contact-info__relocation-text {
+            font-size: 12px;
+            margin-left: 75px; } }
         @media (min-width: 600px) {
           .header__about-me__contact-info__relocation-text {
             margin-left: 35px; } }
@@ -400,6 +404,9 @@
         .portfolio__projects__project__main__icon_pawellicznerski {
           font: normal 15px 'Rokkitt',cursive;
           padding-top: 10px; }
+          @media (min-width: 220px) and (max-width: 360px) {
+            .portfolio__projects__project__main__icon_pawellicznerski {
+              font-size: 12px; } }
           @media (min-width: 600px) {
             .portfolio__projects__project__main__icon_pawellicznerski {
               font-size: 13px;
@@ -896,6 +903,9 @@
   display: flex;
   flex-direction: column;
   height: 570px; }
+  @media (min-width: 220px) and (max-width: 360px) {
+    .experience__content {
+      height: 460px; } }
   @media (min-width: 600px) {
     .experience__content {
       width: 50%;
@@ -925,6 +935,9 @@
     flex-wrap: wrap;
     border: 1px solid #bfc215;
     border-radius: 14px; }
+    @media (min-width: 220px) and (max-width: 360px) {
+      .experience__content__section__el {
+        min-height: 170px; } }
     @media (min-width: 600px) {
       .experience__content__section__el {
         width: 21vw;
@@ -945,6 +958,9 @@
       width: 50%;
       word-wrap: break-word;
       color: #fdfdfd; }
+      @media (min-width: 220px) and (max-width: 360px) {
+        .experience__content__section__el__text_title {
+          font-size: 10px; } }
       @media (min-width: 600px) {
         .experience__content__section__el__text_title {
           font-size: 11px; } }
@@ -964,6 +980,9 @@
       order: 3;
       word-wrap: break-word;
       color: #fdfdfd; }
+      @media (min-width: 220px) and (max-width: 360px) {
+        .experience__content__section__el__text_main {
+          font-size: 10.7px; } }
       @media (min-width: 600px) {
         .experience__content__section__el__text_main {
           font-size: 11px; } }
@@ -986,6 +1005,9 @@
       font-size: 18px;
       word-wrap: break-word;
       color: #bfc215; }
+      @media (min-width: 220px) and (max-width: 360px) {
+        .experience__content__section__el__text_date {
+          font-size: 12px; } }
       @media (min-width: 600px) {
         .experience__content__section__el__text_date {
           font-size: 13px; } }
