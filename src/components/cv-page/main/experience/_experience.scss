@@ -50,6 +50,7 @@
     }
 
     &__section__el{
+      padding: 7px;
       background-color: $color__primary_black;
       width: 42vw;
       min-height: 220px;
@@ -65,27 +66,28 @@
         min-height: 170px;
       };
       @include mobile{
-        width: 21vw;
-        min-height: 130px;
+        margin: 0 0 1vw 3px;
+        width: 22.5vw;
+        min-height: 136px;
       };
       @include tablet{
         min-height: 170px;
       };
       @include laptop{
-        min-height: 220px;
+        min-height: 225px;
       };
       @include desktop{
         min-height: 260px;
       };
       &__text_title{
-        margin: 3px;
+        margin: auto 3px;
         background-color: inherit;
         order: 1;
         width: 50%;
         word-wrap: break-word;
         color: $color__primary_white;
         @include iphone{
-          font-size: 10px;
+          font-size: 13px;
         };
         @include mobile{
           font-size: 11px;
@@ -102,19 +104,21 @@
         };
       }
       &__text_main{
-        margin: 3px;
+        font-size: 14px;
+        margin: auto ;
         background-color: inherit;
         order: 3;
         word-wrap: break-word;
         color: $color__primary_white;
+        // border: 1px solid green;
         @include iphone{
           font-size: 10.7px;
         };
         @include mobile{
-          font-size: 11px;
+          font-size: 9.5px;
         };
         @include tablet{
-          font-size: 14px;
+          font-size: 13px;
         };
         @include laptop{
           font-size: 18px;
@@ -125,8 +129,11 @@
       }
       &__text_date{
         padding: 3px 3px 3px 6px;
+        margin: auto 3px;
         order: 2;
         width: 35%;
+        // border: 1px solid pink;
+
         border-left: 2px solid $color__primary_white;
         background-color: inherit;
         font-weight: bold;

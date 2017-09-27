@@ -17,14 +17,14 @@
       border: 18px solid $color__primary_olive;
     };
     &_lightest{
-      font-size: $biggestCircleSize*0.09;
+      font-size: $biggestCircleSize*0.086;
       left: -$biggestCircleSize*0.59;
       top:$biggestCircleSize*0.35;
       width: $biggestCircleSize*0.7;
       height: $biggestCircleSize*0.7;
       // background-color: $color__primary_navy-blue;
       position: absolute;
-    }
+  }
     &_light{
       font-size: $biggestCircleSize*0.107;
       left: -$biggestCircleSize*0.37;

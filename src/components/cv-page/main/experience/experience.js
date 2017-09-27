@@ -44,7 +44,7 @@ export class Experience extends Component {
                 duties="Firma vendingowa jednoosobowa, zajmująca się sprzedażą kanapek z automatów."
                 />
               <Job company="Limito S.A." year="2016 - 2017" arrow="right"
-                duties="Spec. ds. zakupów: dokonywanie zakupów opakowao do łososia, negocjacja cen."
+                duties="Spec. ds. zakupów: dokonywanie zakupów opakowań do łososia, negocjacja cen."
                 />
             </div>
           </div>

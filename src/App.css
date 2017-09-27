@@ -136,7 +136,7 @@
           margin: 3px; }
           @media (min-width: 1400px) {
             .header__about-me__contact-info__item__icon {
-              border: 4px;
+              border: 4px solid #bfc215;
               background-size: 25px 25px;
               min-width: 35px;
               min-height: 35px;
@@ -925,6 +925,7 @@
     .experience__content__section_right {
       border-left: 3px solid black; }
   .experience__content__section__el {
+    padding: 7px;
     background-color: #000005;
     width: 42vw;
     min-height: 220px;
@@ -940,19 +941,20 @@
         min-height: 170px; } }
     @media (min-width: 600px) {
       .experience__content__section__el {
-        width: 21vw;
-        min-height: 130px; } }
+        margin: 0 0 1vw 3px;
+        width: 22.5vw;
+        min-height: 136px; } }
     @media (min-width: 760px) {
       .experience__content__section__el {
         min-height: 170px; } }
     @media (min-width: 1000px) {
       .experience__content__section__el {
-        min-height: 220px; } }
+        min-height: 225px; } }
     @media (min-width: 1400px) {
       .experience__content__section__el {
         min-height: 260px; } }
     .experience__content__section__el__text_title {
-      margin: 3px;
+      margin: auto 3px;
       background-color: inherit;
       order: 1;
       width: 50%;
@@ -960,7 +962,7 @@
       color: #fdfdfd; }
       @media (min-width: 220px) and (max-width: 360px) {
         .experience__content__section__el__text_title {
-          font-size: 10px; } }
+          font-size: 13px; } }
       @media (min-width: 600px) {
         .experience__content__section__el__text_title {
           font-size: 11px; } }
@@ -975,7 +977,8 @@
           font-size: 25px;
           font-weight: bold; } }
     .experience__content__section__el__text_main {
-      margin: 3px;
+      font-size: 14px;
+      margin: auto;
       background-color: inherit;
       order: 3;
       word-wrap: break-word;
@@ -985,10 +988,10 @@
           font-size: 10.7px; } }
       @media (min-width: 600px) {
         .experience__content__section__el__text_main {
-          font-size: 11px; } }
+          font-size: 9.5px; } }
       @media (min-width: 760px) {
         .experience__content__section__el__text_main {
-          font-size: 14px; } }
+          font-size: 13px; } }
       @media (min-width: 1000px) {
         .experience__content__section__el__text_main {
           font-size: 18px; } }
@@ -997,6 +1000,7 @@
           font-size: 21px; } }
     .experience__content__section__el__text_date {
       padding: 3px 3px 3px 6px;
+      margin: auto 3px;
       order: 2;
       width: 35%;
       border-left: 2px solid #fdfdfd;
@@ -1140,7 +1144,7 @@
       .interests__content .interests__cirles_item_dark-main {
         border: 18px solid #bfc215; } }
     .interests__content .interests__cirles_item_dark-main_lightest {
-      font-size: 14.4px;
+      font-size: 13.76px;
       left: -94.4px;
       top: 56px;
       width: 112px;
@@ -1175,7 +1179,7 @@
       border: 18px solid #bfc215; } }
   @media (min-width: 600px) {
       .interests__content .interests__cirles_item_dark-main_lightest {
-        font-size: 12.6px;
+        font-size: 12.04px;
         left: -82.6px;
         top: 49px;
         width: 98px;
@@ -1210,7 +1214,7 @@
       border: 18px solid #bfc215; } }
   @media (min-width: 760px) {
       .interests__content .interests__cirles_item_dark-main_lightest {
-        font-size: 16.2px;
+        font-size: 15.48px;
         left: -106.2px;
         top: 63px;
         width: 126px;
@@ -1245,7 +1249,7 @@
       border: 18px solid #bfc215; } }
   @media (min-width: 1000px) {
       .interests__content .interests__cirles_item_dark-main_lightest {
-        font-size: 19.8px;
+        font-size: 18.92px;
         left: -129.8px;
         top: 77px;
         width: 154px;
@@ -1280,7 +1284,7 @@
       border: 18px solid #bfc215; } }
   @media (min-width: 1400px) {
       .interests__content .interests__cirles_item_dark-main_lightest {
-        font-size: 26.1px;
+        font-size: 24.94px;
         left: -171.1px;
         top: 101.5px;
         width: 203px;
@@ -1396,7 +1400,7 @@
       font-size: 0.8em; }
 
 .page {
-  font-family: 'Lora', serif; }
+  font-family: 'Righteous', cursive; }
 
 * {
   padding: 0px;
