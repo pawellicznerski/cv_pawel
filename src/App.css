@@ -1392,11 +1392,18 @@
     @media (min-width: 600px) {
       .footer__section {
         width: 50%; } }
-    .footer__section_left {
+    .footer__section__left {
       background-color: #000005;
       color: #fdfdfd;
       font-size: 1em; }
-    .footer__section_right {
+      .footer__section__left__word {
+        transform-style: preserve-3d; }
+        .footer__section__left__word_syllable {
+          margin: auto 3px;
+          height: 35px;
+          border: 2px solid white;
+          padding: 10px 20px; }
+    .footer__section__right {
       font-size: 0.8em; }
 
 .page {
