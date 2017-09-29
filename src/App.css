@@ -1395,16 +1395,15 @@
     .footer__section__left {
       background-color: #000005;
       color: #fdfdfd;
-      font-size: 1em;
+      font-size: 2.1em;
       margin: 0;
-      padding: 0; }
+      padding: 8vh auto; }
       .footer__section__left__word {
-        position: relative;
-        transform-style: preserve-3d; }
+        position: relative; }
         .footer__section__left__word_syllable {
           display: block;
-          border: 2px solid white;
-          padding: 10px 20px; }
+          border: 1px solid white;
+          padding: 10px 0px; }
           .footer__section__left__word_syllable::before {
             position: absolute;
             content: attr(title);
@@ -1412,9 +1411,8 @@
             left: 0;
             background-color: white;
             color: black;
-            padding: 10px 20px;
-            border: 2px solid white;
-            transform-style: preserve-3d;
+            padding: 10px 0px;
+            border: 1px solid white;
             transition: .3s;
             transform: rotateX(90deg) translateY(30px);
             transform-origin: bottom; }
@@ -1427,11 +1425,9 @@
             left: 0;
             background-color: black;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 0px;
             border: 2px solid white;
-            transform-style: preserve-3d;
             transition: .3s;
-            transform: rotateX(0deg) translateY(0px);
             transform-origin: top; }
           .footer__section__left__word_syllable:hover::after {
             transform: rotateX(90deg) translateY(-30px); }

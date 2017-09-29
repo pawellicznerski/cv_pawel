@@ -19,17 +19,19 @@
     &__left{
       background-color: $color__primary_black;
       color: $color__primary_white;
-      font-size: 1em;
+      font-size: 2.1em;
       margin:0;
-      padding:0;
+      // padding:0;
+      padding: 8vh auto;
+
       &__word{
         position: relative;
-        transform-style: preserve-3d;
+        // transform-style: preserve-3d;
         &_syllable{
           display: block;
           // height: 35px;
-          border: 2px solid white;
-          padding: 10px 20px;
+          border: 1px solid white;
+          padding: 10px 0px;
           &::before{
             position: absolute;
             content: attr(title);
@@ -37,9 +39,9 @@
             left:0;
             background-color: white;
             color: black;
-            padding: 10px 20px;
-            border: 2px solid white;
-            transform-style: preserve-3d;
+            padding: 10px 0px;
+            border: 1px solid white;
+            // transform-style: preserve-3d;
             transition: .3s;
             transform: rotateX(90deg) translateY(30px);
             transform-origin: bottom;
@@ -56,11 +58,11 @@
             left:0;
             background-color: black;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 0px;
             border: 2px solid white;
-            transform-style: preserve-3d;
+            // transform-style: preserve-3d;
             transition: .3s;
-            transform: rotateX(0deg) translateY(0px);
+            // // transform: rotateX(0deg) translateY(0px);
             transform-origin: top;
           }
           &:hover{
