@@ -20,13 +20,54 @@
       background-color: $color__primary_black;
       color: $color__primary_white;
       font-size: 1em;
+      margin:0;
+      padding:0;
       &__word{
+        position: relative;
         transform-style: preserve-3d;
         &_syllable{
-          margin: auto 3px;
-          height: 35px;
+          display: block;
+          // height: 35px;
           border: 2px solid white;
           padding: 10px 20px;
+          &::before{
+            position: absolute;
+            content: attr(title);
+            top:0;
+            left:0;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid white;
+            transform-style: preserve-3d;
+            transition: .3s;
+            transform: rotateX(90deg) translateY(30px);
+            transform-origin: bottom;
+          }
+          &:hover{
+            &::before{
+              transform: rotateX(0deg) translateY(0px);
+            }
+          }
+          &::after{
+            position: absolute;
+            content: attr(title);
+            top:0;
+            left:0;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            transform-style: preserve-3d;
+            transition: .3s;
+            transform: rotateX(0deg) translateY(0px);
+            transform-origin: top;
+          }
+          &:hover{
+            &::after{
+              transform: rotateX(90deg) translateY(-30px);
+            }
+          }
         }
       }
     }
