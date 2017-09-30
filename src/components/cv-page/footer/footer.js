@@ -25,6 +25,7 @@ class AniLetter extends Component{
         this.setState({
           isAnimated:true,
           });
+      this.props.animateTick().bind(this);
       window.removeEventListener('scroll', this.handleScroll);
           console.log(this.state.isAnimated);
       }
@@ -43,11 +44,23 @@ class AniLetter extends Component{
 }
 
 export default class Footer extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      isAnimated:false,
+    }
+  }
+
+  animateTick(){
+    this.setState({
+      isAnimated:true,
+    })
+  }
   render() {
     return (
       <div className="footer">
         <div className="footer__section footer__section__left">
-          <AniLetter time="4" letter="&copy;"/>
+          <AniLetter animateTick={this.animateTick.bind(this)} time="4" letter="&copy;"/>
           <AniLetter time="1" letter="P"/>
           <AniLetter time="7" letter="a"/>
           <AniLetter time="5" letter="w"/>
@@ -64,9 +77,26 @@ export default class Footer extends Component {
           <AniLetter time="2" letter="k"/>
           <AniLetter time="1" letter="i"/>
         </div>
-        <p className="footer__section footer__section__right">
-          Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
-        </p>
+        <div className="footer__section footer__section__right">
+          <div className="footer__section__right__tick-box">
+            <span
+              className={this.state.isAnimated?`footer__section__right__tick-box__border footer__section__right__tick-box__border_1`:"footer__section__right__tick-box__border"}
+            ></span>
+            <span
+              className={this.state.isAnimated?`footer__section__right__tick-box__border footer__section__right__tick-box__border_2`:"footer__section__right__tick-box__border"}
+            ></span>
+            <span
+              className={this.state.isAnimated?`footer__section__right__tick-box__border footer__section__right__tick-box__border_3`:"footer__section__right__tick-box__border"}
+            ></span>
+            <span
+              className={this.state.isAnimated?`footer__section__right__tick-box__border footer__section__right__tick-box__border_4`:"footer__section__right__tick-box__border"}
+            ></span>
+            <div className={this.state.isAnimated?"footer__section__right__tick-box__tick":""}></div>
+          </div>
+          <p className="footer__section__right__text">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
+          </p>
+        </div>
       </div>
     );
   }
