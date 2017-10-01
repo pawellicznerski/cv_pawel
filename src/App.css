@@ -1495,29 +1495,37 @@
       border: 1px solid blue;
       display: flex;
       justify-content: center;
-      padding: 10px; }
+      align-items: center; }
       .footer__section__right__tick-box {
         width: 15vw;
         height: 15vw;
-        margin: 10px 15px 5px 5px;
-        position: relative;
-        overflow: hidden;
-        background-color: transparent;
-        border: 0; }
+        margin-right: 15px;
+        position: relative; }
+        @media (min-width: 600px) {
+          .footer__section__right__tick-box {
+            width: 8vw;
+            height: 8vw;
+            margin: auto 10px;
+            overflow: hidden; } }
         .footer__section__right__tick-box__tick {
           height: 10vw;
           width: 5vw;
           margin: 2vw 0 0 5vw;
           transform: rotate(35deg);
           animation: borderAni .2s linear 4.7s forwards; }
+          @media (min-width: 600px) {
+            .footer__section__right__tick-box__tick {
+              height: 5vw;
+              width: 2.5vw;
+              margin: 1.5vw 0 0 2.5vw; } }
 
 @keyframes borderAni {
   0% {
     border-bottom: 0 solid #000005;
     border-right: 0 solid #000005; }
   100% {
-    border-bottom: 8px solid #000005;
-    border-right: 8px solid #000005; } }
+    border-bottom: 10px solid #000005;
+    border-right: 10px solid #000005; } }
         .footer__section__right__tick-box__border {
           content: "";
           position: absolute;
@@ -1525,11 +1533,10 @@
         .footer__section__right__tick-box__border_1 {
           top: 0;
           left: 0;
-          width: 0;
-          height: 6px;
-          animation: Line1 .2s linear 3.7s forwards; }
+          height: 10px;
+          animation: movingLine4 0.2s linear 3.7s forwards; }
 
-@keyframes Line1 {
+@keyframes movingLine4 {
   0% {
     width: 0; }
   100% {
@@ -1537,11 +1544,10 @@
         .footer__section__right__tick-box__border_2 {
           top: 0;
           right: 0;
-          width: 6px;
-          height: 0;
-          animation: Line2 .2s linear 3.9s forwards; }
+          width: 10px;
+          animation: movingLine2 0.2s linear 3.9s forwards; }
 
-@keyframes Line2 {
+@keyframes movingLine2 {
   0% {
     height: 0; }
   100% {
@@ -1549,11 +1555,10 @@
         .footer__section__right__tick-box__border_3 {
           bottom: 0;
           right: 0;
-          width: 0;
-          height: 6px;
-          animation: Line3 .2s linear 4.1s forwards; }
+          height: 10px;
+          animation: movingLine4 0.2s linear 4.1s forwards; }
 
-@keyframes Line3 {
+@keyframes movingLine4 {
   0% {
     width: 0; }
   100% {
@@ -1561,19 +1566,22 @@
         .footer__section__right__tick-box__border_4 {
           bottom: 0;
           left: 0;
-          width: 6px;
-          height: 0;
-          animation: Line4 .2s linear 4.3s forwards; }
+          width: 10px;
+          animation: movingLine2 0.2s linear 4.3s forwards; }
 
-@keyframes Line4 {
+@keyframes movingLine2 {
   0% {
     height: 0; }
   100% {
     height: 15vw; } }
       .footer__section__right__text {
-        font-size: 0.8em;
+        font-size: 3vw;
         border: 1px solid green;
         width: 73vw; }
+        @media (min-width: 600px) {
+          .footer__section__right__text {
+            font-size: 1.9vw;
+            width: 43vw; } }
 
 .page {
   font-family: 'Righteous', cursive; }
